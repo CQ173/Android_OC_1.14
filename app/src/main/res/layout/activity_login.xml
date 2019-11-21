@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#f6f6f6" >
+
+        
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="登 录"
+            android:textColor="#666666"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp" >
+
+        <EditText
+            android:id="@+id/et_userName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:hint="请输入用户名/手机号"
+            android:singleLine="true"
+            android:textSize="16sp" />
+
+  
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+
+        <CheckBox
+	        android:id="@+id/cb_rememberAccount" 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	      
+	        android:scaleX="0.4"  
+       		android:scaleY="0.4"
+	       	style="@style/CustomCheckboxTheme"/>
+
+        <TextView
+            android:id="@+id/tv_resetSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="记住账号"
+           	android:layout_gravity="center_vertical"
+           	android:textColor="#fe6767"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/et_passWard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_forgetPassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="忘记密码？"
+            android:textColor="#fe6767"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/tv_register"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="注册"
+            android:textColor="#fe6767"
+            android:gravity="right"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_login"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bluebutton_click_style"
+        android:text="登 录"
+        android:textColor="#ffffff" />
+	<!--  
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+       
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="登录即表示你同意"
+            android:textColor="#999999"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_userAgreement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            android:text="《O计会计金融平台用户协议》"
+            android:textColor="#fe6767"
+            android:textSize="12sp" />
+    </LinearLayout>
+	-->
+	
+	
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0.02dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="#999999" >
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="快速登录"
+            android:textColor="#999999"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0.02dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="#999999" >
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/weiXin_login"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@drawable/weixinimg" />
+
+        <ImageView
+            android:id="@+id/qq_login"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@drawable/qqimg" />
+
+       
+    </LinearLayout>
+	
+</LinearLayout>

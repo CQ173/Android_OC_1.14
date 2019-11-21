@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f4f4f4"
+    >
+    
+	<LinearLayout
+        android:id="@+id/layout_adminMyMsg"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+    	android:paddingTop="12dp"
+    	android:paddingBottom="12dp"
+    	android:paddingLeft="16dp"
+    	android:paddingRight="16dp"
+    	
+    	android:background="#ffffff">
+    <ImageView
+        android:layout_width="20dp"
+    	android:layout_height="20dp"
+    	android:layout_gravity="center_vertical"
+    	android:src="@drawable/message2">
+        
+    </ImageView>	
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center_vertical"
+	    android:layout_weight="1"
+	  	android:layout_marginLeft="5dp"
+	    android:text="我的消息"/>
+	
+	<ImageView
+        android:layout_width="18dp"
+    	android:layout_height="18dp"
+    	android:layout_gravity="center_vertical"
+    	android:src="@drawable/right_arrow"/>
+	</LinearLayout>
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="0.02dp"
+	    android:background="#999999">
+	</LinearLayout>
+	
+	<LinearLayout
+	    android:id="@+id/layout_adminMyLog"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+    	android:paddingTop="12dp"
+    	android:paddingBottom="12dp"
+    	android:paddingLeft="16dp"
+    	android:paddingRight="16dp"
+    	
+    	android:background="#ffffff">
+    <ImageView
+        android:layout_width="20dp"
+    	android:layout_height="20dp"
+    	android:layout_gravity="center_vertical"
+    	android:src="@drawable/journal">
+        
+    </ImageView>	
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="1"
+	    android:layout_gravity="center_vertical"
+	  	android:layout_marginLeft="5dp"
+	    android:text="我的日志"/>
+	
+		<ImageView
+        android:layout_width="18dp"
+    	android:layout_height="18dp"
+    	android:layout_gravity="center_vertical"
+    	android:src="@drawable/right_arrow"/>
+	</LinearLayout>
+	
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="0.02dp"
+	    android:background="#999999">
+	</LinearLayout>
+	
+	
+	<LinearLayout
+	    android:id="@+id/layout_admin_systemNotification"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+    	android:paddingTop="12dp"
+    	android:paddingBottom="12dp"
+    	android:paddingLeft="16dp"
+    	android:paddingRight="16dp"
+    	
+    	android:background="#ffffff">
+    <ImageView
+        android:layout_width="20dp"
+    	android:layout_height="20dp"
+    	android:layout_gravity="center_vertical"
+    	android:src="@drawable/system_notification">
+        
+    </ImageView>	
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="1"
+	    android:layout_gravity="center_vertical"
+	  	android:layout_marginLeft="5dp"
+	    android:text="系统通知"/>
+	
+		<ImageView
+        android:layout_width="18dp"
+    	android:layout_height="18dp"
+    	android:layout_gravity="center_vertical"
+    	android:src="@drawable/right_arrow"/>
+	</LinearLayout>
+	
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="0.02dp"
+	    android:background="#999999">
+	</LinearLayout>
+	
+	
+	<LinearLayout
+	    android:id="@+id/layout_admin_addNotification"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+    	android:paddingTop="12dp"
+    	android:paddingBottom="12dp"
+    	android:paddingLeft="16dp"
+    	android:paddingRight="16dp"
+    	
+    	android:background="#ffffff">
+    <ImageView
+        android:layout_width="20dp"
+    	android:layout_height="20dp"
+    	android:layout_gravity="center_vertical"
+    	android:src="@drawable/add_notification">
+        
+    </ImageView>	
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="1"
+	    android:layout_gravity="center_vertical"
+	  	android:layout_marginLeft="5dp"
+	    android:text="添加通知"/>
+	
+		<ImageView
+        android:layout_width="18dp"
+    	android:layout_height="18dp"
+    	android:layout_gravity="center_vertical"
+    	android:src="@drawable/right_arrow"/>
+	</LinearLayout>
+	
+	
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="0.02dp"
+	    android:background="#999999">
+	</LinearLayout>
+	
+	<LinearLayout
+	    android:id="@+id/layout_feedbackInformation"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+    	android:paddingTop="12dp"
+    	android:paddingBottom="12dp"
+    	android:paddingLeft="16dp"
+    	android:paddingRight="16dp"
+    	
+    	android:background="#ffffff">
+    <ImageView
+        android:layout_width="20dp"
+    	android:layout_height="20dp"
+    	android:layout_gravity="center_vertical"
+    	android:src="@drawable/feedback_information">
+        
+    </ImageView>	
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="1"
+	    android:layout_gravity="center_vertical"
+	  	android:layout_marginLeft="5dp"
+	    android:text="反馈信息"/>
+	
+		<ImageView
+        android:layout_width="18dp"
+    	android:layout_height="18dp"
+    	android:layout_gravity="center_vertical"
+    	android:src="@drawable/right_arrow"/>
+	</LinearLayout>
+</LinearLayout>

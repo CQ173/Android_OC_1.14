@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_dismiss"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:src="@drawable/delete1"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+             />
+
+    </RelativeLayout>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="缴费二维码"
+        android:layout_gravity="center_horizontal"
+        android:textSize="18sp"
+        android:layout_marginTop="2dp"
+        android:textColor="#666666"/>
+    
+    <ImageView
+        android:id="@+id/iv_rechargeQrCode"
+        android:layout_marginTop="30dp"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+       android:layout_gravity="center_horizontal"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/text_circle_bg_left"
+            android:layout_marginLeft="-12dp"
+            android:id="@+id/textView7" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0.02dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:background="#dbdbdb" >
+    </View>
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/text_circle_bg_right"
+            android:layout_marginRight="-12dp"
+            />
+
+</LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:layout_marginBottom="30dp"
+        android:textColor="#898989"
+        android:text="请长按保存二维码图片，在微信或支付宝通过“扫一扫”中的图片识别进行缴费。"
+        />
+</LinearLayout>

@@ -1,0 +1,164 @@
+apply plugin: 'com.android.application'
+
+
+//是否编译测试版apk
+boolean buildDebug=false;
+dependencies {
+    if (buildDebug) {
+        //测试版用这两个包 名称中包含debug
+        compile(name: 'mposplugin_sdk_debug_2.6.3.aar.001', ext: 'aar')
+        compile(name: 'dhjt_4.1.0_debug_plugin', ext: 'jar')
+    } else {
+        //生产版本 更换成以下两个包 名称中包含release
+        compile(name: 'mposplugin_sdk_release_2.6.3.aar.001', ext: 'aar')
+        compile(name: 'dhjt_4.1.0_release_plugin', ext: 'jar')
+    }
+    compile 'com.github.PhilJay:MPAndroidChart:v3.0.2'
+    compile 'info.hoang8f:android-segmented:1.0.6'
+    compile(name: 'android-logging-log4j-1.0.3', ext: 'jar')
+    compile(name: 'commons-lang3-3.3', ext: 'jar')
+    compile(name: 'locSDK_6.23', ext: 'jar')
+    compile(name: 'log4j-1.2.17', ext: 'jar')
+    compile(name: 'slf4j-api-1.7.12', ext: 'jar')
+    compile(name: 'slf4j-log4j12-1.7.12', ext: 'jar')
+    compile 'com.squareup.okhttp3:okhttp-urlconnection:3.2.0'
+    compile(name: 'umsswipe', ext: 'aar')
+    compile 'com.android.support:appcompat-v7:23.2.1'
+    compile 'com.google.code.gson:gson:2.7'
+    compile files('libs/alipaySdk-20161009.jar')
+    compile files('libs/commons-mycodec-1.9.jar')
+    compile files('libs/mta-sdk-1.6.2.jar')
+    compile files('libs/open_sdk_r5781.jar')
+    compile files('libs/volley.jar')
+    compile files('libs/wechat-sdk-android-with-mta-1.0.2.jar')
+    compile project(':PushSDK')
+    //分包需要添加的依赖
+    compile 'com.android.support:multidex:1.0.0'
+    compile 'com.jakewharton:butterknife:5.1.1'
+    compile 'com.github.bumptech.glide:glide:3.6.1'
+    //compile 'top.zibin:Luban:1.1.2'
+    compile 'com.android.support:support-annotations:25.0.1'
+    compile files('libs/baidumapapi_base_v4_3_1.jar')
+    compile files('libs/baidumapapi_map_v4_3_1.jar')
+    compile files('libs/baidumapapi_search_v4_3_1.jar')
+    compile files('libs/baidumapapi_util_v4_3_1.jar')
+    compile project(':library')
+    compile files('libs/EventBus-2.4.2.jar')
+    compile 'com.umeng.analytics:analytics:latest.integration'
+    compile 'com.github.chrisbanes.photoview:library:1.2.4'
+    compile 'com.android.support:design:24.1.1'
+    compile 'com.google.android.gms:play-services-appindexing:8.4.0'
+    //扫描二维码的库
+
+    /* compile 'cn.yipianfengye.android:zxing-library:2.2'*/
+    compile 'pub.devrel:easypermissions:0.2.0'
+    testCompile 'junit:junit:4.12'
+    compile project(':lib-zxing')
+    //讯飞语音的库
+    compile files('libs/Msc.jar')
+//    compile files('libs/volley.jar')
+}
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+    aaptOptions.cruncherEnabled = false
+    aaptOptions.useNewCruncher = false
+    defaultConfig {
+        applicationId "com.huoniao.oc"
+        minSdkVersion 14
+        targetSdkVersion 22
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+
+        //配置.so文件！
+        ndk {
+            //选择要添加的对应cpu类型的.so库。
+            abiFilters 'x86', 'x86_64','armeabi', 'armeabi-v7a', 'arm64-v8a', 'mips', 'mips64'
+        }
+    }
+
+    if(buildDebug){
+        defaultPublishConfig 'debug'
+    }else{
+        defaultPublishConfig 'release'
+    }
+    signingConfigs {
+        release {                                   /* pos机签名*/
+            storeFile file('debug.keystore')
+            storePassword "android"
+            keyAlias "androiddebugkey"
+            keyPassword "android"
+        }
+        debugBaidu {
+            keyAlias 'baidu'
+            keyPassword '123456'
+            storeFile file('baidu_debug.jks')
+            storePassword '123456'
+        }
+    }
+
+    buildTypes {
+
+        debug {
+            signingConfig signingConfigs.debugBaidu
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        release{
+            signingConfig signingConfigs.release
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+
+    sourceSets {
+        main {
+            //    manifest.srcFile 'AndroidManifest.xml'
+            // java.srcDirs = ['src']
+            // resources.srcDirs = ['src']
+            aidl.srcDirs = ['src']
+            //   renderscript.srcDirs = ['src']
+            //   res.srcDirs = ['res']
+            //   assets.srcDirs = ['assets']
+            jniLibs.srcDirs=['libs']
+
+        }
+        lintOptions{
+            checkReleaseBuilds false
+            abortOnError false
+        }
+        debug.setRoot('build-types/debug')
+        release.setRoot('build-types/release')
+    }
+
+    dexOptions {
+//        preDexLibraries false
+//        incremental true
+        jumboMode = true
+        javaMaxHeapSize "4096m"
+    }
+
+}
+
+
+afterEvaluate {
+    tasks.matching {
+        it.name.startsWith('dex')
+    }.each { dx ->
+        if (dx.additionalParameters == null) {
+            dx.additionalParameters = ['--multi-dex']
+        } else {
+            dx.additionalParameters += '--multi-dex'
+        }
+    }
+}
+
+
+

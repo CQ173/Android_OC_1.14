@@ -1,0 +1,689 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#4d90e7" >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="窗口号挂靠"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:paddingLeft="12dp"
+                android:background="#ffffff">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="代售点名称"
+                    android:textColor="#666666"
+                    />
+                <TextView
+                    android:id="@+id/tv_outletsName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="33dp"
+                    android:textSize="14sp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.02dp"
+                android:background="#dbdbdb" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:paddingLeft="12dp"
+                android:background="#ffffff">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="代售点账号"
+                    android:textColor="#666666"
+                    />
+                <TextView
+                    android:id="@+id/tv_outletsAccount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="33dp"
+                    android:text=""
+                    android:textSize="14sp"
+                   />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.02dp"
+                android:background="#dbdbdb" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:paddingLeft="12dp"
+                android:background="#ffffff">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="窗口号"
+                    android:textColor="#666666"
+                    />
+                <TextView
+                    android:id="@+id/tv_windowNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="62dp"
+                    android:text=""
+                    android:textSize="14sp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.02dp"
+                android:background="#dbdbdb" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:paddingLeft="12dp"
+                android:background="#ffffff">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="法人姓名"
+                    android:textColor="#666666"
+                    />
+                <TextView
+                    android:id="@+id/tv_corpName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="48dp"
+                    android:text=""
+                    android:textSize="14sp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.02dp"
+                android:background="#dbdbdb" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:paddingLeft="12dp"
+                android:background="#ffffff">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="法人电话"
+                    android:textColor="#666666"
+                    />
+                <TextView
+                    android:id="@+id/tv_corpMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="48dp"
+                    android:text=""
+                    android:textSize="14sp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.02dp"
+                android:background="#dbdbdb" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:paddingLeft="12dp"
+                android:background="#ffffff">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="法人身份证"
+                    android:textColor="#666666"
+                    />
+                <TextView
+                    android:id="@+id/tv_corpIdNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="33dp"
+                    android:text=""
+                    android:textSize="14sp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.02dp"
+                android:background="#dbdbdb" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:paddingLeft="12dp"
+                android:background="#ffffff">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="负责人姓名"
+                    android:textColor="#666666"
+                    />
+                <TextView
+                    android:id="@+id/tv_fuZeRenName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="33dp"
+                    android:text=""
+                    android:maxLength="20"
+                    android:textSize="14sp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.02dp"
+                android:background="#dbdbdb" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:paddingLeft="12dp"
+                android:background="#ffffff">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="负责人电话"
+                    android:textColor="#666666"
+                    />
+                <TextView
+                    android:id="@+id/tv_fuZeRenMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="33dp"
+                    android:text=""
+                    android:textSize="14sp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.02dp"
+                android:background="#dbdbdb" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:paddingLeft="12dp"
+                android:background="#ffffff">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="负责人身份证"
+                    android:textColor="#666666"
+                    />
+                <TextView
+                    android:id="@+id/tv_fuZeRenIdNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:text=""
+                    android:textSize="14sp"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:paddingLeft="12dp"
+                android:textSize="12sp"
+                android:textColor="#4d90e7"
+                android:text="*请填写以下资料"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:paddingLeft="12dp"
+                android:background="#ffffff">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="关联的窗口号"
+                    android:textColor="#666666"
+                    />
+                <EditText
+                    android:id="@+id/et_relationWindowNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:hint="请输入关联的窗口号"
+                    android:digits="1234567890"
+                    android:maxLength="6"
+                    android:textSize="14sp"
+                    android:background="@null"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.02dp"
+                android:background="#dbdbdb" >
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:paddingLeft="12dp"
+                android:background="#ffffff">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="代售点名称"
+                    android:textColor="#666666"
+                    />
+                <EditText
+                    android:id="@+id/et_newOutletsName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="36dp"
+                    android:hint="请输入代售点名称"
+                    android:textSize="14sp"
+                    android:background="@null"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.02dp"
+                android:background="#dbdbdb" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:paddingLeft="12dp"
+                android:background="#ffffff">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="负责人姓名"
+                    android:textColor="#666666"
+                    />
+                <EditText
+                    android:id="@+id/et_newFuZeName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="36dp"
+                    android:hint="请输入负责人姓名"
+                    android:textSize="14sp"
+                    android:background="@null"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.02dp"
+                android:background="#dbdbdb" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:paddingLeft="12dp"
+                android:background="#ffffff">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="负责人电话"
+                    android:textColor="#666666"
+                    />
+
+                <EditText
+                    android:id="@+id/et_newFuZeMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="36dp"
+                    android:hint="请输入负责人电话"
+                    android:maxLength="11"
+                    android:digits="1234567890"
+                    android:textSize="14sp"
+                    android:background="@null"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.02dp"
+                android:background="#dbdbdb" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:paddingLeft="12dp"
+                android:background="#ffffff">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="负责人身份证"
+                    android:textColor="#666666"
+                    />
+
+                <EditText
+                    android:id="@+id/et_newFuZeIdNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:hint="请输入负责人身份证号"
+                    android:maxLength="20"
+                    android:digits="1234567890Xx"
+                    android:textSize="14sp"
+                    android:background="@null"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.02dp"
+                android:background="#dbdbdb" >
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:paddingLeft="12dp"
+                android:textSize="12sp"
+                android:textColor="#4d90e7"
+                android:text="*请上传以下证件图片"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:orientation="horizontal"
+                android:background="#ffffff">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_certificate"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+
+                        android:src="@drawable/add_img" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="授权书"
+                        android:textColor="#999999"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_contractFrist"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+
+                        android:src="@drawable/add_img" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="合同首页"
+                        android:textColor="#999999"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_contractLast"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+
+                        android:src="@drawable/add_img" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="合同盖章末页"
+                        android:textColor="#999999"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:paddingBottom="20dp"
+                android:orientation="horizontal"
+                android:background="#ffffff">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_idCardPositive"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+
+                        android:src="@drawable/add_img" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="身份证正面"
+                        android:textColor="#999999"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_idCardOpposite"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+
+                        android:src="@drawable/add_img" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="身份证反面"
+                        android:textColor="#999999"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                         />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+
+                        android:textColor="#999999"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ff862d"
+                android:paddingLeft="12dp"
+                android:paddingBottom="20dp"
+                android:textSize="12sp"
+                android:text="*授权书填写的窗口号必须和待关联的窗口号保持一致"
+                android:background="#ffffff"/>
+
+            <Button
+                android:id="@+id/bt_submit"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="26dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/bluebutton_click_style"
+                android:text="提交"
+
+                android:layout_marginBottom="40dp"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

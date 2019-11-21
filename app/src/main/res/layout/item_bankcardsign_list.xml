@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:descendantFocusability="blocksDescendants"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingBottom="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="12dp"
+        android:paddingLeft="14dp"
+        android:paddingTop="14dp"
+        android:focusable="true"
+        >
+
+        <RadioButton
+            android:id="@+id/rb_bankType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/iv_bankLog"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:src="@drawable/jsbanklogo"/>
+                <TextView
+                    android:id="@+id/tv_bankName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="建设银行"
+                    android:textColor="#333333"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="****  ****  ****  "
+                    android:textColor="#333333"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:id="@+id/tv_cardNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="****"
+                    android:textColor="#333333"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:paddingBottom="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:paddingLeft="14dp"
+        android:paddingTop="8dp">
+        
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="14dp"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#666666"
+                android:text="单笔支付限额"
+                android:textSize="12sp"
+                />
+
+            <TextView
+                android:id="@+id/tv_everyLimit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#666666"
+                android:text="----"
+                android:textSize="12sp"
+                />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#e0e0e0"
+            />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingRight="14dp"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#666666"
+                android:text="单日支付限额"
+                android:textSize="12sp"
+                />
+
+            <TextView
+                android:id="@+id/tv_dailyLimit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#666666"
+                android:text="----"
+                android:textSize="12sp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

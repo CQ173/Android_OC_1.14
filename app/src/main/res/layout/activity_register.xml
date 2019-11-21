@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#ffffff">
+    
+	
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#4d90e7" >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="注册"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+    
+	
+	
+	<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp" >
+
+        <EditText
+            android:id="@+id/et_phoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:hint="请输入手机号码"
+            android:phoneNumber="true"
+	  		android:maxLength="11"
+	  		android:digits="1234567890"
+            android:singleLine="true"
+            android:textSize="16sp" />
+
+  
+    </RelativeLayout>
+
+   
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        >
+
+        <EditText
+            android:id="@+id/et_verCode"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:hint="请输入短信验证码"
+            android:inputType="number"
+            android:maxLength="6"
+	  		android:digits="1234567890"
+            android:singleLine="true"
+            
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_getVericode"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/bg_identify_code_normal"
+            android:gravity="center"
+            android:text="获取验证码"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+	</RelativeLayout>
+	
+   	
+
+    <Button
+        android:id="@+id/bt_nextStep"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bluebutton_click_style"
+        android:text="下一步"
+        android:textColor="#ffffff" />
+	
+
+    
+</LinearLayout>

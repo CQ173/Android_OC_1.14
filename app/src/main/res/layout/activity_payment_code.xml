@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4d90e7"
+    android:id="@+id/ll_layout"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#4d90e7" >
+
+        <ImageView
+            android:id="@+id/qrcode_iv_back"
+            android:layout_width="@dimen/x50"
+            android:layout_height="@dimen/y50"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="缴费二维码"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/iv_three"
+            android:layout_width="@dimen/x50"
+            android:layout_height="@dimen/x50"
+            android:src="@drawable/three"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/ll_save_code"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="12dp"
+
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_marginBottom="40dp"
+        android:gravity="center_horizontal"
+        >
+
+        <ImageView
+            android:id="@+id/iv_qrcode"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginRight="@dimen/x30"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:textColor="#dbdbdb"
+            android:layout_marginRight="16dp"
+            android:maxLines="1"
+            android:text="- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - "
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="下载二维码后，打开微信或者支付宝，进入“扫一扫”，点击相册，选中二维码进行缴费"
+            android:textColor="#999999"
+         />
+
+        <Button
+            android:id="@+id/bt_downloadCode"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/text_round_bg_orange"
+            android:text="下载二维码"
+            android:textColor="#ffffff"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#ffffff"></LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_gravity="bottom"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:background="#ffffff"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/huoniao_logo2"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="40dp"
+                    android:layout_height="0.1dp"
+                    android:background="#999999"></View>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:text="Firebird Tech"
+                    android:textColor="#999999"
+                    android:textSize="12sp"/>
+
+                <View
+                    android:layout_width="40dp"
+                    android:layout_height="0.1dp"
+                    android:background="#999999"></View>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="长沙市火鸟软件科技有限公司"
+                android:textColor="#999999"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

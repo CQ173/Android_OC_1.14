@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_userRecharge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1.4"
+            android:layout_height="wrap_content"
+            android:text="用户缴费"
+            android:textColor="#131313"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="2542252.35"
+            android:textColor="#679FE9"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="95.02%"
+            android:textColor="#131313"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.02dp"
+
+        android:layout_weight="0"
+        android:background="#dbdbdb" >
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_userRechargeType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:layout_marginLeft="16dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1.4"
+                android:layout_height="wrap_content"
+                android:text="Epos缴费"
+                android:textColor="#999999"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="2542252.35"
+                android:textColor="#679FE9"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="95.02%"
+                android:textColor="#999999"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.02dp"
+
+            android:layout_weight="0"
+            android:background="#dbdbdb" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_weChatPayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:layout_marginLeft="16dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1.4"
+                android:layout_height="wrap_content"
+                android:text="微信扫码付款"
+                android:textColor="#999999"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="2542252.35"
+                android:textColor="#679FE9"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="95.02%"
+                android:textColor="#999999"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.02dp"
+
+            android:layout_weight="0"
+            android:background="#dbdbdb" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_alipayPayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:layout_marginLeft="16dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1.4"
+                android:layout_height="wrap_content"
+                android:text="支付宝扫码付款"
+                android:textColor="#999999"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="2542252.35"
+                android:textColor="#679FE9"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="95.02%"
+                android:textColor="#999999"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.02dp"
+
+            android:layout_weight="0"
+            android:background="#dbdbdb" >
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_unionPayRecharge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:layout_marginLeft="16dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1.4"
+                android:layout_height="wrap_content"
+                android:text="银联缴费"
+                android:textColor="#999999"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="2542252.35"
+                android:textColor="#679FE9"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="95.02%"
+                android:textColor="#999999"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.02dp"
+
+            android:layout_weight="0"
+            android:background="#dbdbdb" >
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_advanceFunds"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1.4"
+            android:layout_height="wrap_content"
+            android:text="垫付资金充入"
+            android:textColor="#131313"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="2542252.35"
+            android:textColor="#679FE9"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="95.02%"
+            android:textColor="#131313"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.02dp"
+
+        android:layout_weight="0"
+        android:background="#dbdbdb" >
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_withdrawalsFailed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1.4"
+            android:layout_height="wrap_content"
+            android:text="提现失败返回"
+            android:textColor="#131313"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="2542252.35"
+            android:textColor="#679FE9"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="95.02%"
+            android:textColor="#131313"/>
+    </LinearLayout>
+</LinearLayout>

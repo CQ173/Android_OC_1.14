@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.huoniao.oc.trainstation.AddLateFeeSubmitA"
+    android:background="#FFFFFF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#4d90e7" >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="添加递交"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择时间"/>
+        <LinearLayout
+            android:id="@+id/ll_choiceDate"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginLeft="24dp"
+            android:background="@drawable/shape_editext_white"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="请选择日期（可选择多个）"
+                android:maxLines="1"
+                android:textSize="14sp"
+                android:paddingLeft="5dp"
+
+                />
+
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/paysystem_select"
+                android:layout_marginRight="5dp"
+                />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="代售点账号"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/shape_editext_white"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <EditText
+                android:id="@+id/et_outletsAccount"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:text=""
+                android:textSize="14sp"
+                android:maxLines="1"
+                android:hint="请输入代售点账号"
+                android:paddingLeft="5dp"
+                android:background="@null"
+                />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="返还金额"/>
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginLeft="24dp"
+            android:background="@drawable/shape_editext_white"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <EditText
+                android:id="@+id/et_returnAmount"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:text=""
+                android:textSize="14sp"
+                android:hint="请输入返还金额"
+                android:paddingLeft="5dp"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:maxLength="8"
+                android:background="@null"
+                />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="返还原因"
+            />
+        
+        <RadioGroup
+            android:id="@+id/radioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            >
+            <RadioButton
+                android:id="@+id/rb_importDataError"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="导入数据出错"/>
+
+            <RadioButton
+                android:id="@+id/rb_other"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="其它"/>
+
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_returnReason"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_marginLeft="92dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/shape_editext_white"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:visibility="gone"
+        >
+
+        <EditText
+            android:id="@+id/et_returnReason"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:text=""
+            android:textSize="14sp"
+            android:hint="请输入返还原因"
+            android:paddingLeft="5dp"
+            android:background="@null"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="说明函上传"/>
+
+        <TextView
+            android:id="@+id/tv_uploadPicture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="上传图片"
+            android:textColor="#4d90e7"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@drawable/textbackgroud15"
+            />
+
+        <TextView
+            android:id="@+id/tv_pictureTemplate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:textColor="#4d90e7"
+            android:text="说明函模板"/>
+    </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_previewImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="92dp"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="#666666"
+            android:background="#EDEDED"
+            />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+    </View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.02dp"
+        android:background="#e0e0e0" >
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:background="#EDEDED">
+
+        <TextView
+            android:id="@+id/tv_save"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="保存"
+            android:textColor="#666666"
+            android:textSize="16sp"
+            android:gravity="center"
+            />
+        <LinearLayout
+            android:layout_width="0.02dp"
+            android:layout_weight="0"
+            android:layout_height="match_parent"
+            android:background="#e0e0e0" >
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_confirmApply"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="确定申请"
+            android:textColor="#666666"
+            android:textSize="16sp"
+            android:gravity="center"
+            />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_proxy_distribution"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.huoniao.oc.trainstation.ProxyDistributionA"
+    android:background="#FFFFFF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#4d90e7" >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="代理分布"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+
+ <!--   <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">-->
+
+
+       <!-- <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">-->
+
+            <LinearLayout
+                android:id="@+id/ll_map_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="16dp"
+                android:background="#ffffff"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+
+                    >
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="代售点区域分布"
+                        android:textSize="16sp"
+                        android:textColor="@color/alphaBlack"
+                        android:gravity="left"
+                        android:layout_gravity="center"
+                        android:id="@+id/textView12" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="归属机构"
+                        android:background="@drawable/bg_identify_code_normal"
+                        android:padding="5dp"
+                        android:textColor="@color/white"
+                        android:id="@+id/tv_affiliation3"
+                        android:layout_gravity="center"
+                        />
+                </LinearLayout>
+
+
+                <com.huoniao.oc.custom.MyMapView
+                    android:id="@+id/mymap"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp">
+                    <com.baidu.mapapi.map.TextureMapView
+                        android:id="@+id/tv_map"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        >
+                    </com.baidu.mapapi.map.TextureMapView>
+                </com.huoniao.oc.custom.MyMapView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_tree_outlets"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:visibility="gone"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:id="@+id/tv_trainTicketName"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="火车票代售点"
+                        android:textColor="@color/alphaBlack"
+                        />
+
+                    <!--  <TextView
+                          android:id="@+id/tv_trainTicket_date"
+                          android:layout_width="0dp"
+                          android:layout_height="wrap_content"
+                          android:text="2017-01-01"
+                          android:layout_weight="1"
+                          android:gravity="right"
+                          />-->
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="10dp"
+                    >
+                    <TextView
+                        android:id="@+id/tv_trainTicket_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="天河区"
+                        android:textColor="@color/orange"
+                        android:layout_marginTop="5dp"
+                        />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.02dp"
+                    android:background="@color/gray"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="法人"
+                        android:textColor="@color/grayss"
+                        android:gravity="left"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_trainTicket_legalPerson"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text=""
+                        android:textColor="@color/alpha_black"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="10dp"
+                    >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="法人手机号"
+                        android:textColor="@color/grayss"
+                        android:gravity="left"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_trainTicket_phone"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text=""
+                        android:textColor="@color/alpha_black"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#DEDEDE"></View>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:orientation="horizontal">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1"
+                    >
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/alphaBlack"
+                        android:text="代理列表"
+                        android:textSize="16sp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+
+                        />
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_admin_ownership_institution"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="6dp"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:gravity="center"
+                    android:textColor="@color/alphaBlack"
+                    android:text="归属机构"
+                    android:drawableLeft="@drawable/blue_pointbottom"
+                    android:drawablePadding="5dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+
+                android:layout_weight="0"
+                android:background="#dbdbdb" >
+            </LinearLayout>
+
+
+            <com.handmark.pulltorefresh.library.PullToRefreshListView
+                android:id="@+id/mPullToRefreshListView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fadingEdge="none"
+                android:fastScrollEnabled="false"
+                android:footerDividersEnabled="false"
+                android:headerDividersEnabled="false"
+                android:smoothScrollbar="true"
+            />
+
+<!--      </LinearLayout>-->
+
+
+
+
+</LinearLayout>

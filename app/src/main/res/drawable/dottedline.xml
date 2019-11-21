@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="line"
+    >
+    <!-- 虚线边框的宽度，颜色等 -->
+    <stroke
+        android:dashGap="10dp"
+        android:dashWidth="10dp"
+        android:width="1dp"
+        android:color="@color/grays" >
+    </stroke>
+    <!-- 虚线的高度 -->
+    <size android:height="0.25dp" />
+
+</shape>

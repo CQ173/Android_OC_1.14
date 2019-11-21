@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#4d90e7" >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="完善基本信息"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+    
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="40dp"
+	    android:orientation="horizontal"
+	    android:gravity="center"
+	    android:background="@drawable/maintab_toolbar_bg">
+	    <TextView
+	        android:id="@+id/tv_bindHaveAccount" 
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:gravity="center"
+	        android:text="绑定已有O计账号"
+	        android:textColor="#FFFFFF"
+	        android:layout_weight="1"
+	        android:background="@drawable/home_btn_bg"/>
+	    
+	    <TextView
+	        android:id="@+id/tv_registerBindAccount"  
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:text="注册并绑定账号"
+	        android:gravity="center"
+	        android:textColor="#FFFFFF"
+	        android:layout_weight="1"
+	        android:background="@drawable/selector_tab_background"/>
+	</LinearLayout>
+	
+	<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp" >
+
+        <EditText
+            android:id="@+id/et_userName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:hint="请输入用户名/手机号"
+            android:singleLine="true"
+            android:textSize="16sp" />
+
+  
+    </RelativeLayout>
+
+   
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/et_passWard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+   
+
+    <Button
+        android:id="@+id/bt_submit"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bluebutton_click_style"
+        android:text="完	成"
+        android:textColor="#ffffff" />
+	
+</LinearLayout>

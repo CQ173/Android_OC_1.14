@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_about"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="com.huoniao.oc.user.AboutA">
+
+    <include layout="@layout/backtitle" />
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/y60"
+        >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/about_logo"
+        />
+        <LinearLayout
+            android:layout_marginTop="@dimen/y30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            >
+            <TextView
+                android:layout_marginTop="@dimen/y30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="O计 O Count "
+                android:textSize="20sp"
+
+                android:textColor="@color/graysss"
+                />
+            <TextView
+                android:layout_marginTop="@dimen/y30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/verson"
+                android:textSize="20sp"
+                android:gravity="center_horizontal"
+                android:textColor="@color/graysss"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_version_contrast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/gray"
+            android:textSize="12sp"
+            />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Copyright © 2019 FireBird Software All Right Reserved."
+                android:textSize="14sp"
+                android:textColor="@color/grayfont"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="火鸟软件科技有限公司版权所有"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:textColor="@color/grayfont"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

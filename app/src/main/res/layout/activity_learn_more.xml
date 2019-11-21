@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_learn_more"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="com.huoniao.oc.outlets.LearnMoreA">
+    <include layout="@layout/backtitle" />
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        >
+
+
+    <LinearLayout
+        android:id="@+id/ll_withholding_introduce"
+        style="@style/meHeight"
+        android:layout_width="match_parent"
+
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+
+        >
+
+        <ImageView
+            style="@style/me_imagesize"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/introduce" />
+
+        <TextView
+            style="@style/me_textsize_color"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="汇缴代扣介绍"
+
+            />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/right_arrow" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray" />
+    <LinearLayout
+        android:id="@+id/ll_withholding_rule"
+        style="@style/meHeight"
+        android:layout_width="match_parent"
+
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+
+        >
+
+        <ImageView
+            style="@style/me_imagesize"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/about" />
+
+        <TextView
+            style="@style/me_textsize_color"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="汇缴代扣扣款规则"
+
+            android:id="@+id/textView26" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/right_arrow" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray" />
+    <LinearLayout
+        android:id="@+id/ll_withholding_agreement"
+        style="@style/meHeight"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            style="@style/me_imagesize"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/agreement" />
+
+        <TextView
+            style="@style/me_textsize_color"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="汇缴代扣协议"
+
+            />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/right_arrow" />
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

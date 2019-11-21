@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    >
+
+    <!--<TextView
+        android:id="@+id/tv_operationType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="12dp"
+        android:paddingRight="16dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="8dp"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:text="提现"
+        />
+    <LinearLayout
+        android:id="@+id/layout_anchoredDetails1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="12dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="10dp"
+        android:gravity="center_vertical"
+       >
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="#666666"
+                    android:text="姓名："/>
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:text=""/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_outletCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="#666666"
+                    android:text="金额："/>
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:text="￥"/>
+
+                <TextView
+                    android:id="@+id/tv_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:text=""/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="#666666"
+                    android:text="审核状态："/>
+
+                <TextView
+                    android:id="@+id/tv_auditStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:textSize="12sp"
+                    android:textColor="#1997fe"
+                    android:text=""/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="#666666"
+                    android:text="代理账户："/>
+                <TextView
+                    android:id="@+id/tv_agentAccount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:text=""/>
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/right_arrow"/>
+    </LinearLayout>-->
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="12dp"
+        android:textSize="12sp"
+        android:textColor="#666666"
+        android:text="null"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            >
+
+            <TextView
+                android:id="@+id/tv_agentAccount"
+                android:layout_width="0dp"
+                android:layout_weight="1.5"
+                android:layout_height="wrap_content"
+                android:textColor="#151517"
+                android:text="null"
+                />
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="#151517"
+                android:gravity="center"
+                android:text="null"
+                />
+
+            <TextView
+                android:id="@+id/tv_operationType"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#5D99EE"
+                android:layout_height="wrap_content"
+                android:text="null"
+                />
+
+            <TextView
+                android:id="@+id/tv_auditStatus"
+                android:layout_width="0dp"
+                android:layout_weight="1.2"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:textColor="#666666"
+                android:text="null"
+                />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="8dp"
+        android:paddingBottom="12dp"
+        >
+
+        <TextView
+            android:id="@+id/tradeRemark"
+            android:layout_width="0dp"
+            android:layout_weight="2.78"
+            android:layout_height="wrap_content"
+            android:textColor="#44B438"
+            android:maxLines="1"
+            android:maxEms="12"
+            android:ellipsize="end"
+            android:text="null"
+            android:textSize="12sp"
+            />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="wrap_content"
+            android:textSize="12sp"
+            android:layout_height="wrap_content"
+            android:textColor="#666666"
+            android:text="null"
+            />
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="12sp"
+                android:layout_height="wrap_content"
+                android:textColor="#666666"
+                android:text="元"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

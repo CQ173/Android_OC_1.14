@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_aepayment_apply"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.huoniao.oc.financial.AepaymentApplyA"
+    android:background="#F8F8F8">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#4d90e7" >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="还款申请"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingBottom="12dp"
+        android:background="#FFFFFF">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="申请类型"
+                android:textColor="#999999"
+                />
+            <TextView
+                android:id="@+id/tv_applyType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="还款"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="站点"
+                android:textColor="#999999"
+                />
+            <LinearLayout
+                android:id="@+id/ll_choiceStation"
+                android:layout_width="0dp"
+                android:layout_height="34dp"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:background="@drawable/shape_editext_white">
+
+                <TextView
+                    android:id="@+id/tv_stationName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1"
+                    android:layout_marginLeft="4dp"
+                    android:textSize="14sp"
+                    android:text="全部"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="2dp"
+                    android:src="@drawable/drop_down"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="还款总金额"
+                android:textColor="#999999"
+                />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="34dp"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:background="@drawable/shape_editext_white">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="4dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="4dp"
+                    android:textSize="16sp"
+                    android:text="￥"/>
+                <TextView
+                    android:id="@+id/tv_repaymentSumMoney"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="----"
+                    android:layout_marginRight="4dp"
+                   />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.02dp"
+            android:layout_marginTop="14dp"
+            android:background="#dbdbdb" >
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="还款账户"
+                android:textColor="#999999"
+                />
+            <TextView
+                android:id="@+id/tv_repaymentAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5911账号"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="账户余额"
+                android:textColor="#999999"
+                />
+            <TextView
+                android:id="@+id/tv_accountBalance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥----"
+                android:textColor="#4d90e7"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="还款金额"
+                android:textColor="#999999"
+                />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="34dp"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:background="@drawable/shape_editext_white">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="4dp"
+
+                    android:layout_marginLeft="4dp"
+                    android:textSize="16sp"
+                    android:text="￥"/>
+                <EditText
+                    android:id="@+id/et_repaymentMoney"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="----"
+                    android:layout_marginRight="4dp"
+                    android:textSize="14sp"
+                    android:background="@null"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_aepaymentArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.02dp"
+            android:layout_weight="1"
+            android:layout_marginTop="14dp"
+            android:background="#dbdbdb" >
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="还款账户"
+                android:textColor="#999999"
+                />
+            <TextView
+                android:id="@+id/tv_repaymentAccount2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="补款账号"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="账户余额"
+                android:textColor="#999999"
+                />
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="34dp"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:background="@drawable/shape_editext_white">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="4dp"
+
+                    android:layout_marginLeft="4dp"
+                    android:textSize="16sp"
+                    android:text="￥"
+                    />
+
+                <EditText
+                    android:id="@+id/et_accountBalance2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="----"
+                    android:textSize="14sp"
+                    android:layout_marginRight="4dp"
+                    android:background="@null"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="还款金额"
+                android:textColor="#999999"
+                />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="34dp"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:background="@drawable/shape_editext_white">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="4dp"
+
+                    android:layout_marginLeft="4dp"
+                    android:textSize="16sp"
+                    android:text="￥"
+                    />
+
+                <EditText
+                    android:id="@+id/et_repaymentMoney2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="----"
+                    android:textSize="14sp"
+                    android:layout_marginRight="4dp"
+                    android:background="@null"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.02dp"
+            android:layout_marginTop="14dp"
+            android:background="#dbdbdb" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="备注："
+                android:textColor="#999999"
+                />
+            <EditText
+                android:id="@+id/et_remarks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:maxLength="50"
+                android:hint="请输入备注"
+                android:background="@null"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:id="@+id/bt_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/bluebutton_click_style"
+        android:text="确定"
+        android:textColor="#ffffff" />
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

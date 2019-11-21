@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_message"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.huoniao.oc.user.MessageA">
+    <include layout="@layout/backtitle" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.huoniao.oc.common.sideslip_listview.PullToRefreshSwipeMenuListView
+            android:id="@+id/sideslip_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:cacheColorHint="@color/grays"
+            android:fadingEdge="none"
+            />
+        <TextView
+            android:id="@+id/tv_message_state"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="暂无消息"
+            android:textSize="@dimen/y40"
+            android:gravity="center"
+            android:background="@color/white"
+            android:textColor="@color/gray"
+            android:visibility="gone"
+            />
+    </FrameLayout>
+
+
+
+
+</LinearLayout>

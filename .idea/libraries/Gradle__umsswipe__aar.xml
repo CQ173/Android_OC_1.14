@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: umsswipe:@aar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/umsswipe/jars/libs/umsDriverLib_v1.3.5.jar!/" />
+      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/umsswipe/res" />
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/umsswipe/jars/classes.jar!/" />
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/umsswipe/jars/libs/xgd_umsswipe_20161202_1358.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

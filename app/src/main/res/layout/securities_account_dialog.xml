@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    >
+   
+    <LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical" 
+    	android:background="#035991">
+    
+	<TextView 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="30dp"
+	    android:layout_marginLeft="40dp"
+	    android:layout_marginRight="40dp"
+	    android:gravity="center"
+	    android:textColor="#ffc600"
+	    android:text="请使用手机扫一扫二维码进行开户"
+	    />
+	
+	<ImageView 
+	    android:id="@+id/iv_QRcode"
+	    android:layout_width="120dp"
+	    android:layout_height="120dp"
+	    android:layout_gravity="center_horizontal"
+	    android:layout_marginTop="16dp"
+	    
+	    />
+	
+	<TextView 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:textColor="#ffffff"
+	    android:layout_marginTop="16dp"
+	    android:layout_marginLeft="16dp"
+	    android:layout_marginRight="16dp"
+	    android:textSize="12sp"
+	    android:text="新增无效户（0元资产），则按每新增无效户提10元；"/>
+	
+	<TextView 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:textColor="#ffffff"
+	    android:layout_marginTop="8dp"
+	    android:layout_marginLeft="16dp"
+	    android:layout_marginRight="16dp"
+	     android:textSize="12sp"
+	    android:text="新增有效户（1000元资产持续1月以上），则按每新增有效户提50元；"/>
+	<TextView 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:textColor="#ffffff"
+	    android:layout_marginTop="8dp"
+	    android:layout_marginLeft="16dp"
+	    android:layout_marginRight="16dp"
+	     android:textSize="12sp"
+	    android:text="新增有效户（1万元资产持续1月以上），则按每新增有效户提100元；"/>
+	
+	<TextView 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:textColor="#ffffff"
+	    android:layout_marginTop="8dp"
+	    android:layout_marginLeft="16dp"
+	    android:layout_marginRight="16dp"
+	     android:textSize="12sp"
+	    android:text="新增客户资产（证券资产）奖励：100万以上的客户，资产奖励每户100万的奖励500元，200万的奖励1000元，依次类推。"/>
+	
+	<TextView 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:textColor="#ffffff"
+	    android:layout_marginTop="8dp"
+	    android:layout_marginLeft="16dp"
+	    android:layout_marginRight="16dp"
+	     android:textSize="12sp"
+	    android:text="另所开发的无效客户，三个月内转为有效户，可以视为有效户计算。"/>
+	
+	<TextView 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:textColor="#ff9900"
+	    android:layout_marginTop="8dp"
+	    android:layout_marginLeft="16dp"
+	    android:layout_marginRight="16dp"
+	    
+	    android:textSize="12sp"
+	    android:text="以上奖励以月度户数对比以前开发总户数增量统计。"/>
+	
+	    <Button
+	        android:id="@+id/bt_close" 
+	        android:layout_width="match_parent"
+	        android:layout_height="45dp"	     
+	        android:layout_marginLeft="16dp"
+	        android:layout_marginRight="16dp"
+	    	android:layout_marginTop="16dp"
+	    	android:layout_marginBottom="30dp"
+	        android:text="关闭"
+	        android:textColor="#ffffff"
+	        android:layout_gravity="center_horizontal"
+	        android:background="@drawable/close_button"/>
+	</LinearLayout>
+
+</ScrollView>

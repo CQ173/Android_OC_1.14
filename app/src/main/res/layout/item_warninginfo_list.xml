@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:background="@color/grays"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="预警时间："
+            android:textColor="#888888"
+            />
+        <TextView
+            android:id="@+id/tv_warningDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="---"
+            android:textColor="#888888"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.02dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="0"
+        android:background="#dbdbdb" >
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:layout_marginTop="12dp"
+       android:layout_marginBottom="12dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_windowNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#63A8EB"
+            android:textSize="14sp"
+            android:text="---"/>
+            <TextView
+                android:id="@+id/tv_stationName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="#131313"
+                android:textSize="12sp"
+                android:text="---"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#131313"
+                android:textSize="14sp"
+                android:text="汇缴金额："/>
+           <TextView
+               android:id="@+id/tv_paymentAmount"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="#131313"
+               android:textSize="14sp"
+               android:text="---"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="#888888"
+                android:textSize="12sp"
+                android:text="平均票价："/>
+
+                <TextView
+                    android:id="@+id/tv_averagePrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#888888"
+                    android:textSize="12sp"
+                    android:text="---"/>
+           </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_proState"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+
+            android:gravity="center"
+
+            android:textColor="#63A8EB"
+            android:textSize="14sp"
+            android:text="---"
+            android:background="@drawable/textbackgroud13"/>
+    </LinearLayout>
+</LinearLayout>

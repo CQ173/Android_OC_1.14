@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#ffffff">
+    
+	<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#f6f6f6" >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="注册成功"
+            android:textColor="#666666"
+            android:textSize="20sp" />
+    </RelativeLayout>
+    
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:paddingTop="30dp"
+	    android:paddingBottom="40dp"
+	    >
+	    <ImageView
+	        android:id="@+id/imageView" 
+	        android:layout_width="180dp"
+	        android:layout_height="180dp"
+	        android:layout_centerHorizontal="true"
+	        android:src="@drawable/registersuccess"/>
+	    <TextView 
+	        android:id="@+id/textView1" 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/imageView"
+	        android:layout_marginTop="20dp"
+	        android:layout_centerHorizontal="true"
+	        android:textSize="16sp"
+	        android:textColor="#666666"
+	        android:text="恭喜，您已成功注册账号！"/>
+	     <TextView 
+	        android:id="@+id/textView2" 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/textView1"
+	        android:layout_marginTop="8dp"
+	        android:layout_centerHorizontal="true"
+	        android:textSize="16sp"
+	        android:textColor="#666666"
+	        android:text="请耐心等待审核通过！"/>
+	     
+	     <Button
+	         android:id="@+id/bt_rightLogin" 
+	         android:layout_width="match_parent"
+	         android:layout_height="40dp"
+	         android:layout_marginLeft="36dp"
+	         android:layout_marginRight="36dp"
+	         android:text="马上登录"
+	         android:textColor="#319ef6"
+	         android:background="@drawable/hollow_frame"
+	         android:layout_alignParentBottom="true"/>
+	</RelativeLayout>
+</LinearLayout>

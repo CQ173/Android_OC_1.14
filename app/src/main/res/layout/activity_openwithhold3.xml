@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F6F5FA"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#4d90e7" >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="银行卡代扣签约"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="银行卡号："
+            android:textSize="16sp"
+            android:textColor="#333333"/>
+
+        <TextView
+            android:id="@+id/tv_bankCardInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text=""
+            android:textSize="16sp"
+            android:textColor="#333333"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手机号码："
+            android:textSize="16sp"
+            android:textColor="#333333"/>
+
+        <EditText
+            android:id="@+id/et_phoneNumber"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/shape_editext_white"
+            android:hint="输入此卡在银行预留的手机号码"
+            android:textColorHint="#b7b7b7"
+            android:layout_marginRight="4dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="4dp"
+            android:textSize="16sp"
+            android:digits="0123456789"
+            android:maxLines="1"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="98dp"
+        android:layout_marginTop="6dp"
+        android:text="如忘记手机号，请联系银行客服"
+        android:textColor="#FDA023"
+        android:textSize="12sp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_operationButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="46dp"
+        android:gravity="center_horizontal"
+
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_previousStep"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="35dp"
+            android:background="@drawable/bluebutton_click_style3"
+            android:text="上一步"
+            android:textColor="#333333" />
+        <Button
+            android:id="@+id/bt_nextStep"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+
+            android:layout_marginLeft="26dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/bluebutton_click_style"
+            android:text="下一步"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="10dp"
+        android:gravity="center_vertical">
+        
+        <CheckBox
+	        android:id="@+id/checkBox" 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	       	android:focusable="false" 
+            android:clickable="true" 
+            android:focusableInTouchMode="false"  
+	        android:scaleX="0.5"  
+       		android:scaleY="0.5"
+			android:visibility="gone"
+	       	style="@style/CustomCheckboxTheme"/>
+		<!--TODO 后面小红点需要显示-->
+		<TextView
+			android:id="@+id/tv_message_reader"
+			android:layout_width="10dp"
+			android:layout_height="10dp"
+			android:background="@drawable/text_red_circle"
+			android:layout_gravity="top"
+			android:visibility="gone"
+			/>
+	 <LinearLayout
+             	    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    >
+
+                 
+
+                    <TextView
+                        android:id="@+id/tv_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="201465868846521圣火方剂快疯了开发贷款记得看见过打卡机空间广阔的机构"
+						android:ellipsize="end"
+						android:maxLines="1"/>
+					<RelativeLayout
+					    android:layout_width="match_parent"
+					    android:layout_height="wrap_content"
+					    android:layout_marginTop="5dp"
+					    >
+					   
+					
+                    <TextView
+                        android:id="@+id/tv_data"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                       	android:layout_alignParentRight="true"
+                        
+                        android:text="2016-11-11 15:00" />
+                    </RelativeLayout>
+                </LinearLayout>
+	</LinearLayout>
+               
+
+               
+    
+</LinearLayout>

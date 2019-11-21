@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+   
+	<ImageView
+	    android:layout_width="245dp"
+	    android:layout_height="233dp"
+	    android:src="@drawable/registersuccess" />
+	
+	<TextView 
+	    android:layout_marginTop="16dp"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:paddingLeft="20dp"
+	    android:paddingRight="20dp"
+	    android:textSize="16sp"
+	    android:textColor="#ffffff"
+	    android:text="恭喜，您的账号注册成功！"/>
+	<LinearLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="5dp"
+	    android:paddingLeft="20dp"
+	    android:paddingRight="20dp"
+	    android:orientation="horizontal"
+	    >
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textColor="#ffffff"
+	    android:text="用户名为"/>
+	<TextView
+	    android:id="@+id/tv_userName" 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textColor="#1997fe"
+	    android:text="hn1807312095"/>
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textColor="#ffffff"
+	    android:text="，请耐心等待审核通过"/>
+	</LinearLayout>
+	
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:paddingLeft="20dp"
+	    android:paddingRight="20dp"
+	    android:lineSpacingExtra="3dp"
+	    android:layout_marginTop="14dp"
+	    android:textColor="#ffffff"
+	    android:text="        为了更好的完善O计体系同时给您提供优质的服务，审核通过后会同步帮您生成千店贷铁路专版的账号密码，我们会第一时间短信通知您！以后您就可以通过O计平台进入千店贷铁路专版发起借款。"/>
+	
+	<Button
+	         android:id="@+id/bt_determine" 
+	         android:layout_width="match_parent"
+	         android:layout_height="40dp"
+	         android:layout_marginTop="30dp"
+	         android:layout_marginBottom="30dp"
+	         android:layout_marginLeft="40dp"
+	         android:layout_marginRight="40dp"
+	         android:text="确定"
+	         android:textColor="#ffffff"
+	         android:background="@drawable/aplan_rectangle"
+	         android:layout_alignParentBottom="true"/>
+</LinearLayout>

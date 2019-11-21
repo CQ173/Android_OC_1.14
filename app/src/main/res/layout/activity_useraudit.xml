@@ -1,0 +1,1196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="45dp"
+		android:background="#4d90e7" >
+
+		<ImageView
+			android:id="@+id/iv_back"
+			android:layout_width="25dp"
+			android:layout_height="25dp"
+			android:layout_alignParentLeft="true"
+			android:layout_centerVertical="true"
+			android:layout_marginLeft="10dp"
+			android:src="@drawable/back" />
+
+		<TextView
+			android:id="@+id/tv_title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:text="用户审核"
+			android:textColor="#ffffff"
+			android:textSize="20sp" />
+	</RelativeLayout>
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:scrollbars="none">
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+
+			>
+
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:paddingTop="12dp"
+				android:paddingBottom="12dp"
+				android:paddingLeft="14dp"
+				android:paddingRight="14dp"
+				android:background="#ffffff">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="用户名："
+
+					android:textColor="#666666"
+					/>
+				<TextView
+					android:id="@+id/tv_userName"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:gravity="right"
+
+					android:textSize="14sp"
+					/>
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="0.02dp"
+				android:background="#dbdbdb" >
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:paddingTop="12dp"
+				android:paddingBottom="12dp"
+				android:paddingLeft="14dp"
+				android:paddingRight="14dp"
+				android:background="#ffffff">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="姓名："
+					android:textColor="#666666"
+					/>
+				<TextView
+					android:id="@+id/tv_name"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:gravity="right"
+
+					android:textSize="14sp"
+					/>
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="0.02dp"
+				android:background="#dbdbdb" >
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:paddingTop="12dp"
+				android:paddingBottom="12dp"
+				android:paddingLeft="14dp"
+				android:paddingRight="14dp"
+				android:background="#ffffff">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="手机："
+					android:textColor="#666666"
+					/>
+				<TextView
+					android:id="@+id/tv_mobile"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:gravity="right"
+
+					android:textSize="14sp"
+					/>
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="0.02dp"
+				android:background="#dbdbdb" >
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:paddingTop="12dp"
+				android:paddingBottom="12dp"
+				android:paddingLeft="14dp"
+				android:paddingRight="14dp"
+				android:background="#ffffff">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="邮箱："
+					android:textColor="#666666"
+					/>
+				<TextView
+					android:id="@+id/tv_email"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:gravity="right"
+
+					android:textSize="14sp"
+					/>
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="0.02dp"
+				android:background="#dbdbdb" >
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:paddingTop="12dp"
+				android:paddingBottom="12dp"
+				android:paddingLeft="14dp"
+				android:paddingRight="14dp"
+				android:background="#ffffff">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="用户类型："
+					android:textColor="#666666"
+					/>
+				<TextView
+					android:id="@+id/tv_userType"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:gravity="right"
+
+					android:textSize="14sp"
+					/>
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="0.02dp"
+				android:background="#dbdbdb" >
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:paddingTop="12dp"
+				android:paddingBottom="12dp"
+				android:paddingLeft="14dp"
+				android:paddingRight="14dp"
+				android:background="#ffffff">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="用户角色："
+					android:textColor="#666666"
+					/>
+				<TextView
+					android:id="@+id/tv_roleName"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:gravity="right"
+
+					android:textSize="14sp"
+					/>
+			</LinearLayout>
+
+
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:layout_marginTop="10dp"
+				android:paddingTop="12dp"
+				android:paddingBottom="12dp"
+				android:paddingLeft="14dp"
+				android:paddingRight="14dp"
+				android:background="#ffffff">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="机构名称："
+					android:textColor="#666666"
+					/>
+				<TextView
+					android:id="@+id/tv_orgName"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:gravity="right"
+
+					android:textSize="14sp"
+					/>
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="0.02dp"
+				android:background="#dbdbdb" >
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:paddingTop="12dp"
+				android:paddingBottom="12dp"
+				android:paddingLeft="14dp"
+				android:paddingRight="14dp"
+				android:background="#ffffff">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="地理区域："
+					android:textColor="#666666"
+					/>
+				<TextView
+					android:id="@+id/tv_area"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:gravity="right"
+
+					android:textSize="14sp"
+					/>
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="0.02dp"
+				android:background="#dbdbdb" >
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:paddingTop="12dp"
+				android:paddingBottom="12dp"
+				android:paddingLeft="14dp"
+				android:paddingRight="14dp"
+				android:background="#ffffff">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="管辖区域："
+					android:textColor="#666666"
+					/>
+				<TextView
+					android:id="@+id/tv_ruleArea"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:gravity="right"
+
+					android:textSize="14sp"
+					/>
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="0.02dp"
+				android:background="#dbdbdb" >
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:paddingTop="12dp"
+				android:paddingBottom="12dp"
+				android:paddingLeft="14dp"
+				android:paddingRight="14dp"
+				android:background="#ffffff">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="第一代理人："
+					android:textColor="#666666"
+					/>
+				<TextView
+					android:id="@+id/tv_firstAgent"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:gravity="right"
+
+					android:textSize="14sp"
+
+					/>
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="0.02dp"
+				android:background="#dbdbdb" >
+			</LinearLayout>
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:paddingTop="12dp"
+				android:paddingBottom="12dp"
+				android:paddingLeft="14dp"
+				android:paddingRight="14dp"
+				android:background="#ffffff">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="第一代理人类型："
+					android:textColor="#666666"
+					/>
+				<TextView
+					android:id="@+id/tv_firstAgentType"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:gravity="right"
+					android:textSize="14sp"
+
+					/>
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="0.02dp"
+				android:background="#dbdbdb" >
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:paddingTop="12dp"
+				android:paddingBottom="12dp"
+				android:paddingLeft="14dp"
+				android:paddingRight="14dp"
+				android:background="#ffffff">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="地址："
+					android:textColor="#666666"
+					/>
+				<TextView
+					android:id="@+id/tv_address"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:gravity="right"
+					android:textSize="14sp"
+
+					/>
+
+
+			</LinearLayout>
+
+
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:layout_marginTop="10dp"
+				android:paddingTop="12dp"
+				android:paddingBottom="12dp"
+				android:paddingLeft="14dp"
+				android:paddingRight="14dp"
+				android:background="#ffffff">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="法人姓名："
+					android:textColor="#666666"
+					/>
+				<TextView
+					android:id="@+id/tv_corpName"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:gravity="right"
+					android:textSize="14sp"
+
+					/>
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="0.02dp"
+				android:background="#dbdbdb" >
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:paddingTop="12dp"
+				android:paddingBottom="12dp"
+				android:paddingLeft="14dp"
+				android:paddingRight="14dp"
+				android:background="#ffffff">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="法人身份证号："
+					android:textColor="#666666"
+					/>
+				<TextView
+					android:id="@+id/tv_corpIdCardNumber"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:gravity="right"
+					android:textSize="14sp"
+
+					/>
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="0.02dp"
+				android:background="#dbdbdb" >
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:paddingTop="12dp"
+				android:paddingBottom="12dp"
+				android:paddingLeft="14dp"
+				android:paddingRight="14dp"
+				android:background="#ffffff">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="法人手机："
+					android:textColor="#666666"
+					/>
+				<TextView
+					android:id="@+id/tv_corpMobile"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:gravity="right"
+					android:textSize="14sp"
+
+					/>
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="0.02dp"
+				android:background="#dbdbdb" >
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:paddingTop="12dp"
+				android:paddingBottom="12dp"
+				android:paddingLeft="14dp"
+				android:paddingRight="14dp"
+				android:background="#ffffff">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="联系人："
+					android:textColor="#666666"
+					/>
+				<TextView
+					android:id="@+id/tv_contacts"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:gravity="right"
+					android:textSize="14sp"
+
+					/>
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="0.02dp"
+				android:background="#dbdbdb" >
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:paddingTop="12dp"
+				android:paddingBottom="12dp"
+				android:paddingLeft="14dp"
+				android:paddingRight="14dp"
+				android:background="#ffffff">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="联系人电话："
+					android:textColor="#666666"
+					/>
+				<TextView
+					android:id="@+id/tv_contactsMobile"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:gravity="right"
+					android:textSize="14sp"
+
+					/>
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/layout_fuZeRenInfo"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical">
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:layout_marginTop="10dp"
+				android:paddingTop="12dp"
+				android:paddingBottom="12dp"
+				android:paddingLeft="14dp"
+				android:paddingRight="14dp"
+				android:background="#ffffff">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="负责人姓名："
+					android:textColor="#666666"
+					/>
+				<TextView
+					android:id="@+id/tv_fuZeRenName"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:gravity="right"
+					android:textSize="14sp"
+
+					/>
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="0.02dp"
+				android:background="#dbdbdb" >
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+
+				android:paddingTop="12dp"
+				android:paddingBottom="12dp"
+				android:paddingLeft="14dp"
+				android:paddingRight="14dp"
+				android:background="#ffffff">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="负责人手机："
+					android:textColor="#666666"
+					/>
+				<TextView
+					android:id="@+id/tv_fuZeRenMobile"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:gravity="right"
+					android:textSize="14sp"
+
+					/>
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="0.02dp"
+				android:background="#dbdbdb" >
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+
+				android:paddingTop="12dp"
+				android:paddingBottom="12dp"
+				android:paddingLeft="14dp"
+				android:paddingRight="14dp"
+				android:background="#ffffff">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="负责人身份证号："
+					android:textColor="#666666"
+					/>
+				<TextView
+					android:id="@+id/tv_fuZeRenIdNumber"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:gravity="right"
+					android:textSize="14sp"
+
+					/>
+			</LinearLayout>
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="10dp"
+				android:paddingBottom="14dp"
+				android:orientation="vertical"
+				android:background="#ffffff">
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:paddingLeft="14dp"
+					android:paddingTop="10dp"
+					android:text="*证件图片"
+					android:textColor="#4d90e7"
+					/>
+
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="20dp"
+					android:orientation="horizontal">
+
+					<LinearLayout
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+						android:gravity="center"
+						android:orientation="vertical">
+
+						<ImageView
+							android:id="@+id/iv_businessLicense"
+							android:layout_width="80dp"
+							android:layout_height="80dp"
+
+							android:src="@drawable/add_img" />
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="10dp"
+							android:text="营业执照"
+							android:textColor="#999999"
+							android:textSize="12sp" />
+					</LinearLayout>
+
+					<LinearLayout
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+						android:gravity="center"
+
+						android:orientation="vertical">
+
+						<ImageView
+
+							android:id="@+id/iv_identificationFront"
+							android:layout_width="80dp"
+							android:layout_height="80dp"
+
+							android:src="@drawable/add_img" />
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="10dp"
+							android:text="法人身份证正面"
+							android:textColor="#999999"
+							android:textSize="12sp" />
+					</LinearLayout>
+
+					<LinearLayout
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+
+						android:gravity="center"
+						android:orientation="vertical">
+
+						<ImageView
+							android:id="@+id/iv_identificationOpposite"
+							android:layout_width="80dp"
+							android:layout_height="80dp"
+
+							android:src="@drawable/add_img" />
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="10dp"
+							android:text="法人身份证反面"
+							android:textColor="#999999"
+							android:textSize="12sp" />
+					</LinearLayout>
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="20dp"
+					android:orientation="horizontal">
+
+					<LinearLayout
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+						android:gravity="center"
+						android:orientation="vertical">
+
+						<ImageView
+							android:id="@+id/iv_stationContactFrist"
+							android:layout_width="80dp"
+							android:layout_height="80dp"
+
+							android:src="@drawable/add_img" />
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="10dp"
+							android:text="车站合同首页"
+							android:textColor="#999999"
+							android:textSize="12sp" />
+					</LinearLayout>
+
+					<LinearLayout
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+						android:gravity="center"
+
+						android:orientation="vertical">
+
+						<ImageView
+
+							android:id="@+id/iv_stationContactEnd"
+							android:layout_width="80dp"
+							android:layout_height="80dp"
+
+							android:src="@drawable/add_img" />
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="10dp"
+							android:text="车站合同尾页"
+							android:textColor="#999999"
+							android:textSize="12sp" />
+					</LinearLayout>
+
+					<LinearLayout
+						android:id="@+id/layout_fuzerenIdFront"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+						android:gravity="center"
+
+						android:orientation="vertical">
+
+						<ImageView
+							android:id="@+id/iv_fuzerenIdFront"
+							android:layout_width="80dp"
+							android:layout_height="80dp"
+
+							android:src="@drawable/add_img" />
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="10dp"
+							android:text="负责人身份证正面"
+							android:textColor="#999999"
+							android:textSize="12sp" />
+					</LinearLayout>
+
+					<LinearLayout
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+						android:visibility="gone"
+						android:gravity="center"
+						android:orientation="vertical">
+
+						<ImageView
+							android:id="@+id/iv_articleDeposit"
+							android:layout_width="80dp"
+							android:layout_height="80dp"
+
+							android:src="@drawable/add_img" />
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="10dp"
+							android:text="押金条"
+							android:textColor="#999999"
+							android:textSize="12sp" />
+					</LinearLayout>
+				</LinearLayout>
+
+
+				<LinearLayout
+					android:id="@+id/layout_fuZeRenCertificates"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="20dp"
+					android:orientation="horizontal">
+
+					<LinearLayout
+						android:id="@+id/layout_fuzerenIdOpposite"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+
+						android:gravity="center"
+						android:orientation="vertical">
+
+						<ImageView
+							android:id="@+id/iv_fuzerenIdOpposite"
+							android:layout_width="80dp"
+							android:layout_height="80dp"
+
+							android:src="@drawable/add_img" />
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="10dp"
+							android:text="负责人身份证反面"
+							android:textColor="#999999"
+							android:textSize="12sp" />
+					</LinearLayout>
+
+					<LinearLayout
+						android:id="@+id/layout_shouQuanShu"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+
+						android:gravity="center"
+						android:orientation="vertical">
+
+						<ImageView
+							android:id="@+id/iv_paySystemCertificate"
+							android:layout_width="80dp"
+							android:layout_height="80dp"
+
+							android:src="@drawable/add_img" />
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="10dp"
+							android:text="票款汇缴授权书"
+							android:textColor="#999999"
+							android:textSize="12sp" />
+					</LinearLayout>
+
+					<LinearLayout
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+						android:gravity="center"
+						android:visibility="invisible"
+						android:orientation="vertical">
+
+						<ImageView
+
+							android:id="@+id/iv_nianJianCertificate"
+							android:layout_width="80dp"
+							android:layout_height="80dp"
+
+							android:src="@drawable/add_img" />
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="10dp"
+							android:text="年检证书"
+							android:textColor="#999999"
+							android:textSize="12sp" />
+					</LinearLayout>
+				</LinearLayout>
+
+
+
+
+			</LinearLayout>
+
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:layout_marginTop="10dp"
+				android:paddingTop="12dp"
+				android:paddingBottom="12dp"
+				android:paddingLeft="14dp"
+				android:paddingRight="14dp"
+				android:gravity="center_vertical"
+				android:background="#ffffff">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="设置账户最低限额："
+					android:textColor="#666666"
+					/>
+				<EditText
+					android:id="@+id/et_minimum"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:textSize="14sp"
+					android:digits="0123456789"
+					android:text="0.00"
+					android:textColor="#ff9728"
+					android:background="@null"
+					/>
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/layout_noRelieveContent"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="10dp"
+				android:paddingBottom="30dp"
+				android:layout_weight="1"
+				android:orientation="vertical"
+				android:background="#ffffff">
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:paddingLeft="14dp"
+					android:paddingTop="10dp"
+					android:paddingBottom="12dp"
+					android:text="审核理由"
+					android:textSize="16sp"
+					android:textColor="#666666"
+					/>
+
+				<EditText
+					android:id="@+id/et_auditReason"
+					android:layout_width="match_parent"
+					android:layout_height="120dp"
+					android:layout_marginLeft="16dp"
+					android:layout_marginRight="16dp"
+					android:paddingLeft="14dp"
+					android:paddingRight="14dp"
+					android:paddingTop="10dp"
+					android:hint="请输入审核理由"
+					android:maxLength="200"
+					android:gravity="top"
+					android:background="@drawable/shape_editext"
+					android:textSize="14sp"
+
+					/>
+
+
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/layout_auditedContent"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="10dp"
+				android:paddingBottom="30dp"
+				android:layout_weight="1"
+				android:visibility="gone"
+				android:orientation="vertical"
+				android:background="#ffffff">
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:paddingLeft="14dp"
+					android:paddingTop="10dp"
+					android:paddingBottom="12dp"
+					android:text="审核详情"
+					android:textSize="16sp"
+					android:textColor="#666666"
+					/>
+
+				<LinearLayout
+					android:id="@+id/layout_auditReason"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="46dp"
+
+						android:text="原因："
+
+						/>
+					<TextView
+						android:id="@+id/tv_auditReason"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+
+						android:text="123"
+						android:textColor="#ff862d"
+						/>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="10dp"
+					android:orientation="horizontal">
+
+					<TextView
+
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="46dp"
+
+						android:text="状态："
+
+						/>
+					<TextView
+						android:id="@+id/tv_auditState"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+
+						android:text="审核不通过"
+						android:textColor="#ff862d"
+						/>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:id="@+id/layout_operateTime"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="10dp"
+					android:orientation="horizontal">
+
+					<TextView
+
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="46dp"
+
+						android:text="操作时间："
+
+						/>
+					<TextView
+						android:id="@+id/tv_operateTime"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+
+						android:text=""
+						android:textColor="#ff862d"
+						/>
+
+				</LinearLayout>
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="0.02dp"
+				android:background="#999999" >
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/layout_auditingButon"
+				android:layout_width="match_parent"
+				android:layout_height="55dp"
+				android:background="#ffffff"
+				android:gravity="center_vertical"
+				android:orientation="horizontal" >
+
+				<LinearLayout
+					android:id="@+id/layout_pass"
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:gravity="center"
+					android:orientation="vertical" >
+
+					<TextView
+						android:id="@+id/tv_pass"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textSize="16sp"
+						android:text="通过" />
+
+				</LinearLayout>
+				<View
+					android:id="@+id/view_shuXian"
+					android:layout_width="0.02dp"
+					android:layout_height="match_parent"
+					android:background="#999999" >
+				</View>
+
+				<LinearLayout
+					android:id="@+id/layout_noPass"
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:gravity="center"
+					android:orientation="vertical" >
+
+					<TextView
+						android:id="@+id/tv_noPass"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textSize="16sp"
+						android:text="不通过"
+						/>
+				</LinearLayout>
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</ScrollView>
+</LinearLayout>

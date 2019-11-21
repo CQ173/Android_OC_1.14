@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/alphaGray"
+    android:gravity="center"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:orientation="vertical"
+            android:background="@drawable/text_round_bg_white2"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:padding="20dp"
+            >
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="挂靠详情"
+                android:textSize="20sp"
+                android:textColor="@color/alphaBlack"
+                android:id="@+id/textView9"
+                android:gravity="center"
+                />
+            <ListView
+                android:id="@+id/lv_affiliated_details"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@drawable/dottedline"
+                android:dividerHeight="2dp"
+                android:layerType="software"
+                >
+
+            </ListView>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/closes"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            />
+    </RelativeLayout>
+</LinearLayout>

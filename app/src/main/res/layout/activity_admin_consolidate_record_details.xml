@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_transaction_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.huoniao.oc.admin.TransactionDetails"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+    <include layout="@layout/backtitle"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+               android:background="@drawable/details_backgroud"
+                >
+
+                <TextView
+                    android:id="@+id/tv_consignee_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/white"
+                    android:text="--"
+                    android:textSize="18sp"
+                    />
+                <TextView
+                    android:id="@+id/tv_amount_paid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="--"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    style="@style/text" />
+
+                <TextView
+                      android:id="@+id/tv_payment_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="--"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/umsmpospi_red"
+                    style="@style/text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+
+
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="扣款账号："
+                        style="@style/text"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_debit_account"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                      android:textColor="@color/colorAccent"
+                        style="@style/text"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="10dp"
+
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="汇缴窗口号："
+                        style="@style/text"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_subscription_window_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        style="@style/text"
+                        />
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grays"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="票款日期："
+                        style="@style/text"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_the_ticket_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        style="@style/text"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="汇缴日期："
+                        style="@style/text"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_subscription_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        style="@style/text"
+                        />
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grays"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="总局名称："
+                        style="@style/text"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_general_office_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        style="@style/text"
+                        />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="分局名称："
+                        style="@style/text"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_branch_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        style="@style/text"
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="车务段名称："
+                        style="@style/text"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_trainDepotName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        style="@style/text"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="车站名称："
+                        style="@style/text"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_station_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        style="@style/text"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="车站账号："
+                        style="@style/text"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_station_account_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        style="@style/text"
+                        />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/alpha_backgroud"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                >
+                <LinearLayout
+                    android:id="@+id/ll_consolidated_record"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:background="@color/white"
+                    android:layout_marginTop="10dp"
+                    >
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/computer"
+                        />
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="查看该账户汇缴记录"
+                        android:textColor="@color/grayss"
+                        android:layout_marginLeft="10dp"
+                        style="@style/textSize16" />
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/right_arrow"
+                        />
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray"
+                    />
+                <LinearLayout
+                    android:id="@+id/ll_transaction_record"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:background="@color/white"
+                    android:visibility="gone"
+                    >
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/select"
+                        />
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="查看该账户交易记录"
+                        android:textColor="@color/grayss"
+                        android:layout_marginLeft="10dp"
+                        style="@style/textSize16" />
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/right_arrow"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/alpha_backgroud"
+                />
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

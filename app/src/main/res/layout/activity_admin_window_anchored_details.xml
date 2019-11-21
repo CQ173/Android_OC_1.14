@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_admin_window_anchored_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.huoniao.oc.admin.AdminWindowAnchoredDetails">
+    <include layout="@layout/backtitle" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/white"
+            >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/anchored_person" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="挂靠账号信息"
+                android:textColor="@color/blue" />
+        </LinearLayout>
+            <View
+                style="@style/viewStyle"
+                android:layout_marginTop="0dp" />
+
+            <LinearLayout style="@style/ll_user">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/userWeight"
+                        android:text="扣款账号:" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_click_account_details"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="0.7"
+                        android:gravity="center_vertical"
+                        >
+                        <TextView
+                            android:id="@+id/tv_eebit_account"
+                            android:layout_width="wrap_content"
+                            android:textColor="@color/blue"
+                             android:text="hahah"
+                              android:layout_height="30dp"
+                              android:paddingLeft="10dp"
+                              android:textSize="13sp"
+                              android:gravity="center_vertical"
+                            />
+
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:src="@drawable/right_arrow"
+                            android:layout_marginLeft="10dp"
+                            />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/userWeight"
+                        android:text="用户姓名:" />
+
+                    <TextView
+                        android:id="@+id/tv_username"
+                        style="@style/userWeightBackgroud2"
+                        android:enabled="false"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/userWeight"
+                        android:text="代售点窗口号:" />
+
+                    <TextView style="@style/userWeightBackgroud2"
+                      android:id="@+id/tv_outlets_window_number"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/userWeight"
+                        android:text="代售点名称:" />
+
+                    <TextView style="@style/userWeightBackgroud2"
+                        android:id="@+id/tv_consignee_name"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/userWeight"
+                        android:text="法人姓名:" />
+
+                    <TextView style="@style/userWeightBackgroud2"
+                        android:id="@+id/tv_legal_person_name"
+                        />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+            <View
+                style="@style/viewStyle"
+                android:layout_marginTop="0dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/window_number" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="本窗口号信息"
+                    android:textColor="@color/blue" />
+            </LinearLayout>
+            <View
+                style="@style/viewStyle"
+                android:layout_marginTop="0dp" />
+
+            <LinearLayout style="@style/ll_user">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/userWeight"
+                        android:text="区域:" />
+
+                    <TextView
+                        style="@style/userWeightBackgroud2"
+                        android:id="@+id/tv_region"
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/userWeight"
+                        android:text="代售点窗口号:" />
+
+                    <TextView
+                        style="@style/userWeightBackgroud2"
+                        android:enabled="false"
+                        android:id="@+id/tv_outlets_window_number2"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/userWeight"
+                        android:text="代售点名称:" />
+
+                    <TextView style="@style/userWeightBackgroud2"
+                      android:id="@+id/tv_consignee_name2"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/userWeight"
+                        android:text="负责人:" />
+
+                    <TextView style="@style/userWeightBackgroud2"
+                          android:id="@+id/tv_person_in_charge"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/userWeight"
+                        android:text="负责人电话:" />
+
+                    <TextView style="@style/userWeightBackgroud2"
+                     android:id="@+id/tv_name_of_person_in_charge_phone"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/userWeight"
+                        android:text="负责人身份证:" />
+
+                    <TextView style="@style/userWeightBackgroud2"
+                      android:id="@+id/tv_person_in_charge_id"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                style="@style/viewStyle"
+                android:layout_marginTop="0dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/document_data" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="证件资料"
+                    android:textColor="@color/blue" />
+            </LinearLayout>
+            <View
+                style="@style/viewStyle"
+                android:layout_marginTop="0dp" />
+
+            <com.huoniao.oc.custom.MyGridView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:id="@+id/gv_enclosure"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:numColumns="3"
+                android:horizontalSpacing="5dp"
+                android:verticalSpacing="15dp">
+
+            </com.huoniao.oc.custom.MyGridView>
+
+            <View
+                style="@style/viewStyle"
+                android:layout_marginTop="0dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/qq" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="审核详情"
+                    android:textColor="@color/blue" />
+            </LinearLayout>
+            <View
+                style="@style/viewStyle"
+                android:layout_marginTop="0dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:paddingBottom="10dp"
+                android:layout_marginTop="10dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="审核状态："
+                    android:textColor="@color/alphaBlack"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_audit_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/alphaBlack"
+                    />
+
+            </LinearLayout>
+
+
+
+
+
+            <!-- <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:paddingRight="10dp"
+                 android:paddingLeft="10dp"
+                 android:paddingBottom="10dp"
+                 >
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="审核时间："
+                     android:textColor="@color/alphaBlack"
+                     />
+
+                 <TextView
+                     android:id="@+id/tv_audit_date"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="2017-10-10"
+                     android:textColor="@color/alphaBlack"
+                     />
+
+             </LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:paddingBottom="10dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="审核情况说明："
+                    android:textColor="@color/alphaBlack"
+                    />
+
+
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/tv_audit_instructions"
+                style="@style/userWeightBackgroud"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:padding="5dp"
+                android:enabled="false"
+                android:gravity="top"
+                android:maxLength="100"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_return"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:visibility="gone"
+                    android:gravity="center"
+                    android:background="@drawable/bluebutton_click_style"
+                    android:textColor="@color/white"
+                    android:text="返回" />
+
+
+                <TextView
+                    android:id="@+id/tv_no_ok"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:background="@drawable/redbutton_click_style"
+                    android:textColor="@color/white"
+                    android:text="不通过"
+                    android:visibility="gone"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: :dhjt_4.1.0_release_plugin:@jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/dhjt_4.1.0_release_plugin.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

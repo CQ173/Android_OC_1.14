@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:padding="20dp">
+    
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop = "4dp"
+	    >
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="18sp"
+	        android:layout_centerHorizontal="true"
+	        android:text="同意借款"/>
+	</RelativeLayout>
+	
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="30dp"
+	    android:lineSpacingExtra = "4dp"
+	    android:text="当您未按时交纳票款时，是否同意通过您指定的第三方小额贷款公司借款以补足票款"	  
+	    android:textColor="#666666"/>
+	
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="80dp"
+	    android:layout_marginBottom="40dp"
+	    android:orientation="horizontal">
+	    
+	    <Button
+        android:id="@+id/bt_previousStep"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+      
+        android:background="@drawable/bluebutton_click_style"
+        android:text="上一步"
+        android:textColor="#ffffff" />
+	    
+	    <Button
+        android:id="@+id/bt_complete"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+      	android:layout_marginLeft="36dp"
+        android:background="@drawable/bluebutton_click_style"
+        android:text="同意"
+        android:textColor="#ffffff" />
+	    
+	</LinearLayout>
+</LinearLayout>

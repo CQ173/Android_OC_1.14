@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#4d90e7">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="注册"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <!--
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#69b6f7"
+                android:textSize="12sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="注：单张图片上传不能超过1M"/>
+            -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/et_corporationName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:hint="请输入法人姓名"
+                    android:maxLength="20"
+                    android:singleLine="true"
+                    android:textSize="16sp"
+                    />
+
+                <EditText
+                    android:id="@+id/et_corpIdNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:hint="请输入法人身份证号"
+                    android:maxLength="18"
+                    android:singleLine="true"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_corpPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:digits="1234567890"
+                    android:hint="请输入法人联系电话"
+                    android:maxLength="11"
+                    android:singleLine="true"
+                    android:textSize="16sp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"
+                    android:layout_marginTop="16dp"
+                    android:background="#dbdbdb"/>
+
+                <LinearLayout
+                    android:id="@+id/layout_checkBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal">
+                    <CheckBox
+                        android:id="@+id/checkBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleX="0.5"
+                        android:scaleY="0.5"
+                        style="@style/CustomCheckboxTheme"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:text="同法人"
+                        android:textColor="#4d90e7"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_fuZeRenInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+
+                    <EditText
+                        android:id="@+id/et_fuZeRenName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:hint="请输入负责人姓名"
+                        android:maxLength="20"
+                        android:singleLine="true"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/et_fuZeRenIdNum"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:hint="请输入负责人身份证号"
+                        android:singleLine="true"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/et_fuZeRenPhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:digits="1234567890"
+                        android:hint="请输入负责人联系电话"
+                        android:maxLength="11"
+                        android:singleLine="true"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="请确保该手机能正常接收平台推送消息"
+                        android:textColor="#ff862d"
+                        android:textSize="12sp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="8dp"
+                        android:background="#dbdbdb"/>
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/et_contactName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+
+                    android:hint="请输入联系人姓名"
+                    android:maxLength="20"
+                    android:singleLine="true"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_contactPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:digits="1234567890"
+                    android:hint="请输入联系人电话"
+                    android:maxLength="11"
+                    android:singleLine="true"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_deposit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:hint="请输入所缴纳押金金额"
+                    android:inputType="numberDecimal"
+                    android:maxLength="8"
+                    android:singleLine="true"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/iv_businessLicense"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+
+                            android:src="@drawable/add_img" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="营业执照"
+                            android:textColor="#999999"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+
+                        android:orientation="vertical">
+
+                        <ImageView
+
+                            android:id="@+id/iv_identificationFront"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+
+                            android:src="@drawable/add_img" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="法人身份证正面"
+                            android:textColor="#999999"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/iv_identificationOpposite"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+
+                            android:src="@drawable/add_img" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="法人身份证反面"
+                            android:textColor="#999999"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/iv_stationContactFrist"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+
+                            android:src="@drawable/add_img" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="车站合同首页"
+                            android:textColor="#999999"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+
+                        android:orientation="vertical">
+
+                        <ImageView
+
+                            android:id="@+id/iv_stationContactEnd"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+
+                            android:src="@drawable/add_img" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="车站合同尾页"
+                            android:textColor="#999999"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_shouQuanShu"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/iv_paySystemCertificate"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+
+                            android:src="@drawable/add_img" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="票款汇缴授权书"
+                            android:textColor="#999999"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:visibility="gone"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/iv_articleDeposit"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+
+                            android:src="@drawable/add_img" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="押金条"
+                            android:textColor="#999999"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/layout_fuZeRenCertificates"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+
+
+                    <LinearLayout
+                        android:id="@+id/layout_fuzerenIdFront"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/iv_fuzerenIdFront"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+
+                            android:src="@drawable/add_img" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="负责人身份证正面"
+                            android:textColor="#999999"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/iv_fuzerenIdOpposite"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+
+                            android:src="@drawable/add_img" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="负责人身份证反面"
+                            android:textColor="#999999"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:visibility="invisible"
+                        android:orientation="vertical">
+
+                        <ImageView
+
+                            android:id="@+id/iv_nianJianCertificate"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+
+                            android:src="@drawable/add_img" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="年检证书"
+                            android:textColor="#999999"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="*注册即表示你同意"
+                        android:textColor="#999999"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_Service_agreement"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="《O计汇缴平台服务协议》"
+                        android:textColor="#fe6767"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv_Custom_project"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="《定制项目服务协议（铁路客票汇缴）》"
+                    android:textColor="#fe6767"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_Software_license"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="《火鸟客户端软件许可及服务协议》"
+                    android:textColor="#fe6767"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_Firebird_Pass"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="《火鸟通行证服务协议》"
+                        android:textColor="#fe6767"
+                        android:textSize="12sp" />
+                    <TextView
+                        android:id="@+id/tv_Privacy_Policy"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="《火鸟隐私权政策》"
+                        android:textColor="#fe6767"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bt_registerSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="36dp"
+                android:background="@drawable/bluebutton_click_style"
+                android:text="提交"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

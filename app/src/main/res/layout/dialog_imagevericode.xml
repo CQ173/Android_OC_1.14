@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+        
+	<ImageView 
+	    android:id="@+id/imageVeriCode"
+	    android:layout_width="220dp"
+	    android:layout_height="60dp"/>
+	<TextView
+	    android:id="@+id/tv_reset" 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="看不清？点击图片切换"
+	    android:textSize="12sp"
+	    android:textColor="#FF9900"/>
+	</LinearLayout>
+	
+    <EditText
+        android:id="@+id/et_imageVeriCode" 
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="14sp"
+        android:hint="请输入图形验证码,不区分大小写"
+        />
+    
+     <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+	
+         <Button
+             android:id="@+id/bt_confirm" 
+             android:layout_width="0dp"
+             android:layout_height="40dp"
+             android:layout_weight="1"
+             android:text="确认"
+             android:textColor="#ffffff"
+             android:background="@drawable/bluebutton_click_style"/>
+         
+         <Button
+             android:id="@+id/bt_concel" 
+             android:layout_width="0dp"
+             android:layout_height="40dp"
+             android:layout_marginLeft="12dp"
+             android:layout_weight="1"
+             android:text="取消"
+             android:textColor="#ffffff"
+             android:background="@drawable/bluebutton_click_style"/>
+	</LinearLayout>
+</LinearLayout>

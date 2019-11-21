@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 序列帧动画 -->
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false" >
+	<!--  
+    <item
+        android:drawable="@drawable/frame_jindutiao0"
+        android:duration="150"/>
+    <item
+        android:drawable="@drawable/frame_jindutiao1"
+        android:duration="150"/>
+	-->
+	<item
+        android:drawable="@drawable/sf_progress_1"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/sf_progress_2"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/sf_progress_3"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/sf_progress_4"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/sf_progress_5"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/sf_progress_6"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/sf_progress_7"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/sf_progress_8"
+        android:duration="60"/>
+</animation-list>

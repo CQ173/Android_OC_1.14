@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp">
+
+        <ImageView
+            android:id="@+id/iv_img_refund"
+            android:layout_width="20dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.1"
+            android:src="@drawable/shou"
+            />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.85"
+            android:layout_marginLeft="@dimen/x5"
+            android:gravity="center_vertical"
+            >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="0.4"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_tradeName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:singleLine="true"
+                    android:text="快捷支付"
+                    android:textColor="@color/alpha_black"
+                    android:textSize="16sp"
+                    android:maxLines="1"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/y5"
+                    android:gravity="left"
+                    android:text="2016-11-20  20:00"
+                    android:textColor="@color/grayss"
+                    android:textSize="14sp"
+                    android:maxLines="1"
+                    />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/x10"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_tradeAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="1234.00"
+                    android:textColor="@color/alpha_black"
+                    android:textSize="16sp"
+                    android:maxLines="1"
+                    />
+
+
+                <TextView
+                    android:id="@+id/tv_tradeStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text=""
+                    android:textColor="#666666"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_refund"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.15"
+                android:background="@drawable/text_round_ring"
+                android:gravity="center"
+                android:padding="@dimen/y5"
+                android:text="退款"
+                android:textColor="@color/blueCash"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

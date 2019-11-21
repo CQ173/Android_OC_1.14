@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_person_center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.huoniao.oc.user.PersonCenterA">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#4d90e7" >
+
+        <ImageView
+            android:id="@+id/qrcode_iv_back"
+            android:layout_width="@dimen/x50"
+            android:layout_height="@dimen/y50"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="个人中心"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_person_message"
+        android:layout_width="match_parent"
+        style="@style/meHeight"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/x30"
+        android:visibility="gone"
+        >
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="0.1"
+            style="@style/me_imagesize"
+            android:src="@drawable/person_message"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.8"
+            android:layout_height="wrap_content"
+            android:text="个人信息"
+            android:layout_marginLeft="@dimen/x20"
+            style="@style/me_textsize_color"
+            />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="0.1"
+            android:layout_height="@dimen/y30"
+            android:src="@drawable/right_arrow"
+
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="@color/gray"
+        android:layout_marginLeft="@dimen/x38"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_update_pwd"
+        android:layout_width="match_parent"
+        style="@style/meHeight"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/x30"
+        android:visibility="gone"
+        >
+        <ImageView
+            android:src="@drawable/update_pwd"
+            style="@style/me_imagesize"
+            android:layout_width="0dp"
+            android:layout_weight="0.1"
+
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.8"
+            android:layout_height="wrap_content"
+            android:text="修改密码"
+            android:layout_marginLeft="@dimen/x20"
+            style="@style/me_textsize_color"
+            />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="0.1"
+            android:layout_height="@dimen/y30"
+            android:src="@drawable/right_arrow"
+            />
+    </LinearLayout>
+
+    <!--  <View
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/x1"
+          android:background="@color/gray"
+          android:layout_marginLeft="@dimen/x38"
+          />-->
+
+
+</LinearLayout>

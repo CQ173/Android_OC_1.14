@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:descendantFocusability="blocksDescendants"
+    android:paddingBottom="10dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="10dp"
+    android:orientation="vertical"
+    >
+
+<!--    <ImageView
+        android:id="@+id/iv_yuanDian"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:layout_marginTop="4.5dp"
+        android:focusable="false"
+        android:src="@drawable/yuandian" />-->
+    <TextView
+        android:id="@+id/tv_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:text="2016-11-11 15:00" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text=""
+        android:textColor="@color/blues"
+        />
+
+
+
+</LinearLayout>

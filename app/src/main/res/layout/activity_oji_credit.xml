@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.huoniao.oc.user.OjiCreditA"
+    android:background="#FFFFFF">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.huoniao.oc.common.DashboardView
+            android:id="@+id/dashboard_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/x130"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="#4d90e7">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="O计信用"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/tv_creditRules"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:text="规则解读"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+    </FrameLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="12dp"
+
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/layout_allPoints"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/all_points"/>
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="4dp"
+                     android:text="全部"
+                     android:textColor="#333333"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view_allPoints"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@color/blues"
+
+                >
+
+            </View>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_bonusPoint"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/bonus_point"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:text="加分明细"
+                    android:textColor="#333333"/>
+            </LinearLayout>
+            <View
+                android:id="@+id/view_bonusPoint"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@color/blues"
+                android:visibility="gone"
+                >
+
+            </View>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_deductPoints"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/deduct_points"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:text="扣分明细"
+                    android:textColor="#333333"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view_deductPoints"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@color/blues"
+                android:visibility="gone"
+                >
+
+            </View>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+       <com.handmark.pulltorefresh.library.PullToRefreshListView
+           android:id="@+id/mPullToRefreshListView"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_marginLeft="12dp"
+           android:layout_marginRight="12dp"
+           android:fadingEdge="none"
+           android:fastScrollEnabled="false"
+           android:footerDividersEnabled="false"
+           android:headerDividersEnabled="false"
+           android:smoothScrollbar="true"
+           >
+
+       </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+</LinearLayout>

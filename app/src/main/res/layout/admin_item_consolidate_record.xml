@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        >
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2017-10-10"
+        style="@style/textSize12"
+        />
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="5dp"
+           android:layout_marginBottom="5dp"
+
+           >
+           <TextView
+               android:text="扣款账号："
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               style="@style/text"
+               />
+           <TextView
+               android:id="@+id/tv_debit_account"
+               android:text="----"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               style="@style/text"
+               />
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="right"
+          >
+          <TextView
+              android:id="@+id/tv_money"
+              android:text="2326.00"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              style="@style/text"
+              android:textColor="@color/blue"
+              />
+      </LinearLayout>
+
+
+
+       </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp"
+            >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                >
+                <TextView
+                    android:text="窗口号："
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/textSize12"
+                    />
+                <TextView
+                    android:id="@+id/tv_window_number"
+                    android:text="----"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/textSize12"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp"
+                android:layout_weight="0.5"
+                >
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:text="车站名称："
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/textSize12"
+                    />
+                <TextView
+                    android:id="@+id/tv_stationName"
+                    android:text="----"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/textSize12"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                >
+                <TextView
+                    android:id="@+id/tv_recharge"
+                    android:text="代缴费"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/textSize12"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

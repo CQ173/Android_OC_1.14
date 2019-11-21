@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   	android:scrollbars="none">
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical"
+    	android:background="#FFFFFF"
+    	 >
+        
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#f6f6f6" >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="伙伴商城声明"
+            android:textColor="#666666"
+            android:textSize="20sp" />
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+        
+	
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="一、免责声明"
+	    android:layout_marginTop="10dp"
+	    android:textStyle="bold"
+	   
+	    
+	    />
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="      您使用O计会计金融平台账户登录由第三方提供、独立运营的平台伙伴商城， O计会计金融平台仅提供进入伙伴商城的链接，不对伙伴商城发布的任何信息（包括但不限于注册信息、企业/个人信息、店铺名称、联系人及联络信息、产品的描述和说明、图片、视频、言论等）承担审核、担保等责任。您与伙伴商城中第三方达成的交易，需符合中华人民共和国法律、法规的要求，交易规则以您与第三方另行达成的为准。使用伙伴商城提供的服务，请您仔细阅读相关协议及提示信息。"
+	    android:layout_marginTop="2dp"
+	    
+	    />
+	
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="      为给您带来更多优质服务，伙伴商城将陆续添加第三方合作商户供您选择，您使用伙伴商城服务即表示您理解并认可本免责声明的效力及于所有伙伴商城第三方合作商户提供的服务。"
+	    android:layout_marginTop="2dp"
+	    
+	    />
+	
+	
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="二、伙伴商城提供以下服务，使用以下服务即表示您认可O计会计金融平台向第三方提供您的信息："
+	    android:layout_marginTop="10dp"
+	    android:textStyle="bold"
+	/>
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="      1、证券开户"
+	    android:layout_marginTop="2dp"
+	    />
+	
+	
+	
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="      用户点击“证券开户”后，O计系统将会判断当前用户是否为首此使用。如果是首次使用，则将为该用户分配一个证券公司提供的二维码；如果不是首次使用，则使用已分配的二维码。用户使用该二维码完成的开户，证券公司都将计入到该二维码对应的帐户。"
+	    android:layout_marginTop="2dp"
+	    />
+	
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="      证券公司定期（每周）提交各帐户下的开户数据到O计平台，该数据将作为给代售点的返点依据。用户也可通过O计平台记录开户的数据，但该数据不作为返点依据，仅作为一个方便用户记账的功能。"
+	    android:layout_marginTop="2dp"
+	    />
+	
+	
+	
+	
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="      证券公司定期将返利资金及平台服务费付款到火鸟公司帐户，由火鸟公司代为支付给用户，该资金将存入用户的电子钱包。"
+	    android:layout_marginTop="2dp"
+	    />
+	
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="      2、生态农场"
+	    android:layout_marginTop="2dp"
+	    />
+	
+	
+	
+	
+	
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="      用户点击“生态农场”后，O计系统将打开“生态农场”网站，同时会携带部分用户帐户信息给“生态农场”网站以便实现免密登录。"
+	    android:layout_marginTop="2dp"
+	    />
+	
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="      用户在“生态农场”发起的付款，如果选择由火鸟公司进行垫付，O计系统都会在用户的电子钱包中扣除相应金额。"
+	    android:layout_marginTop="2dp"
+	    />
+	
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="      3、机票"
+	    android:layout_marginTop="2dp"
+	    />
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="      用户点击“机票”后，O计系统将打开“今日商旅”网站，同时会携带部分用户帐户信息给“今日商旅”网站以便实现免密登录。"
+	    android:layout_marginTop="2dp"
+	    />
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="      用户在“今日商旅”发起“财务付款”并通过审批后，O计系统将从用户的电子钱包中扣除相应金额。"
+	    android:layout_marginTop="2dp"
+	    />
+	
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="      4、保险"
+	    android:layout_marginTop="2dp"
+	    />
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="      用户点击“保险”后，O计系统将打开合作的保险公司网站，同时会携带部分用户帐户信息给保险公司网站以便实现免密登录。"
+	    android:layout_marginTop="2dp"
+	    />
+	
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="      您完全承担您使用本服务期间由本公司保管或代收或代付的款项的货币贬值风险及可能的孳息损失。"
+	    android:layout_marginTop="2dp"
+	    />
+	
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="      用户在保险公司网站发起的付款，如果选择由火鸟公司进行垫付，O计系统都会在用户的电子钱包中扣除相应金额。"
+	    android:layout_marginTop="2dp"
+	    />
+	
+	
+	</LinearLayout> 
+	
+   </LinearLayout>  
+</ScrollView>

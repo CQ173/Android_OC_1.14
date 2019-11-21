@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.huoniao.oc.user.SettingA"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#4d90e7" >
+
+        <ImageView
+            android:id="@+id/qrcode_iv_back"
+            android:layout_width="@dimen/x50"
+            android:layout_height="@dimen/y50"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="设置"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_log"
+        android:layout_width="match_parent"
+        style="@style/meHeight"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/x30"
+        android:visibility="gone"
+        >
+        <ImageView
+            style="@style/me_imagesize"
+            android:src="@drawable/journal"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.8"
+            android:layout_height="wrap_content"
+            android:text="我的日志"
+            android:layout_marginLeft="@dimen/x20"
+            style="@style/me_textsize_color"
+            />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="0.1"
+            android:layout_height="@dimen/y30"
+            android:src="@drawable/right_arrow"
+
+            />
+    </LinearLayout>
+
+    <View
+       android:id="@+id/v_log"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="@color/gray"
+         android:visibility="gone"
+        />
+
+   <!-- <LinearLayout
+        android:id="@+id/ll_system_notify"
+        android:layout_width="match_parent"
+        style="@style/meHeight"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/x30"
+        android:visibility="gone"
+        >
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="0.1"
+            style="@style/me_imagesize"
+            android:src="@drawable/system_notify"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.8"
+            android:layout_height="wrap_content"
+            android:text="系统通知"
+            android:layout_marginLeft="@dimen/x20"
+            style="@style/me_textsize_color"
+            />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="0.1"
+            android:layout_height="@dimen/y30"
+            android:src="@drawable/right_arrow"
+
+            />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v_system_notify"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="@color/gray"
+android:visibility="gone"
+        />
+-->
+    <LinearLayout
+        android:id="@+id/ll_feedback_message"
+        android:layout_width="match_parent"
+        style="@style/meHeight"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/x30"
+        android:visibility="gone"
+        >
+        <ImageView
+
+            style="@style/me_imagesize"
+            android:src="@drawable/feedback_message"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.8"
+            android:layout_height="wrap_content"
+            android:text="反馈信息"
+            android:layout_marginLeft="@dimen/x20"
+            style="@style/me_textsize_color"
+            />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="0.1"
+            android:layout_height="@dimen/y30"
+            android:src="@drawable/right_arrow"
+
+            />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v_feedback_message"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="@color/gray"
+  android:visibility="gone"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_about"
+        android:layout_width="match_parent"
+        style="@style/meHeight"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/x30"
+        >
+        <ImageView
+
+            style="@style/me_imagesize"
+            android:src="@drawable/about"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.8"
+            android:layout_height="wrap_content"
+            android:text="关于O计"
+            android:layout_marginLeft="@dimen/x20"
+            style="@style/me_textsize_color"
+            />
+
+        <TextView
+            android:id="@+id/tv_red_circle"
+            android:layout_width="7dp"
+            android:layout_height="7dp"
+            android:background="@drawable/text_red_circle"
+            android:layout_marginRight="5dp"
+            />
+        <TextView
+            android:id="@+id/tv_verson_newest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:text="已是最新版本"
+            android:textSize="9dp"
+            android:layout_marginRight="5dp"
+            />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="0.1"
+            android:layout_height="@dimen/y30"
+            android:src="@drawable/right_arrow" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="@color/gray"
+
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_newMessage"
+        android:layout_width="match_parent"
+        style="@style/meHeight"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/x30"
+        android:visibility="gone"
+        >
+        <ImageView
+
+            style="@style/me_imagesize"
+            android:src="@drawable/message_true"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.8"
+            android:layout_height="wrap_content"
+            android:text="新消息通知"
+            android:layout_marginLeft="@dimen/x20"
+            style="@style/me_textsize_color"
+            />
+
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="0.1"
+            android:layout_height="@dimen/y30"
+            android:src="@drawable/right_arrow" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v_lineNewMessage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="@color/gray"
+
+        />
+
+<!--    <LinearLayout
+        android:id="@+id/ll_exit_login"
+        android:layout_width="match_parent"
+        style="@style/meHeight"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/x30"
+        >
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="0.1"
+            style="@style/me_imagesize"
+            android:src="@drawable/exit_login"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.8"
+            android:layout_height="wrap_content"
+            android:text="退出登录"
+            android:layout_marginLeft="@dimen/x20"
+            style="@style/me_textsize_color"
+            />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="0.1"
+            android:layout_height="@dimen/y30"
+            android:src="@drawable/right_arrow"
+
+            />
+    </LinearLayout>-->
+
+
+  <!--  <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="@color/gray"
+        android:layout_marginLeft="@dimen/x38"
+        />-->
+
+</LinearLayout>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4"
+    android:orientation="vertical" >
+    
+	<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#4d90e7" >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="我要反馈"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:background="@color/white"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp"
+            >
+
+           <!-- <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="horizontal"
+                android:paddingBottom="12dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:gravity="center_vertical"
+                android:paddingTop="12dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="反馈类型:"
+                    android:textColor="#666666"
+                    android:textSize="16sp" />
+
+              &lt;!&ndash;  <Spinner
+                    android:id="@+id/sp_feedbackType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text=""
+                    android:textSize="14sp" />&ndash;&gt;
+            </LinearLayout>-->
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="请详细描述您的问题或者建议，我们将及时跟进解决。"
+                android:textColor="#666666"
+                android:textSize="12sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                />
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:orientation="horizontal"
+                     android:layout_marginLeft="10dp"
+                     android:layout_marginRight="10dp"
+                     android:layout_marginTop="10dp"
+                     >
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="类型:"
+                         android:textSize="12sp"
+                         />
+
+                     <TextView
+                         android:id="@+id/tv_type"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="请选择"
+                         android:layout_marginLeft="5dp"
+                         android:textSize="12sp"
+                         />
+
+                 </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                  >
+
+                <EditText
+                    android:id="@+id/et_feedbackContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_weight="1"
+                    android:hint="请输入不少于10个字的描述"
+                    android:maxLength="240"
+                    android:background="@drawable/text_round_bg"
+                    android:gravity="top"
+                    android:text=""
+
+                    android:padding="10dp"
+                    android:textSize="12sp" />
+                <TextView
+                    android:id="@+id/tv_lenth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0/240"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    />
+            </RelativeLayout>
+
+           	
+            <TextView
+        		android:id="@+id/bt_submit"
+        		android:layout_width="wrap_content"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+        		android:layout_height="wrap_content"
+        		android:layout_marginTop="30dp"
+        		android:background="@drawable/bluebutton_click_style"
+        		android:text="提交"
+                android:layout_gravity="center"
+                android:textSize="12sp"
+       		    android:textColor="#ffffff" />
+            
+        </LinearLayout>
+    </ScrollView> 
+</LinearLayout>

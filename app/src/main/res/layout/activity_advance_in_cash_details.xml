@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_advance_in_cash_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.huoniao.oc.financial.AdvanceInCashDetailsA"
+    android:background="#F8F8F8">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#4d90e7" >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="详情"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:background="#FFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="汇缴金额"
+                android:textColor="#999999"
+                />
+            <TextView
+                android:id="@+id/tv_paymentAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="32005.00元"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="站点导入数量"
+                android:textColor="#999999"
+                />
+            <TextView
+                android:id="@+id/tv_staImportCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="80(20)家"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+
+            android:background="#dbdbdb" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="垫款总额"
+                android:textColor="#999999"
+                />
+            <TextView
+                android:id="@+id/tv_advanceCashSum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="32005.00元"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="未用垫款额度"
+                android:textColor="#999999"
+                />
+            <TextView
+                android:id="@+id/tv_unUsedQuota"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="32005.00元"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="#dbdbdb" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="付款总额"
+                android:textColor="#999999"
+                />
+            <TextView
+                android:id="@+id/tv_paymentSum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="32005.00元"
+                />
+        </LinearLayout>
+
+       <!-- <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="5911付款金额"
+                android:textColor="#999999"
+                />
+            <TextView
+                android:id="@+id/tv_5911PaymentAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="32005.00元"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="补款账号付款金额"
+                android:textColor="#999999"
+                />
+            <TextView
+                android:id="@+id/tv_supplementPaymentAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="32005.00元"
+                />
+        </LinearLayout>-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="#dbdbdb" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="还款总额"
+                android:textColor="#999999"
+                />
+            <TextView
+                android:id="@+id/tv_repaymentSum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="32005.00元"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="5911还款金额"
+                android:textColor="#999999"
+                />
+            <TextView
+                android:id="@+id/tv_5911repaymentAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="32005.00元"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="补款账号还款金额"
+                android:textColor="#999999"
+                />
+            <TextView
+                android:id="@+id/tv_supplementRepaymentAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="32005.00元"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="未还款总额"
+                android:textColor="#999999"
+                />
+            <TextView
+                android:id="@+id/tv_unRepaymentSum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="32005.00元"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_repaymentApply"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/bluebutton_click_style"
+        android:text="还款申请"
+        android:textColor="#ffffff" />
+</LinearLayout>

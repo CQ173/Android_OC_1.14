@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	>
+
+	<include layout="@layout/backtitle"/>
+
+<!--	<RelativeLayout
+		android:id="@+id/rl_bankCard"
+		android:layout_width="match_parent"
+		android:layout_height="60dp"
+		android:layout_marginLeft="16dp"
+		android:layout_marginRight="16dp"
+		android:layout_marginTop="10dp"
+		android:background="@drawable/blue_bg" >
+
+		<ImageView
+			android:id="@+id/iv_bankLog"
+			android:layout_width="35dp"
+			android:layout_height="35dp"
+			android:layout_alignParentLeft="true"
+			android:layout_alignParentTop="true"
+			android:layout_marginLeft="14dp"
+			android:layout_marginTop="10dp"
+			android:src="@drawable/jianshebank_log" />
+
+		<LinearLayout
+			android:id="@+id/layout_nameAndType"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="10dp"
+			android:layout_marginTop="10dp"
+			android:layout_toRightOf="@+id/iv_bankLog"
+			android:orientation="vertical" >
+
+			<TextView
+				android:id="@+id/tv_bankName"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="建设银行"
+				android:textColor="#ffffff"
+				android:textSize="16sp" />
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="5dp"
+				android:orientation="horizontal">
+
+
+				<TextView
+					android:id="@+id/tv_cardType"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="借记卡"
+
+					android:textColor="#ffffff"
+					android:textSize="12sp" />
+
+				<TextView
+					android:id="@+id/tv_shuXian"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="5dp"
+					android:text="|"
+					android:textColor="#ffffff"
+					android:textSize="12sp" />
+				<TextView
+
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="5dp"
+					android:text="尾号"
+					android:textColor="#ffffff"
+					android:textSize="12sp" />
+				<TextView
+					android:id="@+id/tv_lastNumber"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="5dp"
+					android:text="尾号5238"
+					android:textColor="#ffffff"
+					android:textSize="12sp" />
+			</LinearLayout>
+		</LinearLayout>
+	</RelativeLayout>-->
+	<include layout="@layout/bankcard_item_layout"	/>
+
+	<LinearLayout
+		android:layout_marginTop="8dp"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="16dp"
+		android:orientation="horizontal"
+		android:background="#ffffff">
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="16sp"
+			android:layout_weight="1"
+			android:text="单笔支付限额"/>
+		<TextView
+			android:id="@+id/tv_single_payment_limit"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="#999999"
+			android:textSize="16sp"
+			android:layout_marginLeft="40dp"
+			/>
+
+	</LinearLayout>
+<!--	android:text="￥10000"-->
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="0.02dp"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+		android:background="#dbdbdb">
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="16dp"
+		android:orientation="horizontal"
+		android:background="#ffffff">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="16sp"
+			android:layout_weight="1"
+			android:text="单日支付限额"
+			android:id="@+id/textView25" />
+
+		<TextView
+			android:id="@+id/tv_single_day_payment_limit"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="#999999"
+			android:textSize="16sp"
+			android:layout_marginLeft="40dp"
+		/>
+		<!--android:text="￥50000"-->
+	</LinearLayout>
+	<Button
+		android:id="@+id/bt_unbound"
+		android:layout_width="match_parent"
+		android:layout_height="45dp"
+		android:layout_marginLeft="20dp"
+		android:layout_marginRight="20dp"
+		android:layout_marginTop="30dp"
+		android:background="@drawable/bluebutton_click_style"
+		android:text="解除绑定"
+		android:textColor="#ffffff" />
+
+
+</LinearLayout>

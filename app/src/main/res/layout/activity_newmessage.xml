@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#4d90e7" >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            />
+
+
+
+        <ImageView
+            android:id="@+id/iv_three"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/three"
+
+            />
+        <TextView
+            android:id="@+id/tv_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取消"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:tabSelectedTextColor="@color/blues"
+        app:tabTextColor="@color/grayss"
+        app:tabIndicatorColor="@color/blues"
+        app:tabTextAppearance="@android:style/TextAppearance.Holo.Widget.PopupMenu.Small"
+        >
+
+    </android.support.design.widget.TabLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/messageListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="false"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:smoothScrollbar="false"
+            android:divider="@null"
+            />
+        <LinearLayout
+            android:id="@+id/ll_messageState"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+         <ImageView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:src="@drawable/nodata"/>
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="暂时没有相关数据"
+            android:textSize="@dimen/y40"
+
+            android:background="@color/white"
+            android:textColor="@color/gray"
+
+            />
+        </LinearLayout>
+    </FrameLayout>
+<View
+    android:layout_width="wrap_content"
+    android:layout_height="1dp"
+    android:background="@color/grays"
+    />
+    <LinearLayout
+        android:id="@+id/ll_delete"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+         android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        >
+        <RadioButton
+            android:id="@+id/rb_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="全选"
+            android:textColor="@color/alphaBlack"
+            android:textSize="15sp"
+            />
+          <View
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              />
+        <TextView
+            android:id="@+id/tv_select_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="删除"
+            android:layout_weight="0.3"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:background="@color/blues"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            />
+
+    </LinearLayout>
+</LinearLayout>

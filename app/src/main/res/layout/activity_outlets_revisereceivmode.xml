@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f9"
+    android:orientation="vertical" >
+    
+	<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#4d90e7" >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="修改接收方式"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingTop="12dp"
+        android:paddingLeft="14dp"
+        android:orientation="vertical"
+        android:background="#FFFFFF">
+
+
+        <RadioButton
+            android:id="@+id/rb_pushAddMsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="APP推送+短信"
+            android:textSize="18sp"
+            />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="32dp"
+
+                android:textSize="14sp"
+                android:text="O计平台默认将重要通知通过短信发送给负责人和联系人，请在“个人资料”进行设置"
+                android:textColor="#999999"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_height="0.02dp"
+        android:background="#e0e0e0" >
+    </LinearLayout>
+
+
+        <RadioButton
+            android:id="@+id/rb_pushAddPublicNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textSize="18sp"
+            android:text="APP推送+微信公众号"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="14dp"
+                android:textSize="14sp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginBottom="12dp"
+                android:text="每个O计账户最多可绑定3个微信账号接收O计平台通知"
+                android:textColor="#999999"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_height="0.02dp"
+            android:background="#e0e0e0" >
+        </LinearLayout>
+
+        <RadioButton
+            android:id="@+id/rb_noNotificationReceived"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textSize="18sp"
+            android:text="不接收通知"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="14dp"
+            android:textSize="14sp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginBottom="12dp"
+            android:text="平台将不会发送任何通知类消息"
+            android:textColor="#999999"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_height="0.02dp"
+            android:background="#e0e0e0" >
+        </LinearLayout>
+
+    </RadioGroup>
+
+    <ListView
+        android:id="@+id/mListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:background="#FFFFFF"
+        >
+
+    </ListView>
+    <LinearLayout
+        android:id="@+id/ll_operationButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="26dp"
+        android:gravity="center_horizontal"
+
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_saveSetting"
+            android:layout_width="120dp"
+            android:layout_height="42dp"
+
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="35dp"
+            android:background="@drawable/bluebutton_click_style"
+            android:text="保存设置"
+            android:textColor="#ffffff" />
+        <Button
+            android:id="@+id/bt_cancel"
+            android:layout_width="120dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="26dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="35dp"
+            android:background="@drawable/bluebutton_click_style3"
+            android:text="取消"
+            android:textColor="#666666" />
+    </LinearLayout>
+</LinearLayout>

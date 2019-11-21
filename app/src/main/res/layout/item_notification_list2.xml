@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:descendantFocusability="blocksDescendants"
+    >
+
+       <TextView
+           android:id="@+id/tv_date"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center_horizontal"
+           android:text="2017-09-08 10:23"
+           android:layout_marginTop="16dp"
+           android:padding="6dp"
+           android:textColor="#ffffff"
+           android:background="@drawable/textbackgroud11"/>
+
+    <LinearLayout
+        android:id="@+id/ll_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+        <RadioButton
+            android:id="@+id/rb_batch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="5dp"
+            android:longClickable="true"
+            android:visibility="gone"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="16dp"
+            android:padding="14dp"
+            android:background="@drawable/shadow_wilite">
+
+
+            <com.huoniao.oc.common.ExpandableTextView
+                android:id="@+id/tv_content"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:longClickable="false"
+                android:layout_weight="1"
+                app:animDuration="200"
+                app:collapseDrawable="@drawable/icon_green_arrow_down"
+                app:collapseExpandGrarity="left"
+                app:collapseExpandTextColor="@color/blues"
+                app:contentTextColor="@color/gray2"
+                app:contentTextSize="14sp"
+                app:expandDrawable="@drawable/icon_green_arrow_up"
+                app:maxCollapsedLines="3"
+                app:textCollapse="@string/collapse"
+                app:textExpand="@string/expand"
+
+                />
+            <TextView
+                android:id="@+id/tv_circle_red"
+                android:layout_width="7dp"
+                android:layout_height="7dp"
+                android:background="@drawable/text_red_circle"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

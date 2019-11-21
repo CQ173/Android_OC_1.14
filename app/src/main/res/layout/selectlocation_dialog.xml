@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    
+	<RelativeLayout
+        android:id="@+id/rl_choiceProvinces"   
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingTop="12dp"
+	    android:paddingBottom="12dp"
+	    android:layout_marginLeft="18dp"
+	    android:layout_marginRight="18dp"
+	    android:background="#ffffff"
+        >
+        
+        <TextView
+        android:id="@+id/tv_provinces"  
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	   	android:layout_centerHorizontal="true"
+	    android:text="选择省"
+	    android:textColor="#666666"
+	    android:textSize="16sp"
+	    />
+        
+        <ImageView 
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/bottom_arrow"/>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/rl_choiceCitys"   
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:paddingTop="12dp"
+	    android:paddingBottom="12dp"
+	    android:layout_marginLeft="18dp"
+	    android:layout_marginRight="18dp"
+	    android:background="#ffffff"
+        >
+        
+        <TextView
+        android:id="@+id/tv_citys"  
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	   	android:layout_centerHorizontal="true"
+	    android:text="选择市"
+	    android:textColor="#666666"
+	    android:textSize="16sp"
+	    />
+        
+        <ImageView 
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/bottom_arrow"/>
+    </RelativeLayout>
+    
+    
+    <RelativeLayout
+        android:id="@+id/rl_thirdLevel"   
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:paddingTop="12dp"
+	    android:paddingBottom="12dp"
+	    android:layout_marginLeft="18dp"
+	    android:layout_marginRight="18dp"
+	    android:visibility="gone"
+	    android:background="#ffffff"
+        >
+        
+        <TextView
+        android:id="@+id/tv_thirdLevel"  
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	   	android:layout_centerHorizontal="true"
+	    android:text="第三级"
+	    android:textColor="#666666"
+	    android:textSize="16sp"
+	    />
+        
+        <ImageView 
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/bottom_arrow"/>
+    </RelativeLayout>
+	<Button
+        android:id="@+id/bt_complete"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/bluebutton_click_style"
+        android:text="完成"
+        android:textColor="#ffffff" />
+</LinearLayout>

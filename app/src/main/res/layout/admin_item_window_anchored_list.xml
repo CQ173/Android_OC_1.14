@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+       <LinearLayout
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:layout_weight="0.7"
+           android:layout_marginTop="10dp"
+           android:layout_marginBottom="10dp"
+           android:paddingLeft="8dp"
+           >
+           <TextView
+               android:id="@+id/tv_agency_name"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="--"
+               android:textSize="16sp"
+               android:singleLine="true"
+               android:textColor="@color/alpha_black"
+               />
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="5dp"
+               >
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:layout_weight="1"
+                   android:text="窗口号"
+                   android:textColor="@color/alphaBlack"
+                   />
+
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:layout_weight="1"
+                   android:text="归属账号"
+                   android:textColor="@color/alphaBlack"
+                   android:id="@+id/textView20" />
+
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="5dp"
+               >
+               <TextView
+                   android:id="@+id/tv_win_number"
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:layout_weight="1"
+                   android:text="--"
+                   android:textColor="@color/blue"
+                   />
+
+               <TextView
+                   android:id="@+id/tv_office_code"
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:layout_weight="1"
+                   android:text="--"
+                   android:singleLine="true"
+                   android:textColor="@color/blue"
+                   />
+
+           </LinearLayout>
+
+       </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="0.3"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:paddingRight="8dp"
+        android:layout_marginBottom="10dp"
+        >
+        <TextView
+            android:id="@+id/tv_audit_state"
+            android:padding="5dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="--"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@drawable/blue_button_pressed"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

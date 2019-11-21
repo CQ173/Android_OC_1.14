@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 角度 -->
+    <corners
+        android:topRightRadius="3dp"
+        android:bottomLeftRadius="3dp"
+        android:bottomRightRadius="3dp"/>
+    <!-- 填充色 -->
+    <solid android:color="#F6F6F6"/>
+    <!-- 描边 设置线宽及颜色 -->
+    <stroke android:color="@color/gray"
+        android:width="1dp"
+        />
+</shape>

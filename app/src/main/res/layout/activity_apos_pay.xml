@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_apos_pay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context="com.huoniao.oc.outlets.AposPayA">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#4d90e7" >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="缴费"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <!-- <ImageView
+             android:id="@+id/iv_showQRCode"
+             android:layout_width="20dp"
+             android:layout_height="20dp"
+             android:layout_alignParentRight="true"
+             android:layout_centerVertical="true"
+             android:layout_marginRight="14dp"
+             android:src="@drawable/recharge_qrcode" />-->
+
+    </RelativeLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="#ffffff"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingTop="14dp"
+                android:paddingBottom="14dp"
+                android:gravity="center_vertical"
+                android:paddingRight="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="金额:"/>
+                <EditText
+                    android:id="@+id/et_rechargeAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="建议转入100以上金额"
+                    android:textSize="14sp"
+                    android:inputType="numberDecimal"
+                    android:maxLength="8"
+                    android:layout_marginLeft="20dp"
+                    android:background="@null"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.02dp"
+
+                android:background="#dbdbdb" >
+            </LinearLayout>
+
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#666666"
+        android:text="选择缴费方式:"
+        android:id="@+id/tv_mode" />
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/layout_payByCard"
+                android:background="#fd844f"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                >
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/pos_img"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"
+                    android:text="刷卡"
+                    android:textColor="#FFFFFF"/>
+            </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/layout_scan"
+        android:background="#4d90e7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/qr_img"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:text="扫码"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+           <!-- <LinearLayout
+                android:id="@+id/ll_QRcodeArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:background="#ffffff"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+
+                    android:text="微信/支付宝 扫一扫向我付款"
+                    android:background="@drawable/text_round"
+
+                    android:textSize="@dimen/y28"
+                    android:textColor="@color/white"
+
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:gravity="center"
+                    android:id="@+id/textView8" />
+
+                <ImageView
+                    android:id="@+id/iv_qrcode"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:layout_marginRight="@dimen/x30"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:textColor="#dbdbdb"
+                    android:layout_marginRight="16dp"
+                    android:maxLines="1"
+                    android:text="- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - "
+                    />
+
+                <TextView
+                    android:id="@+id/tv_downloadCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="下载二维码"
+                    android:textColor="#4d90e7"/>
+
+            </LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#ffffff"></LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_gravity="bottom"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:background="#ffffff"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/huoniao_logo2"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="40dp"
+                        android:layout_height="0.1dp"
+                        android:background="#999999"></View>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        android:text="Firebird Tech"
+                        android:textColor="#999999"
+                        android:textSize="12sp"/>
+
+                    <View
+                        android:layout_width="40dp"
+                        android:layout_height="0.1dp"
+                        android:background="#999999"></View>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="长沙市火鸟软件科技有限公司"
+                    android:textColor="#999999"/>
+            </LinearLayout>
+
+
+
+
+</LinearLayout>

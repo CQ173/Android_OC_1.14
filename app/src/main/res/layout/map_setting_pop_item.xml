@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    >
+               <ImageView
+                   android:layout_width="15dp"
+                   android:layout_height="15dp"
+                   android:src="@drawable/map_person"
+                   />
+                    <TextView
+                        android:id="@+id/tv_windowNumbe_nick"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="挂靠窗口号:"
+                        android:textColor="@color/grayss"
+                        android:layout_marginLeft="5dp"
+                        />
+                    <TextView
+                        android:id="@+id/tv_windowNumbe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/alpha_black"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv_setting_consignee_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="代售点名称:"
+                        android:singleLine="true"
+                        android:textColor="@color/grayss"
+                        />
+
+
+                </LinearLayout>
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+               android:gravity="center_vertical"
+                >
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/locations"
+                    />
+                <TextView
+                    android:id="@+id/tv_setting_location"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="地理位置:"
+                    android:layout_weight="0.9"
+                    android:textColor="@color/alphaBlack"
+                    android:layout_marginLeft="5dp"
+                    />
+
+
+               <ImageView
+                   android:layout_width="10dp"
+                   android:layout_height="10dp"
+                   android:src="@drawable/right_arrow"
+                   />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+   >
+    
+	<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#f6f6f6" >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="修改联系人"
+            android:textColor="#666666"
+            android:textSize="20sp" />
+    </RelativeLayout>
+    
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:padding="16dp"
+	    android:orientation="horizontal"
+	    android:background="#ffffff">
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="16sp"
+	        android:text="联系人"/>
+	    <EditText 
+	        android:id="@+id/et_master"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:hint="请输入联系人"
+	        android:textSize="16sp"
+	        android:background="@null"
+	       	android:layout_marginLeft="50dp"
+            android:singleLine="true"
+	        android:text=""/>
+	</LinearLayout>
+	
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="0.02dp"
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginRight="10dp"
+	    android:background="#dbdbdb">
+	</LinearLayout>
+	
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:padding="16dp"
+	    android:orientation="horizontal"
+	    android:gravity="center_vertical"
+	    android:background="#ffffff">
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="16sp"
+	        android:text="联系人电话"/>
+	    
+
+        <EditText
+            android:id="@+id/et_masterMobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:hint="请输入联系人电话"
+           
+            android:maxLength="11"
+	  		android:digits="1234567890"
+            android:singleLine="true"
+            android:background="@null"
+            android:textSize="16sp" />
+
+        
+	</LinearLayout>
+	
+	<Button
+        android:id="@+id/bt_submit"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bluebutton_click_style"
+        android:text="提交"
+        android:textColor="#ffffff" />
+</LinearLayout>

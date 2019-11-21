@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#ffffff">
+    
+	<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#f6f6f6" >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/back2" />
+        
+		<LinearLayout
+		    	android:id="@+id/layout_shuXian"
+                android:layout_width="0.02dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/iv_back"
+                android:layout_marginTop="9dp"
+                android:layout_marginBottom="9dp"
+                android:layout_marginLeft="14dp"
+                android:background="#999999" >
+         </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/layout_shuXian"
+            android:text="验证手机号"
+           	android:textColor="#666666"
+            android:layout_marginLeft="14dp"
+            android:textSize="16sp" />
+        
+        
+    </RelativeLayout>
+  
+   
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="绑定银行卡需要短信确认，验证码已发送至手机：131****8325，请按提示操作。"
+	   
+	   	android:layout_centerInParent="true"
+	   	android:layout_marginTop="20dp"
+	   	android:layout_marginLeft="16dp"
+	   	android:layout_marginRight="16dp"
+	    android:textColor="#999999"/>
+	
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="20dp"
+	    android:paddingLeft="16dp"
+	    android:paddingRight="16dp"
+	    android:orientation="horizontal"
+	    android:gravity="center_vertical"
+	   >
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="16sp"
+	        android:textColor="#666666"
+	        android:text="验证码"/>
+	    <EditText
+	        android:id="@+id/et_verifiCode" 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="16sp"
+	        android:hint="请填写验证码"
+	        android:layout_marginLeft="30dp"
+	        android:layout_weight="1"
+	        android:background="@null"
+	        />
+	    <TextView
+            android:id="@+id/tv_getVericode"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_identify_code_normal"
+            android:gravity="center"
+            android:text="获取验证码"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+	   
+	</LinearLayout>
+	
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="0.02dp"
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginRight="10dp"
+	    android:background="#dbdbdb">
+	</LinearLayout>
+	
+	
+	
+	<Button
+        android:id="@+id/bt_next"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bluebutton_click_style"
+        android:text="下一步"
+        android:textColor="#ffffff" />
+</LinearLayout>

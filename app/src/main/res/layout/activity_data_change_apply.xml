@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F6F5FA"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#4d90e7" >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="资料变更"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_operationContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_marginTop="20dp"
+        android:text="您正在申请资料变更"
+        android:textSize="16sp"
+        android:textColor="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+       android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="验证码已发送到手机："
+            android:textSize="16sp"
+            android:textColor="#999999"/>
+
+        <TextView
+            android:id="@+id/tv_phoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text=""
+            android:textSize="16sp"
+            android:textColor="#333333"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="4dp"
+        android:orientation="horizontal"
+        android:background="@drawable/shape_editext_white">
+        <EditText
+            android:id="@+id/et_verCode"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="30dp"
+
+            android:background="@null"
+            android:hint="请输入验证码"
+            android:textColorHint="#b7b7b7"
+            android:maxLength="6"
+            android:textSize="16sp"
+            android:digits="0123456789"
+            android:maxLines="1"
+            />
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_weight="0"
+            android:layout_height="match_parent"
+            android:layout_marginRight="16dp"
+            android:background="#e0e0e0" >
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_getVericode"
+            android:layout_width="76dp"
+            android:layout_height="34dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/bg_identify_code_normal"
+            android:gravity="center"
+            android:text="获取验证码"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/bt_next"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="46dp"
+        android:background="@drawable/bluebutton_click_style"
+        android:text="下一步"
+        android:textColor="#ffffff" />
+</LinearLayout>

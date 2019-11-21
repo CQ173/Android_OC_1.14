@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/rl_RelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="#4D90E7" >
+
+        <LinearLayout
+            android:id="@+id/ll_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/back" />
+            <TextView
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:text="返回"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="车站汇缴统计"
+            android:textColor="#ffffff"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_LinearLayout"
+        android:layout_below="@+id/rl_RelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:id="@+id/ll_Time_query"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_Time_query"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="16dp"
+                android:text="按时间段"
+                android:gravity="center"
+                />
+            <TextView
+                android:id="@+id/tv_time_back"
+                android:layout_width="100dp"
+                android:layout_height="3dp"
+                android:background="#4D90E7"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_Year_query"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:background="#E0DFDF"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_Year_query"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="14sp"
+                android:text="按年月旬"
+                android:gravity="center"
+                />
+            <TextView
+                android:id="@+id/tv_year_back"
+                android:layout_width="100dp"
+                android:visibility="gone"
+                android:layout_height="3dp"
+                android:background="#4D90E7"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/my_viewpager"
+        android:layout_below="@+id/ll_LinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    </android.support.v4.view.ViewPager>
+
+</RelativeLayout>

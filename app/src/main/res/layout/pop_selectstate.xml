@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/alphaGray"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#ffffff"
+        android:paddingTop="22dp"
+        android:paddingBottom="22dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <GridView
+            android:id="@+id/gv_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:horizontalSpacing="8dp"
+            android:verticalSpacing="12dp"
+            android:numColumns="3"
+            android:layout_gravity="center_horizontal">
+
+        </GridView>
+
+        <Button
+            android:id="@+id/bt_complete"
+            android:layout_width="120dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="24dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/bluebutton_click_style"
+            android:text="完成"
+            android:textColor="#ffffff" />
+
+       <!-- <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_waitAudit"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:text="待审核"
+                android:textColor="#151517"
+                android:gravity="center"
+                android:background="@drawable/textbackgroud4"/>
+            <TextView
+                android:id="@+id/tv_auditPass"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:layout_marginLeft="8dp"
+                android:text="审核通过"
+                android:textColor="#151517"
+                android:gravity="center"
+                android:background="@drawable/textbackgroud4"/>
+            <TextView
+                android:id="@+id/tv_auditNoPass"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:layout_marginLeft="8dp"
+                android:text="审核不通过"
+                android:textColor="#151517"
+                android:gravity="center"
+                android:background="@drawable/textbackgroud4"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_waitPayment"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:text="待付款"
+                android:textColor="#151517"
+                android:gravity="center"
+                android:background="@drawable/textbackgroud4"/>
+            <TextView
+                android:id="@+id/tv_zzSuccess"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:layout_marginLeft="8dp"
+                android:text="转账成功"
+                android:textColor="#151517"
+                android:gravity="center"
+                android:background="@drawable/textbackgroud4"/>
+            <TextView
+                android:id="@+id/tv_zzFail"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:layout_marginLeft="8dp"
+                android:text="转账失败"
+                android:textColor="#151517"
+                android:gravity="center"
+                android:background="@drawable/textbackgroud4"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_waitConfirm"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:text="待确认"
+                android:textColor="#151517"
+                android:gravity="center"
+                android:background="@drawable/textbackgroud4"/>
+            <TextView
+                android:id="@+id/tv_inPayment"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:layout_marginLeft="8dp"
+                android:text="付款中"
+                android:textColor="#151517"
+                android:gravity="center"
+                android:background="@drawable/textbackgroud4"/>
+            <TextView
+                android:id="@+id/tv_refusePayment"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:layout_marginLeft="8dp"
+                android:text="拒绝付款"
+                android:textColor="#151517"
+                android:gravity="center"
+                android:background="@drawable/textbackgroud4"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_rePayment"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:text="失败重新付款"
+                android:textColor="#151517"
+                android:gravity="center"
+                android:background="@drawable/textbackgroud4"
+                 />
+
+            <TextView
+                android:id="@+id/tv_downPayment"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:layout_marginLeft="8dp"
+                android:text="线下付款"
+                android:textColor="#151517"
+                android:gravity="center"
+                android:background="@drawable/textbackgroud4"/>
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:layout_marginLeft="8dp"
+                android:text=""
+                android:textColor="#ffffff"
+                android:gravity="center"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_operationButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="26dp"
+            android:gravity="center_horizontal"
+
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bt_complete"
+                android:layout_width="120dp"
+                android:layout_height="42dp"
+
+                android:layout_gravity="center_horizontal"
+
+                android:background="@drawable/bluebutton_click_style"
+                android:text="完成"
+                android:textColor="#ffffff" />
+            <Button
+
+                android:layout_width="120dp"
+                android:layout_height="42dp"
+                android:visibility="gone"
+                android:layout_marginLeft="26dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="35dp"
+                android:background="@drawable/bluebutton_click_style2"
+                android:text="拒绝"
+                android:textColor="#ffffff" />
+        </LinearLayout>-->
+    </LinearLayout>
+
+
+</LinearLayout>

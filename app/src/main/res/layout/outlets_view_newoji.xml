@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f9"
+    android:scrollbars="none"
+    android:orientation="vertical" >
+    
+	
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    <!--  
+	<RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <com.huoniao.oc.util.SmartImageView
+                android:id="@+id/oJi_gallery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:id="@+id/oJi_lin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </RelativeLayout>
+      -->  
+      <TextView 
+          android:layout_width="match_parent"
+          android:layout_height="170dp"
+          android:background="@drawable/oji_lunbo1"/>
+	<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="horizontal" >
+
+        <LinearLayout
+                android:layout_width="0.02dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:background="#dbdbdb" >
+            </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_oJiPaySys"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="12dp"
+            android:paddingTop="12dp"
+
+            >
+
+            <ImageView
+                android:id="@+id/iv_ticket"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/pay_system" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="汇缴"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/layout_contacts"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingBottom="12dp"
+                android:visibility="gone"
+                android:paddingTop="12dp" >
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/contacts" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="往来"
+                    android:textSize="14sp" />
+                
+                
+            </LinearLayout>
+               
+           </LinearLayout>
+             <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="16dp"
+            android:background="#ffffff"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:text="汇缴专题"
+                android:textSize="16sp" />
+            
+            <RelativeLayout
+                android:id="@+id/rl_paySysSpecial" 
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:paddingTop="16dp"
+                android:paddingRight="16dp"
+                android:background="@drawable/paysys_special_backgroud">
+                
+                <TextView
+                    android:id="@+id/tv_paysys1" 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:layout_centerHorizontal="true"
+                   
+                    android:textSize="16sp"
+                    android:text="汇缴要求"/>
+                 <TextView
+                    android:id="@+id/tv_paysys2" 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/tv_paysys1"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"
+                    android:text="汇缴注意事项"/>
+                 <TextView
+                    android:id="@+id/tv_paysys3" 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/tv_paysys2"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"
+                    android:text="汇缴开展安排"/>
+            </RelativeLayout>
+            </LinearLayout>
+		
+              <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="16dp"
+            android:background="#ffffff"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:text="往来专题"
+                android:textSize="16sp" />
+            
+            <RelativeLayout
+                android:id="@+id/rl_contactsSpecial"  
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:paddingTop="16dp"
+                android:paddingRight="16dp"
+                android:background="@drawable/contacts_special_backgroud">
+                <LinearLayout 
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+                    
+                
+                <TextView
+                  
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                   	
+                   
+                    android:textSize="16sp"
+                    android:text="财务往来能解决什么问题"/>
+                 <TextView
+                    
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:layout_centerHorizontal="true"
+                    
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"
+                    android:text="企业应收应付和实收实付之间的资金流向"/>
+                 </LinearLayout>
+                 
+            </RelativeLayout>
+            </LinearLayout>
+	</LinearLayout>
+</ScrollView>

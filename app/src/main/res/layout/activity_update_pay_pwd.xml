@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_setting_pay_pwd"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/transparent"
+    tools:context="com.huoniao.oc.user.SettingPayPwd">
+
+    <include layout="@layout/backtitle" />
+
+    <LinearLayout
+        android:id="@+id/ll_idNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingLeft="16dp"
+        android:paddingBottom="16dp"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+           android:layout_marginTop="10dp"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="请输身份证号"
+            android:textColor="@color/blue"
+            />
+
+        <EditText
+            android:id="@+id/et_idNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_weight="0.7"
+            android:hint="请输入身份证号码"
+            android:maxLength="18"
+            android:background="@null"
+            android:digits="0123456789xX"
+            android:paddingLeft="5dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_old_pay_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingLeft="16dp"
+        android:paddingBottom="16dp"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="旧支付密码"
+            android:textColor="@color/blue"
+            android:id="@+id/textView14"
+            />
+
+        <EditText
+            android:id="@+id/et_old_pay_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_weight="0.7"
+            android:hint="请输入旧支付密码"
+            android:digits="0123456789"
+            android:maxLength="6"
+            android:background="@null"
+            android:inputType="textPassword"
+            android:paddingLeft="5dp"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.02dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#dbdbdb"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingLeft="16dp"
+        android:paddingBottom="16dp"
+        android:orientation="horizontal"
+        android:background="#ffffff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="新支付密码"
+            android:textColor="@color/blue"
+            />
+
+        <EditText
+            android:id="@+id/et_new_paypwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_weight="0.7"
+            android:hint="请输入新支付密码"
+            android:digits="0123456789"
+            android:maxLength="6"
+            android:background="@null"
+            android:inputType="textPassword"
+            android:paddingLeft="5dp"
+            />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.02dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#dbdbdb"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingLeft="16dp"
+        android:paddingBottom="16dp"
+        android:orientation="horizontal"
+        android:background="#ffffff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="确认新密码"
+            android:textColor="@color/blue"
+            />
+
+        <EditText
+            android:id="@+id/et_confirm_new_paypwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_weight="0.7"
+            android:hint="请确认支付密码"
+            android:digits="0123456789"
+            android:maxLength="6"
+            android:background="@null"
+            android:inputType="textPassword"
+            android:paddingLeft="5dp"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingLeft="16dp"
+        android:paddingBottom="16dp"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="已绑定手机号"
+            android:textColor="@color/blue"
+            />
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_weight="0.7"
+            android:paddingLeft="5dp"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingLeft="16dp"
+        android:paddingBottom="16dp"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        android:layout_marginTop="10dp"
+        >
+
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:hint="请输入验证码"
+            android:background="@null"
+            android:id="@+id/et_verification_code"
+            android:maxLength="6"
+            />
+
+        <TextView
+            android:id="@+id/tv_send_code"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="发送验证码"
+            android:background="@drawable/bluebutton_click_style"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:layout_marginLeft="20dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_sendContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+       android:visibility="gone"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="验证码已发送到"
+            android:textColor="@color/grayss"
+            />
+        <TextView
+            android:id="@+id/tv_sendContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/alpha_black"
+            />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_update_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="确认修改"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bluebutton_click_style"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Copyright © 2019 FireBird Software All Right Reserved."
+            android:textSize="14sp"
+            android:textColor="@color/grayfont"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="火鸟软件科技有限公司版权所有"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:textColor="@color/grayfont"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

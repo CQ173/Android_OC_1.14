@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:orientation="horizontal"
+    android:background="#ffffff"
+    >
+    
+    
+    <LinearLayout
+        android:id="@+id/layout_tab_homepage"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:id="@+id/tab_homepage_img"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/newhomepage_true" />
+
+        <TextView
+            android:id="@+id/tv_tab_homepage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="@string/app_home_page_tab"
+            android:textColor="#4d90e7" />
+    </LinearLayout>
+    
+
+    <LinearLayout
+        android:id="@+id/layot_tab_ole"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+
+        >
+
+        <ImageView
+            android:id="@+id/tab_ole_img"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/newoji_false" />
+
+        <TextView
+            android:id="@+id/tv_tap_ole"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="@string/app_o_count_tab"
+            android:textColor="#A9A9A9" />
+    </LinearLayout>
+    
+
+    <LinearLayout
+        android:id="@+id/layout_tab_shoping"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+
+        >
+
+        <ImageView
+            android:id="@+id/tab_shoping_img"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/newshoping_false" />
+
+        <TextView
+            android:id="@+id/tv_tab_shopping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="@string/app_shopping_mall_tab"
+            android:textColor="#A9A9A9" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_tab_paysystem"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+
+        >
+
+        <ImageView
+            android:id="@+id/tab_paysystem_img"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/management" />
+
+        <TextView
+            android:id="@+id/tv_tab_paysystem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="@string/app_paysystem_tab"
+            android:textColor="#A9A9A9" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_tab_user"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/tab_user_img"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/newuser_false" />
+
+        <TextView
+            android:id="@+id/tv_tab_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="@string/app_user_tab"
+            android:textColor="#A9A9A9" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout_tab_mine"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+
+        >
+
+        <ImageView
+            android:id="@+id/tab_mine_img"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/newmine_false" />
+
+        <TextView
+            android:id="@+id/tv_top_mine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="@string/app_me_tab"
+            android:textColor="#A9A9A9" />
+    </LinearLayout>
+
+</LinearLayout>

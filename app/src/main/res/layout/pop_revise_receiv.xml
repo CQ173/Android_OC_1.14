@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/alphaGray"
+    android:gravity="center"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_height="220dp"
+        android:orientation="vertical"
+        android:background="@drawable/text_round_bg_white2"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_weight="0.1"
+            android:background="@drawable/text_round_bg_blue2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="提示"
+                android:layout_marginLeft="14dp"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF"/>
+
+            <ImageView
+                android:id="@+id/iv_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/close_circle"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:orientation="vertical"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_promptIcon"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/prompt_circle"/>
+            <TextView
+                android:id="@+id/tv_promptContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+
+                android:text="请到O计微信公众号或网页端绑定接收信息的微信号"
+                android:gravity="center"
+                android:textColor="@color/alphaBlack"
+                android:textSize="16sp"
+                android:lineSpacingExtra="6dp"
+
+                />
+
+            </LinearLayout>
+            <Button
+                android:id="@+id/btn_confirm"
+                android:layout_width="110dp"
+                android:layout_height="36dp"
+
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp"
+                android:background="#6FB7F7"
+                android:text="我知道了"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</LinearLayout>

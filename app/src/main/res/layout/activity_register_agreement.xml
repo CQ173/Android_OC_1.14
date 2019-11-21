@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+   	>
+
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="45dp"
+		android:background="#4d90e7" >
+
+		<ImageView
+			android:id="@+id/iv_back"
+			android:layout_width="25dp"
+			android:layout_height="25dp"
+			android:layout_alignParentLeft="true"
+			android:layout_centerVertical="true"
+			android:layout_marginLeft="10dp"
+			android:src="@drawable/back" />
+
+		<TextView
+			android:id="@+id/tv_title"
+			android:singleLine="true"
+			android:ellipsize="end"
+			android:textStyle="bold"
+			android:paddingLeft="50dp"
+			android:paddingRight="40dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:textColor="#ffffff"
+			android:textSize="16sp" />
+
+	</RelativeLayout>
+
+	<WebView
+		android:id="@+id/wv_protocal"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"/>
+	<!-- <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:scrollbars="none">
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+        
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="      长沙市火鸟软件科技有限公司（以下简称为“火鸟公司”）将依据以下条件和条款（“本协议”）为您提供有关信息服务，请您务必审慎阅读、充分理解各条款内容，特别是限制或免除责任的相应条款，以及开通或使用某项服务的单独协议，并选择接受或不接受。本协议适用于您使用O计平台，所获得的有关本服务以及因该等服务所产生的合同关系、分歧和争议。"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="      除非您已阅读并接受本协议所有条款，否则您无权使用本服务。您对本服务的登陆、查看、发布和利用信息等行为即视为您已阅读并同意受本协议的约束。"
+        android:layout_marginTop="2dp"
+
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="一、接受条款"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+    />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="        1、本协议内容包括协议正文及所有火鸟公司已经发布或将来可能发布的各类规则。所有规则为协议不可分割的一部分，与协议正文具有同等法律效力。"
+        android:layout_marginTop="2dp"
+        />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="        2、以任何方式进入O计会计金融平台或用户服务平台（以下简称为“O计平台”）并使用相关服务即表示您已充分阅读、理解并同意接受本协议的条款。"
+        android:layout_marginTop="2dp"
+        />
+
+
+
+
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="        3、火鸟公司有权根据业务需要酌情修订“条款”，并在O计平台以公告的形式进行更新，不再单独通知予您。经修订的“条款”一经在O计平台上公布，即产生效力。如您不同意相关修订，请您立即停止使用“服务”。如您继续使用“本服务”，则将视为您已接受经修订的“条款”，当您与火鸟公司和/或其关联企业发生争议时，应以最新的“条款”为准。"
+        android:layout_marginTop="2dp"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="二、提供服务内容"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+    />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="        O计会计金融平台专门针对个人或企业间财务往来帐目管理的需求，提供信息化的解决方案，通过高速快捷的数据登记及保存服务，数量金额核算服务及分类查询筛选服务，有效整合财务往来帐目，提高财务数据登记、查询效率，建立真实可靠的对账平台。"
+        android:layout_marginTop="2dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="三、账户注册与使用"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+    />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="        1、账户资格"
+        android:layout_marginTop="2dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="        您确认，在您完成注册程序或以其他火鸟公司允许的方式实际使用O计平台时，您应当是具备完全民事权利能力和与所从事的民事行为相适应的行为能力的自然人、法人或其他组织。若您不具备前述主体资格，请勿使用本服务，否则您及您的监护人应承担因此而导致的一切后果，且火鸟公司有权注销（永久冻结）您的账户，并向您及您的监护人索偿。如您代表一家公司、企业或其他法律主体在O计平台注册使用，则您声明和保证，您有权使该公司或该法律主体受本协议“条款”的约束。"
+        android:layout_marginTop="2dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="        2、账户说明"
+        android:layout_marginTop="2dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="        在您按照O计平台注册页面提示填写信息、阅读并同意本协议且完成全部注册程序后，或在您按照激活页面提示填写信息、阅读并同意本协议且完成全部激活程序后，或您以其他火鸟公司允许的方式实际使用O计平台服务时，您即受本协议的约束。您可以使用您提供或确认的邮箱、手机号码或者火鸟公司允许的其它方式作为登录手段进入O计平台。"
+        android:layout_marginTop="2dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="        3、注册信息管理"
+        android:layout_marginTop="2dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="      （1）您可以对O计平台帐户设置昵称，但您设置的昵称不得侵犯或涉嫌侵犯他人合法权益。如您设置的昵称涉嫌侵犯他人合法权益，火鸟公司有权终止向您提供本服务，并注销您的账户。账户注销后，相应的昵称将开放给其他有权用户登记使用。"
+        android:layout_marginTop="2dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="      （2）在完成注册或激活流程时，您应当按照法律法规要求，按相应页面的提示准确提供并及时更新您的资料，以使之真实、及时，完整和准确。如有合理理由怀疑您提供的资料错误、不实、过时或不完整的，火鸟公司有权向您发出询问及/或要求改正的通知，并有权直接做出删除相应资料的处理，直至中止、终止对您提供部分或全部火鸟公司的服务，火鸟公司对此不承担任何责任，您将承担因此产生的任何直接或间接损失及不利后果。"
+        android:layout_marginTop="2dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="        4、账户安全管理"
+        android:layout_marginTop="2dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="       （1）您须自行负责对您的账户的登录名、昵称和密码保密，且须对该登录名、昵称和密码下发生的所有活动（包括但不限于信息披露、发布信息、网上点击同意或提交各类规则协议、网上续签协议或购买服务等）承担责任。除非有法律规定，且征得火鸟公司的同意，否则，您的登录名、昵称和密码不得以任何方式转让、赠与或继承（与账户相关的财产权益除外）。"
+        android:layout_marginTop="2dp"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="       （2）火鸟公司将使用各种安全技术和程序，以防信息的丢失、不当使用、未经授权阅览或披露。例如，在某些服务中，我们将利用加密技术来保护您提供的个人信息。但请您理解，由于技术的限制以及可能存在的各种恶意手段，在互联网行业，即便竭尽所能加强安全措施，也不可能始终保证信息百分之百的安全。您需要了解，您接入火鸟公司的本服务所用的系统和通讯网络，有可能因火鸟公司可控范围外的因素而出现问题。"
+        android:layout_marginTop="2dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="        5、账户注销"
+        android:layout_marginTop="2dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="       （1）如您连续365日未使用您的邮箱、手机或O计平台认可的其他方式和密码登录本平台，您的登录名可能被注销，所有火鸟公司的服务将同时终止。"
+        android:layout_marginTop="2dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="       （2）您同意并授权火鸟公司O计平台，如您在火鸟公司任何平台有欺诈、侵权他人合法权益或其他严重违反任意火鸟公司平台规则的行为，火鸟公司将有权在平台的范围内对此披露，您的登录名可能被注销，所有平台服务同时终止。"
+        android:layout_marginTop="2dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="四、服务费用"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+    />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="         O计平台将依据您选择的服务项目收取费用，具体费用收取方式在O计平台进行公示。"
+        android:layout_marginTop="2dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="五、服务终止"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+    />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="        1．您同意，在火鸟公司未向您收费的情况下，火鸟公司可自行全权决定以任何理由终止您的“本服务”通行证账户、密码 (或其任何部份)或您对“本服务”的使用。您同意，在火鸟公司向您收费的情况下，火鸟公司应基于合理的怀疑且经电子邮件通知的情况下实施上述终止本服务的行为。您进一步承认和同意，火鸟公司根据本协议规定终止对您本服务的情况下可立即使您的通行证账户无效，或注销您的通行证账户以及在您的通行证账户内的所有相关资料和档案，和或禁止您进一步接入该等档案或“本服务”。通行证账户终止后，火鸟公司没有义务为您保留原账户中或与之相关的任何信息，或转发任何未曾阅读或发送的信息给您或第三方。此外，您同意，火鸟公司不会就终止向您提供“本服务”而对您或任何第三者承担任何责任。"
+        android:layout_marginTop="2dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="        2．您有权向火鸟公司要求注销您的通行证账户，经火鸟公司审核同意的，火鸟公司将注销您的通行证账户，届时，您与火鸟公司基于本协议的合同关系即终止。您的通行证账户被注销后，火鸟公司没有义务为您保留或向您披露您账户中的任何信息，也没有义务向您或第三方转发任何您未曾阅读或发送过的信息。"
+        android:layout_marginTop="2dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="        3．您理解并同意，您与火鸟公司的合同关系终止后："
+        android:layout_marginTop="2dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="         a) 火鸟公司有权继续保存您的资料。"
+        android:layout_marginTop="2dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="         b) 您在使用火鸟公司服务期间存在违法行为或违反本协议和/或规则的行为的，火鸟公司仍可依据本协议向您主张权利。"
+        android:layout_marginTop="2dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="         c)您在使用服务期间因使用服务与其他用户之间发生的关系，不因本协议的终止而终止，其他用户仍有权向您主张权利，您应继续按您的承诺履行义务。"
+        android:layout_marginTop="2dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="六、O计平台服务及规范"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+    />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="        1. 您注册O计平台账号，制作、发布、传播信息内容的，应当使用真实身份信息，不得以虚假、冒用的居民身份信息、企业注册信息、组织机构代码信息进行注册。如您使用了虚假信息，依据相关法律、法规及国家政策要求，火鸟公司有权随时中止或终止您对O计平台服务的使用且不承担违约责任。"
+        android:layout_marginTop="2dp"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="        2. 您在使用O计平台服务时，火鸟公司有权基于安全运营、社会公共安全的需要或国家政策的要求，要求用户提供准确的个人资料，如用户提供的个人资料有任何变动，导致用户的实际情况与用户提交给火鸟公司的信息不一致的，用户应及时更新。"
+        android:layout_marginTop="2dp"
+        />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="         3. O计平台用户不应将其通行证帐号、密码转让或出借予他人使用。如用户发现其帐号、密码或O计平台服务遭他人非法使用，应立即通知火鸟公司协调处理。因无法对非法或未经您授权使用您账号及密码的行为作出甄别，因此火鸟公司不承担任何责任。"
+        android:layout_marginTop="2dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="        4. 您同意并理解火鸟公司在提供O计平台服务过程中以各种方式投放各种商业性广告或其他任何类型的商业信息，并且，您同意接受火鸟公司通过电子邮件或其他方式向您发送商品促销或其他相关商业信息。"
+        android:layout_marginTop="2dp"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="        5. 对于您通过O计平台服务公开发布的任何内容，您同意火鸟公司在全世界范围内具有免费的、永久性的、不可撤销的、非独家的和完全再许可的权利和许可，以使用、复制、修改、改编、出版、翻译、据以创作衍生作品、传播、表演和展示此等内容（整体或部分），和/或将此等内容编入当前已知的或以后开发的其他任何形式的作品、媒体或技术中。"
+        android:layout_marginTop="2dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="        6. 您在使用O计平台服务过程中，不得在O计平台上制作、复制、上传、发布、传播含有下列内容之一的信息："
+        android:layout_marginTop="2dp"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="         a) 危害国家安全，损害国家荣誉和利益，颠覆国家政权，破坏国家统一的；"
+        android:layout_marginTop="2dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="         b) 破坏国家宗教政策，宣扬邪教和封建迷信，煽动民族仇恨、破坏民族团结的；"
+        android:layout_marginTop="2dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="         c) 散布谣言，扰乱社会秩序，破坏社会稳定的；"
+        android:layout_marginTop="2dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="         d) 散布淫秽、色情、赌博、暴力、凶杀、恐怖或者教唆犯罪的；"
+        android:layout_marginTop="2dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="         e) 侮辱或者诽谤他人，侵害他人合法权利的，或其它道德上令人反感的内容；"
+        android:layout_marginTop="2dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="         f) 煽动非法集会、结社、游行示威、聚众扰乱社会秩序的；"
+        android:layout_marginTop="2dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="         g) 含有中国法律、法规以及任何具有法律效力之规范所限制或禁止的其它内容的。"
+        android:layout_marginTop="2dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="        7. 火鸟公司针对某些特定的O计平台服务的使用通过各种方式（包括但不限于网页公告、系统通知、邮件、短信、微信提醒等）作出的任何声明、通知、警示等内容视为本协议的一部分，您如使用该等O计平台服务，视为您同意该等声明、通知、警示的内容。"
+        android:layout_marginTop="2dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="        8. 您须承诺自己在使用本网站服务的所有行为均遵守国家法律、法规和本网站的相关规定以及各种社会公共利益或公共道德。对于任何法律后果的发生，您将以自己的名义独立承担所有相应的法律责任，火鸟公司不承担任何责任。"
+        android:layout_marginTop="2dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="        9. 您在使用O计平台服务时如发现O计平台服务系统或其他相关系统的信息安全漏洞需及时通报火鸟公司，禁止对火鸟公司的O计平台服务系统进行漏洞扫描、渗透测试等可能造成火鸟公司损失的行为。"
+        android:layout_marginTop="2dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="       10．您不得从事下列行为：（1）删除火鸟公司软件及其副本上关于著作权的信息；（2）对软件进行反向工程、反向汇编、反向编译，或者以其他方式尝试发现软件的源代码；（3）对火鸟公司拥有知识产权的内容进行使用、出租、出借、复制、修改、链接、转载、汇编、发表、出版等；（4）对软件或者软件运行过程中释放到任何终端内存中的数据、软件运行过程中客户端与服务器端的交互数据，以及软件运行所必需的系统数据，进行复制、修改、增加、删除、挂接运行或创作任何衍生作品，形式包括但不限于使用插件、外挂或非经火鸟公司授权的第三方工具/服务接入软件和相关系统；（5）通过修改或伪造软件运行中的指令、数据，增加、删减、变动软件的功能或运行效果，或者将用于上述用途的软件、方法进行运营或向公众传播，无论这些行为是否为商业目的；（6）通过非火鸟公司开发、授权的第三方软件、插件、外挂、系统，登录或使用O计平台及服务，或制作、发布、传播上述工具；（7）其他未经火鸟公司明示授权的行为。"
+        android:layout_marginTop="2dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="       11．火鸟公司不对您在本服务中相关数据的删除或储存失败负责。"
+        android:layout_marginTop="2dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="       12．火鸟公司有权根据实际情况自行决定在服务器上对您在本服务中的数据的最长储存期限、为单个用户分配的最大存储使用空间等。您可根据自己的需要自行备份本服务中的相关数据。"
+        android:layout_marginTop="2dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="       13. 如果您的服务被终止或取消，火鸟公司可以从服务器上永久地删除您的数据。服务终止或取消后，火鸟公司没有义务向您返还数据。但法律法规另有规定的除外。"
+        android:layout_marginTop="2dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="七、用户信息保护"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+    />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="       1、加强用户隐私保护是火鸟公司的一项基本政策，并一直在严格贯彻执行，通过隔离企业数据、加强数据中心安全、增强应用程序安全、及时进行数据备份和恢复等一系列措施保障用户信息安全。"
+        android:layout_marginTop="2dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="       2、火鸟公司保证不对外公开或向任何无关的第三方提供，出售，出租，分享和交易企业组织及单个用户的注册资料及用户在使用云服务时存储在O计平台上的非公开内容，但下列情况除外："
+        android:layout_marginTop="2dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="         a) 事先获得用户的明确授权；"
+        android:layout_marginTop="2dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="         b) 根据有关的法律法规要求；"
+        android:layout_marginTop="2dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="         c) 按照相关政府主管部门的要求；"
+        android:layout_marginTop="2dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="         d) 为维护社会公众的利益。"
+        android:layout_marginTop="2dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="       3、您完全理解并同意，为提升O计平台服务的质量，火鸟公司可能会与合作伙伴或第三方合作向用户提供相关的服务，在此情况下，如该第三方同意承担与本平台同等的保护用户隐私的责任，则火鸟公司有权将用户的注册资料等提供给该合作伙伴或第三方，并与合作伙伴或第三方约定用户数据仅为双方合作的O计平台服务之目的使用。并且，火鸟公司将对该等第三方使用用户数据的行为进行监督和管理，尽一切合理努力保护企业与用户个人信息的安全性。"
+        android:layout_marginTop="2dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="八、知识产权"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+    />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="       1、火鸟公司在本服务中提供的内容（包括但不限于网页、文字、图片、音频、视频、图表等）的知识产权归火鸟公司所有，您在使用本服务中所产生的内容的知识产权归您或相关权利人所有。"
+        android:layout_marginTop="2dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="       2、除另有特别声明外，火鸟公司提供本服务时所依托软件的著作权、专利权及其他知识产权均归火鸟公司所有。"
+        android:layout_marginTop="2dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="       3、上述及其他任何本服务包含的内容的知识产权均受到法律保护，未经火鸟公司、您或相关权利人书面许可，任何人不得以任何形式进行使用或创造相关衍生作品。"
+        android:layout_marginTop="2dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="九、违约责任"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+     />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="       1、如因火鸟公司违反有关法律、法规或本协议项下的任何条款而给用户造成损失，火鸟公司同意承担由此造成的损害赔偿责任。在相关法律所允许的最大范围内，火鸟公司不就用户因使用或不能使用O计平台服务所发生的间接损害（包括但不限于营业中断、利润损失、商业信息的丢失、费用增加等）承担赔偿责任火鸟公司不对由于移动通信服务商、互联网接入服务商等第三方原因导致O计平台服务无法使用或出现故障所发生的损失承担责任。"
+        android:layout_marginTop="2dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="       2、您同意保障和维护火鸟公司及其他用户的利益，如您违反本协议或经在此提及而纳入本协议的其他文件，或因您违反法律侵害了第三方的合法权利，或因您违反法律须承担行政或刑事责任，而使第三方或行政、司法机关对火鸟公司及其子公司、关联公司、分公司、董事、职员、代理人提出索赔或处罚要求（包括司法费用和其他专业人士的费用），您必须全额赔偿给火鸟公司及其子公司、关联公司、分公司、董事、职员、代理人，并使其等免遭损失。"
+        android:layout_marginTop="2dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="十、通知"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+     />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="       您应当准确填写并及时更新您提供的电子邮件地址、联系电话、联系地址、邮政编码等联系方式，以便火鸟公司与您进行有效联系，因通过这些联系方式无法与您取得联系，导致您在使用服务过程中产生任何损失或增加费用的，应由您完全独自承担。您了解并同意，您有义务保持您提供的联系方式的有效性，如有变更需要更新的，您应按火鸟公司的要求进行操作。"
+        android:layout_marginTop="2dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="       火鸟公司对于您所有的通知均可通过网页公告、电子邮件、系统通知主动联系、私信、手机短信或常规的信件传送等方式进行；该等通知于发送之日视为已送达收件人。您对于火鸟公司的通知应当通过火鸟公司对外正式公布的通信地址、传真号码、电子邮件地址等联系信息进行送达。"
+        android:layout_marginTop="2dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="十一、不可抗力"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+     />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="       1、您理解并同意，在使用本服务的过程中，可能会遇到不可抗力等风险因素，使本服务发生中断。不可抗力是指不能预见、不能克服并不能避免且对一方或双方造成重大影响的客观事件，包括但不限于自然灾害如洪水、地震、瘟疫流行和风暴等以及社会事件如战争、动乱、政府行为等。出现上述情况时，火鸟公司将努力在第一时间与相关单位配合，及时进行修复，但是由此给您造成的损失火鸟公司将在法律允许的范围内免责。"
+        android:layout_marginTop="2dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="       2、在法律允许的范围内，火鸟公司对以下情形导致的服务中断或受阻不承担责任： (1)受到计算机病毒、木马或其他恶意程序、黑客攻击的破坏； (2)您或火鸟公司的电脑软件、系统、硬件和通信线路出现故障；（3）您操作不当；（4）其他火鸟公司无法控制或合理预见的情形。"
+        android:layout_marginTop="2dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="       3、您理解并同意，在使用本服务的过程中，可能会遇到网络信息或其他用户行为带来的风险，火鸟公司不对任何信息的真实性、适用性、合法性承担责任，也不对因侵权行为给用户造成的损害负责。这些风险包括但不限于：（1）来自他人匿名或冒名的含有威胁、诽谤、令人反感或非法内容的信息；（2）因使用本协议项下的服务，遭受他人误导、欺骗或其他导致或可能导致的任何心理、生理上的伤害以及经济上的损失；（3）其他因网络信息或其他用户行为引起的风险。"
+        android:layout_marginTop="2dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="       4、火鸟公司依据本协议约定获得对违法违规内容处理的权利，该权利不构成火鸟公司的义务或承诺，火鸟公司不能保证及时发现违法行为或进行相应处理。"
+        android:layout_marginTop="2dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="       5、在任何情况下，您不应轻信借款、索要密码或其他涉及财产的网络信息。涉及财产操作的，请一定先核实对方身份，并请经常留意警方关于防范诈骗犯罪的提示。"
+        android:layout_marginTop="2dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="十二、其它"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+     />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="       1、您知悉且同意，火鸟公司对本服务有自主经营权，为了更好地为用户提供本服务，火鸟公司有权对本协议进行不时的修订，并将修订后的协议进行公告，修订后的条款内容自公告时起生效，并成为本协议的一部分。您若在本协议修改之后，仍继续使用本服务，则视为您接受和自愿遵守修订后的协议。火鸟公司对本协议及修订后的协议享有最终解释权。"
+        android:layout_marginTop="2dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="       2、您同意火鸟公司因经营业务需要有权将本协议项下的权利义务就部分或全部进行转让，而无须再通知予您并取得您的同意。"
+        android:layout_marginTop="2dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="       3、本协议之订立、生效、解释、修订、补充、终止、执行与争议解决均适用中华人民共和国大陆地区法律；如法律无相关规定的，参照商业惯例及/或行业惯例。"
+        android:layout_marginTop="2dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="       4、您因使用O计平台服务所产生的争议，由火鸟公司与您协商解决。协商不成时，任何一方均可向火鸟公司注册登记所在地人民法院提起诉讼。"
+        android:layout_marginTop="2dp"
+        />
+    </LinearLayout>
+    </ScrollView> -->
+    
+   
+</LinearLayout>

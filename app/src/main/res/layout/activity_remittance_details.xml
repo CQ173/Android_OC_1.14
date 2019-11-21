@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_remittance_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context="com.huoniao.oc.trainstation.RemittanceDetailsA">
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#4d90e7">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="汇缴详情"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center_vertical">
+
+        <RelativeLayout
+            android:id="@+id/layout_startDataChoice"
+            android:layout_width="0dp"
+            android:layout_height="38dp"
+            android:layout_weight="3"
+            android:background="@drawable/shape_editext_white"
+            android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/tv_startDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:hint="开始日期"
+                android:textColorHint="#b7b7b7"
+                android:text=""
+                android:textSize="12sp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                />
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_marginRight="8dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/paysystem_select"/>
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="—"/>
+
+        <RelativeLayout
+            android:id="@+id/layout_endDataChoice"
+            android:layout_width="0dp"
+            android:layout_height="38dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="3"
+            android:background="@drawable/shape_editext_white"
+            android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/tv_endDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:hint="结束日期"
+                android:textColorHint="#b7b7b7"
+                android:text=""
+                android:textSize="12sp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                />
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_marginRight="8dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/paysystem_select"/>
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_ownership_institution"
+        android:layout_height="32dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="6dp"
+        android:drawableRight="@drawable/drop_down"
+        android:background="@drawable/shape_editext_white"
+        android:gravity="center_vertical"
+        android:paddingLeft="4dp"
+
+        android:maxLines="1"
+        android:textSize="12sp"
+        android:textColor="#b7b7b7"
+        android:text="归属机构"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/ll_station_account_number_str"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="8dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal">
+
+
+
+        <EditText
+            android:id="@+id/et_station_account_number_str"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_editext_white"
+            android:hint="机构名称"
+            android:layout_marginRight="4dp"
+            android:paddingLeft="4dp"
+            android:textSize="12sp"
+            android:maxLines="1"
+            android:textColorHint="#b7b7b7"
+            />
+
+        <TextView
+            android:id="@+id/tv_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="6dp"
+
+            android:text="查询"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:background="@drawable/bluebutton_click_style"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#DEDEDE"></View>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:padding="12dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="共"
+            android:textColor="@color/alpha_black"/>
+
+        <TextView
+            android:id="@+id/tv_dataNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="----"
+            android:textColor="#4d90e7"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="条记录"
+            android:textColor="@color/alpha_black"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.02dp"
+        android:background="#e0e0e0" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="应收金额"
+            android:textColor="@color/alpha_black"/>
+
+        <TextView
+            android:id="@+id/tv_shouldAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="----元"
+            android:textColor="@color/alpha_black"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="实收金额"
+            android:textColor="@color/alpha_black"/>
+
+        <TextView
+            android:id="@+id/tv_amountReceived"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="----元"
+            android:textColor="@color/alpha_black"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="代理实缴"
+            android:textColor="@color/alpha_black"/>
+
+        <TextView
+            android:id="@+id/tv_agencyPayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="----元"
+            android:textColor="@color/alpha_black"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="0.02dp"
+        android:background="#e0e0e0" >
+    </LinearLayout>
+
+
+
+    <com.huoniao.oc.custom.MyListView
+        android:id="@+id/myListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:focusable="false">
+
+    </com.huoniao.oc.custom.MyListView>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

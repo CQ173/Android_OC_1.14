@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="#4d90e7" >
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="我的消息"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:background="#ffffff">
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="我的消息"
+           android:textColor="#4d90e7"
+           android:textSize="16sp"
+           />
+
+        <TextView
+            android:id="@+id/tv_messageCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="（20）"
+            android:textColor="#4d90e7"
+            android:textSize="16sp"
+            />
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grays"
+        />
+    <FrameLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+
+            <ListView
+                android:id="@+id/myMessageListView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                >
+
+            </ListView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.02dp"
+                android:visibility="gone"
+                android:background="#999999" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="#ffffff"
+                android:gravity="center_vertical"
+                android:visibility="gone"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/layout_allOption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/all_option" />
+
+                    <TextView
+                        android:id="@+id/tv_allOption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text="全选" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0.02dp"
+                    android:layout_height="match_parent"
+                    android:background="#999999" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/delete3" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text="删除" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_message_state"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="暂无消息"
+            android:textSize="@dimen/y40"
+            android:gravity="center"
+            android:background="@color/white"
+           android:textColor="@color/gray"
+            android:visibility="gone"
+            />
+
+    </FrameLayout>
+    </LinearLayout>
+
+

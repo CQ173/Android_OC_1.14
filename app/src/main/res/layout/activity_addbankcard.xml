@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#f6f6f6" >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/back2" />
+        
+		<LinearLayout
+		    	android:id="@+id/layout_shuXian"
+                android:layout_width="0.02dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/iv_back"
+                android:layout_marginTop="9dp"
+                android:layout_marginBottom="9dp"
+                android:layout_marginLeft="14dp"
+                android:background="#999999" >
+         </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/layout_shuXian"
+            android:text="添加银行卡"
+           	android:textColor="#666666"
+            android:layout_marginLeft="14dp"
+            android:textSize="16sp" />
+        
+        
+    </RelativeLayout>
+    
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="请绑定持卡人本人的银行卡"
+	    android:textSize="12sp"
+	    android:layout_marginTop="10dp"
+	    android:layout_marginLeft="16dp"
+	    android:textColor="#666666"/>
+	
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:padding="16dp"
+	    android:orientation="horizontal"
+	    android:background="#ffffff">
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="16sp"
+	        android:text="持卡人"/>
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="#999999"
+	        android:textSize="16sp"
+	        android:layout_weight="1"
+	        android:layout_marginLeft="40dp"
+	        android:text="李大"/>
+	   <ImageView
+	       android:id="@+id/iv_prompt" 
+	       android:layout_width="18dp"
+	       android:layout_height="18dp"
+	       android:src="@drawable/notification2"/> 
+	</LinearLayout>
+	
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="0.02dp"
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginRight="10dp"
+	    android:background="#dbdbdb">
+	</LinearLayout>
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:padding="16dp"
+	    android:orientation="horizontal"
+	    android:background="#ffffff">
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="16sp"
+	        android:text="卡号"/>
+	    <EditText
+	        android:id="@+id/et_bankCardNumber" 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="16sp"
+	        android:layout_weight="1"
+	        android:hint="请输入银行卡号"
+	        android:digits="0123456789"
+	        android:maxLength="16"
+	        android:background="@null"
+	        android:layout_marginLeft="58dp"
+	        />
+	    
+	</LinearLayout>
+	
+	<Button
+        android:id="@+id/bt_next"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bluebutton_click_style"
+        android:text="下一步"
+        android:textColor="#ffffff" />
+</LinearLayout>

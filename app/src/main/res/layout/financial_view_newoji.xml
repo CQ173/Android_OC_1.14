@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.huoniao.oc.custom.MySwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/myswipeRefresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    >
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:scrollbars="none"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+   <RelativeLayout
+       android:id="@+id/rl_resume"
+       android:layout_width="match_parent"
+       android:layout_height="120dp"
+       android:background="#4d90e7">
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerInParent="true"
+           android:gravity="center_horizontal"
+           android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="总资产（元）"
+                android:textColor="#ffffff"/>
+           <TextView
+               android:id="@+id/tv_totalAssets"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="16dp"
+               android:text=""
+               android:textSize="22sp"
+               android:textColor="#ffffff"/>
+       </LinearLayout>
+   </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:background="#679FE9">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_actualBalance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+
+                android:textSize="18sp"
+                android:text=""/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:layout_marginTop="10dp"
+                android:text="实际余额（元）"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:background="#dbdbdb" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_advanceFunds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+
+                android:textSize="18sp"
+                android:text=""/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:layout_marginTop="10dp"
+                android:text="垫付资金（元）"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#ffffff"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="18dp"
+        android:paddingBottom="18dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_finDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="----年--月--日"
+                android:textColor="#679FE9"
+                 />
+            <ImageView
+                android:id="@+id/iv_calendarImg"
+
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+
+                android:layout_marginLeft="24dp"
+                android:src="@drawable/calendar2"/>
+            <info.hoang8f.android.segmented.SegmentedGroup
+                android:id="@+id/segmented4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/rb_day"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:text="日"
+                    android:checked="true"
+                    android:textSize="14sp"
+                    style="@style/RadioButton" />
+                <RadioButton
+                    android:id="@+id/rb_month"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:text="月"
+                    style="@style/RadioButton" />
+                <RadioButton
+                    android:id="@+id/rb_year"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:text="年"
+                    style="@style/RadioButton" />
+
+            </info.hoang8f.android.segmented.SegmentedGroup>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="收入："
+                android:textColor="#131313"/>
+            <TextView
+                android:id="@+id/tv_oJiIncome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="--.--元"
+                android:textColor="#999999"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="支出："
+                android:textColor="#131313"/>
+            <TextView
+                android:id="@+id/tv_oJiExpenditure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="--.--元"
+                android:textColor="#999999"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="收支差："
+                android:textColor="#131313"/>
+            <TextView
+                android:id="@+id/tv_surplus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="--.--元"
+                android:textColor="#999999"/>
+        </LinearLayout>
+    </LinearLayout>
+<View
+    android:layout_width="match_parent"
+    android:layout_height="12dp"
+    android:background="@color/alpha_backgroud"
+    />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#ffffff"
+
+        android:paddingBottom="14dp"
+        android:paddingTop="14dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_incomeSummary"
+
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:text="收入汇总"
+                android:background="@drawable/textbackgroud5"
+                />
+
+            <TextView
+                android:id="@+id/tv_expenditureSummary"
+
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="10dp"
+                android:background="@drawable/textbackgroud6"
+                android:textColor="#4A4A4A"
+                android:text="支出汇总"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="12dp"
+
+            android:layout_weight="0"
+            android:background="#dbdbdb" >
+        </LinearLayout>
+
+        <com.huoniao.oc.custom.MyListView
+            android:id="@+id/mFinSumListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </com.huoniao.oc.custom.MyListView>
+
+
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>
+    </com.huoniao.oc.custom.MySwipeRefreshLayout>

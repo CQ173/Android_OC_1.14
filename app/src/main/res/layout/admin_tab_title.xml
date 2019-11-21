@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_title"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#4d90e7">
+
+
+        <TextView
+            android:id="@+id/tv_tab_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="首页"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_msgArea"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+
+            >
+
+            <ImageView
+                android:id="@+id/iv_personalCenter"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/message"
+
+                />
+
+            <TextView
+                android:id="@+id/tv_circle"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignRight="@id/iv_personalCenter"
+                android:background="@drawable/text_red_circle"
+                android:layout_marginRight="5dp"
+                android:textSize="8dip"
+                android:textColor="@android:color/white"
+                android:text="0"
+                android:gravity="center"
+                />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_financeoOJiTradeDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:textColor="#ffffff"
+            android:text="交易明细"/>
+    </RelativeLayout>
+</LinearLayout>

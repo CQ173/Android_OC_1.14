@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/alphaGray"
+    android:gravity="center"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:orientation="vertical"
+            android:background="@drawable/text_round_bg_white2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+
+            >
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="地图设置"
+                android:textSize="20sp"
+                android:textColor="@color/alphaBlack"
+                android:gravity="center"
+                />
+
+
+        </RelativeLayout>
+
+
+            <ListView
+                android:id="@+id/lv_setting_map"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:dividerHeight="0.5dp"
+                ></ListView>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:id="@+id/tv_confirm"
+                    android:layout_width="120dp"
+                    android:layout_height="30dp"
+                    android:text="确认"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:background="@drawable/selected_button_round_gray"
+                    android:textColor="@color/alphaBlack"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/closes"
+            android:layout_alignParentRight="true"
+             android:layout_marginRight="15dp"
+            />
+    </RelativeLayout>
+</LinearLayout>

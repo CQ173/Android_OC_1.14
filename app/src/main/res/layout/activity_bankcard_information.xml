@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#f6f6f6" >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/back2" />
+        
+		<LinearLayout
+		    	android:id="@+id/layout_shuXian"
+                android:layout_width="0.02dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/iv_back"
+                android:layout_marginTop="9dp"
+                android:layout_marginBottom="9dp"
+                android:layout_marginLeft="14dp"
+                android:background="#999999" >
+         </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/layout_shuXian"
+            android:text="填写银行卡信息"
+           	android:textColor="#666666"
+            android:layout_marginLeft="14dp"
+            android:textSize="16sp" />
+        
+        
+    </RelativeLayout>
+    
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="请选择银行卡类型"
+	    android:textSize="12sp"
+	    android:layout_marginTop="10dp"
+	    android:layout_marginLeft="16dp"
+	    android:textColor="#666666"/>
+	
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:padding="16dp"
+	    android:orientation="horizontal"
+	    android:background="#ffffff">
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="16sp"
+	        android:text="卡类型"/>
+	    <TextView
+	        android:id="@+id/tv_bankType" 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="#326e8d"
+	        android:textSize="16sp"
+	        android:layout_marginLeft="40dp"
+	        android:text="浦发银行"/>
+	    <TextView
+	        android:id="@+id/tv_cardType" 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="#326e8d"
+	        android:textSize="16sp"
+	        android:layout_marginLeft="5dp"
+	        android:text="储蓄卡"/>
+	   
+	</LinearLayout>
+	
+	
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:padding="16dp"
+	    android:layout_marginTop="16dp"
+	    android:orientation="horizontal"
+	    android:background="#ffffff">
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="16sp"
+	        android:text="手机号"/>
+	    <EditText
+	        android:id="@+id/et_etPhoneNumber"  
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="16sp"
+	        android:layout_weight="1"
+	        android:hint="请输入银行预留手机号"
+	        android:digits="0123456789"
+	        android:maxLength="11"
+	        android:background="@null"
+	        android:layout_marginLeft="40dp"
+	        />
+	     <ImageView
+	       android:id="@+id/iv_prompt"  
+	       android:layout_width="18dp"
+	       android:layout_height="18dp"
+	       android:src="@drawable/notification2"/> 
+	</LinearLayout>
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content">
+		<TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="12sp"
+	        android:textColor="#666666"
+	        android:layout_centerHorizontal="true"
+	        android:text="信息加密处理，仅用于银行验证"/>
+	</RelativeLayout>
+	
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:paddingLeft="16dp"
+	    android:paddingRight="16dp"
+	    android:layout_marginTop="20dp">
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="12sp"
+	        android:textColor="#666666"
+	        android:text="点击下一步即表示你同意"/>
+	    
+	    <TextView
+	        android:id="@+id/tv_userAgreement" 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="12sp"
+	        android:textColor="#fe6767"
+	        android:text="《用户协议》"/>
+	</LinearLayout>
+	<Button
+        android:id="@+id/bt_next"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bluebutton_click_style"
+        android:text="下一步"
+        android:textColor="#ffffff" />
+</LinearLayout>

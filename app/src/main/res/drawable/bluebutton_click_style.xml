@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<selector xmlns:android="http://schemas.android.com/apk/res/android"> 
+    <!-- 点击时的样式 --> 
+    <item android:state_pressed="true"  
+        android:drawable="@drawable/blue_button_pressed" />  
+    <!-- 获取焦点时的样式 -->     
+    <item android:state_focused="true"  
+        android:drawable="@drawable/blue_button_pressed" />  
+    <!-- 默认时的样式 -->     
+    <item android:drawable="@drawable/bg_identify_code_normal" />  
+</selector>  

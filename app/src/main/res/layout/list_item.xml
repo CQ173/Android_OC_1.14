@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_vertical"
+    android:minHeight="40dip"
+    android:orientation="horizontal"
+    android:background="#00000000"
+    >
+
+
+
+    <ImageView
+        android:id="@+id/ivec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+
+        android:src="@drawable/tree_ec" />
+
+    <!--<ImageView-->
+        <!--android:id="@+id/ivicon"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_toRightOf="@id/cb"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:minHeight="40dip" />-->
+
+    <TextView
+        android:id="@+id/itemvalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:textSize="14dip"
+        android:minHeight="40dip"
+        android:text="北京" />
+
+    <!--<Button-->
+        <!--android:id="@+id/button_all"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_toRightOf="@id/itemvalue"-->
+        <!--android:focusable="false"-->
+        <!--android:text="全选"-->
+        <!--/>-->
+
+    <!--<Button-->
+        <!--android:id="@+id/button_cancel"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_toRightOf="@id/button_all"-->
+        <!--android:focusable="false"-->
+        <!--android:text="全消"-->
+        <!--/>-->
+
+    <CheckBox
+        android:id="@+id/cb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="center_vertical" />
+    
+
+</LinearLayout>

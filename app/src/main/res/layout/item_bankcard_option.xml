@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingTop="10dp"
+	    android:paddingBottom="10dp"
+	    >
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+	        android:text="选择银行卡"/>
+	    <ImageView
+	        android:id="@+id/iv_dismiss" 
+	        android:layout_width="14dp"
+	        android:layout_height="14dp"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="16dp"
+	        android:src="@drawable/delete2"/>
+	</RelativeLayout>
+	
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.02dp"
+        
+        android:background="#999999" >
+    </LinearLayout>
+    
+	 <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:gravity="center_vertical"
+        android:paddingRight="10dp" >
+        
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/icbc"
+            />
+        <LinearLayout 
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_marginLeft="20dp"
+        	android:layout_weight="1"
+        	android:orientation="vertical">
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="中国工商银行"/>
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#666666"
+                android:text="尾号3092"/>
+        </LinearLayout>
+        <ImageView 
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/select_bulue"/>
+    </LinearLayout>
+    
+	 <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.02dp"
+        
+        android:background="#999999" >
+    </LinearLayout>
+    
+	  <LinearLayout
+        android:id="@+id/layout_bankCardOption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:gravity="center_vertical"
+        android:paddingRight="10dp" >
+        
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/china_constructionbank"
+            />
+        <LinearLayout 
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_marginLeft="20dp"
+        	android:layout_weight="1"
+        	android:orientation="vertical">
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="中国建设银行"/>
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#666666"
+                android:text="尾号3097"/>
+        </LinearLayout>
+        <ImageView 
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="10dp"
+            />
+    </LinearLayout>
+    
+	 <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.02dp"
+        
+        android:background="#999999" >
+    </LinearLayout>
+    
+	  <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:paddingLeft="12dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:gravity="center_vertical"
+        android:paddingRight="10dp" >
+        
+       
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:text="使用新卡付款"/>
+           <ImageView 
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/right_arrow"
+            />
+    </LinearLayout>
+    
+	 <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.02dp"
+        
+        android:background="#999999" >
+    </LinearLayout>
+    
+	 <TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="10dp"
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginBottom="40dp"
+	    android:textColor="#666666"
+	    android:text="*网上银行，需跳转银行页面"
+	    />
+</LinearLayout>

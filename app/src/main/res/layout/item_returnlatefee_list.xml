@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:descendantFocusability="blocksDescendants">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="代售点账号"
+            android:textColor="#999999"/>
+
+        <TextView
+            android:id="@+id/tv_outletsAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="----"
+            android:textColor="#333333"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="6dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="滞纳金返还金额"
+            android:textColor="#999999"/>
+
+        <TextView
+            android:id="@+id/tv_returnAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="----"
+            android:textColor="#333333"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="6dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="返还天数"
+            android:textColor="#999999"/>
+
+        <TextView
+            android:id="@+id/tv_returnDays"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="----"
+            android:textColor="#333333"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="6dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="说明函"
+            android:textColor="#999999"/>
+
+        <TextView
+            android:id="@+id/tv_lookImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="点击查看图片"
+            android:textColor="#4d90e7"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="6dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="申请时间"
+            android:textColor="#999999"/>
+
+        <TextView
+            android:id="@+id/tv_applyTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="----"
+            android:textColor="#333333"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="6dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="状态"
+            android:textColor="#999999"/>
+
+        <TextView
+            android:id="@+id/tv_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="----"
+            android:textColor="#333333"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp">
+
+        <TextView
+            android:id="@+id/tv_states"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="编辑"
+            android:textColor="#4d90e7"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@drawable/textbackgroud15"/>
+    </RelativeLayout>
+</LinearLayout>

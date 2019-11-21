@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/ll_pop_delete"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/pop_message5"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        >
+        <TextView
+            android:id="@+id/tv_asRead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="标为已读"
+            android:gravity="center"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            />
+
+        <TextView
+           android:id="@+id/tv_copy_t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="复制"
+            android:gravity="center"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:id="@+id/tv_sigle_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="删除"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_pop_delete2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/pop_message2"
+        android:gravity="center"
+        >
+        <TextView
+            android:id="@+id/tv_cp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="复制"
+            android:gravity="center"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            />
+
+        <TextView
+           android:id="@+id/tv_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="删除"
+            android:gravity="center"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            />
+    </LinearLayout>
+
+    </FrameLayout>
+</LinearLayout>

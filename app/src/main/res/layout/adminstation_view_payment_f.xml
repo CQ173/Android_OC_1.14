@@ -1,0 +1,782 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<com.huoniao.oc.custom.MySwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/myswipeRefresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    >-->
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scroll_view"
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        android:background="@color/white"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:id="@+id/ll_todayPayment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="12dp">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/today_payment_count"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="6dp"
+                    android:textSize="16sp"
+                    android:text="今日汇缴"
+                    android:textColor="@color/black"/>
+
+                <ImageView
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+
+                    android:src="@drawable/right_arrow"/>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp">
+
+                <TextView
+                    android:id="@+id/tv_alreadyImport"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:text="已导入"
+                    android:background="@drawable/shape_editext_white3"
+                    android:gravity="center"
+                    android:textColor="@color/blues"/>
+
+                <TextView
+                    android:id="@+id/tv_noImport"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="4dp"
+                    android:text="未导入"
+                    android:background="@drawable/shape_editext_white4"
+                    android:gravity="center"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:paddingTop="14dp"
+                android:paddingBottom="14dp"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:orientation="vertical"
+                android:background="@drawable/shape_editext_white5">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_importNumberTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="导入数量："
+                        android:textColor="@color/alpha_black"/>
+
+                    <TextView
+                        android:id="@+id/tv_importNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="200"
+                        android:textColor="@color/blues"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="家"
+                        android:layout_marginLeft="2dp"
+                        android:textColor="@color/alpha_black"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_importAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="导入金额："
+                        android:textColor="@color/alpha_black"/>
+
+                    <TextView
+                        android:id="@+id/tv_importAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="200"
+                        android:textColor="@color/blues"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="元"
+                        android:layout_marginLeft="2dp"
+                        android:textColor="@color/alpha_black"/>
+
+                </LinearLayout>
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp">
+                <LinearLayout
+                    android:id="@+id/ll_alreadyImportType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="名称"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:gravity="center"
+                        android:text="销售量"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:text="销售额"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_noImportType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2"
+                            android:gravity="center"
+                            android:text="序号"
+                            android:textColor="@color/black"
+                            />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="所属机构"
+                            android:textColor="@color/black"/>
+
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:text="名称"
+                            android:textColor="@color/black"/>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0.02dp"
+                    android:layout_marginTop="12dp"
+                    android:background="#dbdbdb" />
+
+
+                <com.huoniao.oc.custom.MyListView
+                    android:id="@+id/todayPaymentListView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </com.huoniao.oc.custom.MyListView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_previousPage"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:layout_marginRight="12dp"
+                        android:textColor="@color/blues"
+                        android:text="上一页"/>
+
+
+                    <TextView
+                        android:id="@+id/tv_nextPage"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/blues"
+                        android:gravity="left"
+                        android:layout_marginLeft="12dp"
+                        android:text="下一页"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="10dp"
+                android:background="#DEDEDE"></View>
+
+            <LinearLayout
+                android:id="@+id/ll_cumulativePayment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="12dp">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/cumulative_payment"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="6dp"
+                    android:textSize="16sp"
+                    android:text="累计汇缴"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/tv_ownership_institution"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableRight="@drawable/drop_down"
+                    android:background="@drawable/shape_editext_white"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="4dp"
+
+                    android:maxLines="1"
+                    android:textSize="12sp"
+                    android:textColor="#b7b7b7"
+                    android:text="归属机构"
+                    />
+            </LinearLayout>
+
+
+           <!-- <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp">
+
+                <TextView
+                    android:id="@+id/tv_alreadyImportCumulative"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:text="已导入"
+                    android:background="@drawable/shape_editext_white3"
+                    android:gravity="center"
+                    android:textColor="@color/blues"/>
+
+                <TextView
+                    android:id="@+id/tv_noImportCumulative"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="4dp"
+                    android:text="未导入"
+                    android:background="@drawable/shape_editext_white4"
+                    android:gravity="center"
+                    android:textColor="@color/white"/>
+            </LinearLayout>-->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_weight="0"
+                android:background="#dbdbdb" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                >
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:text="汇缴金额（元）"
+                        android:id="@+id/textView21"
+                        android:textColor="@color/alphaBlack"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_admin_amount_paid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="--"
+                        android:textSize="14sp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/blue"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="汇缴记录（条）"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/alphaBlack"
+                        />
+                    <TextView
+                        android:id="@+id/tv_admin_consolidated_record"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="--"
+                        android:textSize="14sp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/color_gold"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:orientation="vertical"
+            android:background="@drawable/shape_editext_white5">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="汇缴记录："
+                    android:textColor="@color/alpha_black"/>
+
+                <TextView
+                    android:id="@+id/tv_paymentNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="200"
+                    android:textColor="@color/blues"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="条"
+                    android:layout_marginLeft="2dp"
+                    android:textColor="@color/alpha_black"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="汇缴总金额："
+                    android:textColor="@color/alpha_black"/>
+
+                <TextView
+                    android:id="@+id/tv_paymentAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="200"
+                    android:textColor="@color/blues"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="元"
+                    android:layout_marginLeft="2dp"
+                    android:textColor="@color/alpha_black"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="平均值："
+                    android:textColor="@color/alpha_black"/>
+
+                <TextView
+                    android:id="@+id/tv_average_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="200"
+                    android:textColor="@color/blues"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="元"
+                    android:layout_marginLeft="2dp"
+                    android:textColor="@color/alpha_black"/>
+
+            </LinearLayout>
+
+
+            <info.hoang8f.android.segmented.SegmentedGroup
+                android:id="@+id/segmented1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="8dp"
+                android:gravity="right"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/rb_day"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text="周"
+                    android:checked="true"
+                    android:textSize="14sp"
+                    style="@style/RadioButton" />
+                <RadioButton
+                    android:id="@+id/rb_month"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:text="月"
+                    style="@style/RadioButton" />
+                <RadioButton
+                    android:id="@+id/rb_year"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:text="年"
+                    style="@style/RadioButton" />
+
+            </info.hoang8f.android.segmented.SegmentedGroup>
+
+
+
+            <com.huoniao.oc.custom.MyLineChart
+                android:id="@+id/lc_admin_lineChart"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="10dp"
+                >
+
+            </com.huoniao.oc.custom.MyLineChart>
+
+            <TextView
+                android:id="@+id/tv_linechart_explain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grayss"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:text="--"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="10dp"
+                android:background="#DEDEDE"></View>
+
+
+            <LinearLayout
+                android:id="@+id/ll_top10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="12dp">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/performance_ranking"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="6dp"
+                    android:textSize="16sp"
+                    android:text="业绩排行榜TOP10"
+                    android:textColor="@color/black"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp">
+
+                <TextView
+                    android:id="@+id/tv_passengerTransport"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:text="客运"
+                    android:background="@drawable/shape_editext_white3"
+                    android:gravity="center"
+                    android:textColor="@color/blues"/>
+
+                <TextView
+                    android:id="@+id/tv_freightTransport"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="4dp"
+                    android:text="货运"
+                    android:background="@drawable/shape_editext_white4"
+                    android:gravity="center"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical"
+            android:background="@drawable/shape_editext_white5">
+
+
+            <info.hoang8f.android.segmented.SegmentedGroup
+                android:id="@+id/segmented2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:gravity="right"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/rb_topDay"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text="周"
+                    android:checked="true"
+                    android:textSize="14sp"
+                    style="@style/RadioButton" />
+
+                <RadioButton
+                    android:id="@+id/rb_topMonth"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:text="月"
+                    style="@style/RadioButton" />
+
+                <RadioButton
+                    android:id="@+id/rb_topYear"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:text="年"
+                    style="@style/RadioButton" />
+
+            </info.hoang8f.android.segmented.SegmentedGroup>
+
+
+            <LinearLayout
+                android:id="@+id/layout_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+
+                    android:text="排名"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:text="名称"
+                    android:textColor="@color/black"/>
+
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="0.8"
+                    android:text="销售额"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.02dp"
+                android:layout_marginTop="12dp"
+                android:background="#dbdbdb" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <com.huoniao.oc.custom.MyListView
+                android:id="@+id/achievementListView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false">
+
+            </com.huoniao.oc.custom.MyListView>
+
+                <LinearLayout
+                    android:id="@+id/ll_inConstruction"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:visibility="gone"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/construction"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="正在建设中，敬请期待！"
+                        android:textSize="18sp"
+                        android:textColor="#999999"/>
+                </LinearLayout>
+
+            </FrameLayout>
+            <TextView
+                android:id="@+id/tv_retract"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginTop="20dp"
+                android:textSize="16sp"
+                android:textColor="@color/blues"
+                android:gravity="center"
+                android:text="点击收起"
+                />
+        </LinearLayout>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+<!--</com.huoniao.oc.custom.MySwipeRefreshLayout>-->

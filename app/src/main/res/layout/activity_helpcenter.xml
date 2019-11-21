@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+<include  layout="@layout/backtitle" />
+	<ProgressBar
+		android:id="@+id/progressBar1"
+		style="?android:attr/progressBarStyleHorizontal"
+		android:layout_width="match_parent"
+		android:layout_height="3dip"
+		android:progressDrawable="@drawable/progressbar_style"
+		android:visibility="gone"
+
+		/>
+	<WebView
+	    android:id="@+id/wv_helpCenter"
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+		android:layout_weight="1"
+		/>
+
+  <LinearLayout
+	  android:layout_width="match_parent"
+	  android:layout_height="wrap_content"
+	  android:orientation="horizontal"
+	  android:background="@color/blues"
+	  android:padding="5dp"
+	  android:gravity="center_vertical"
+	  >
+<LinearLayout
+	android:layout_width="0dp"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:layout_weight="0.2"
+	android:gravity="center"
+	>
+	<ImageView
+		android:layout_width="30dp"
+		android:layout_height="30dp"
+		android:src="@drawable/customer"
+		/>
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="联系客服"
+		android:textColor="@color/white"
+		android:textSize="12sp"
+		android:layout_marginTop="3dp"
+		/>
+</LinearLayout>
+   <LinearLayout
+	   android:layout_width="0dp"
+	   android:layout_height="wrap_content"
+	   android:orientation="vertical"
+	   android:layout_weight="0.6"
+	   >
+	   <TextView
+		   android:id="@+id/tv_customer_service_hotline"
+		   android:layout_width="wrap_content"
+		   android:layout_height="wrap_content"
+		   android:text=""
+		   android:textColor="@color/white"
+		   android:textSize="12sp"
+		   />
+       <TextView
+		   android:id="@+id/tv_work_time"
+		   android:layout_width="wrap_content"
+		   android:layout_height="wrap_content"
+		   android:text=""
+		   android:textSize="12sp"
+		   android:textColor="@color/white"
+		   android:layout_marginTop="5dp"
+		   />
+   </LinearLayout>
+
+	  <LinearLayout
+		  android:layout_width="0dp"
+		  android:layout_height="wrap_content"
+		  android:layout_weight="0.2"
+		  android:gravity="center"
+		  >
+		  <ImageView
+			  android:id="@+id/iv_customer_call_phone"
+			  android:layout_width="35dp"
+			  android:layout_height="35dp"
+			  android:src="@drawable/customer_phone"
+			  />
+	  </LinearLayout>
+  </LinearLayout>
+
+	<!--
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#f6f6f6" >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="帮助中心"
+            android:textColor="#666666"
+            android:textSize="20sp" />
+        
+        
+    </RelativeLayout>
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+        
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#999999"
+        android:textSize="12sp"
+        android:text="猜您遇到了以下问题"/>
+	<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.02dp"
+            android:background="#dbdbdb" >
+    </LinearLayout>
+	
+	<LinearLayout
+	    android:id="@+id/layout_commonProblem"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+    	android:paddingTop="12dp"
+    	android:paddingBottom="12dp"
+    	android:paddingLeft="16dp"
+    	android:paddingRight="16dp"
+    	
+    	android:background="#ffffff">
+    <ImageView
+        android:layout_width="20dp"
+    	android:layout_height="20dp"
+    	android:layout_gravity="center_vertical"
+    	android:src="@drawable/common_problem">
+        
+    </ImageView>	
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="1"
+	    android:layout_gravity="center_vertical"
+	  	android:layout_marginLeft="5dp"
+	    android:text="常见问题"/>
+	
+		<ImageView
+        android:layout_width="18dp"
+    	android:layout_height="18dp"
+    	android:layout_gravity="center_vertical"
+    	android:src="@drawable/right_arrow"/>
+		
+	</LinearLayout>
+	
+	<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.02dp"
+            android:background="#dbdbdb" >
+    </LinearLayout>
+    
+	<LinearLayout
+	    android:id="@+id/layout_noviceGuide"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+    	android:paddingTop="12dp"
+    	android:paddingBottom="12dp"
+    	android:paddingLeft="16dp"
+    	android:paddingRight="16dp"
+    	
+    	android:background="#ffffff">
+    <ImageView
+        android:layout_width="20dp"
+    	android:layout_height="20dp"
+    	android:layout_gravity="center_vertical"
+    	android:src="@drawable/novice_guide">
+        
+    </ImageView>	
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="1"
+	    android:layout_gravity="center_vertical"
+	  	android:layout_marginLeft="5dp"
+	    android:text="新手指引"/>
+	
+		<ImageView
+        android:layout_width="18dp"
+    	android:layout_height="18dp"
+    	android:layout_gravity="center_vertical"
+    	android:src="@drawable/right_arrow"/>
+		
+	</LinearLayout>
+	
+	<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.02dp"
+            android:background="#dbdbdb" >
+    </LinearLayout>
+    
+	<LinearLayout
+	    android:id="@+id/layout_myAccount"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+    	android:paddingTop="12dp"
+    	android:paddingBottom="12dp"
+    	android:paddingLeft="16dp"
+    	android:paddingRight="16dp"
+    	
+    	android:background="#ffffff">
+    <ImageView
+        android:layout_width="20dp"
+    	android:layout_height="20dp"
+    	android:layout_gravity="center_vertical"
+    	android:src="@drawable/my_account">
+        
+    </ImageView>	
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="1"
+	    android:layout_gravity="center_vertical"
+	  	android:layout_marginLeft="5dp"
+	    android:text="我的账户"/>
+	
+		<ImageView
+        android:layout_width="18dp"
+    	android:layout_height="18dp"
+    	android:layout_gravity="center_vertical"
+    	android:src="@drawable/right_arrow"/>
+		
+	</LinearLayout>
+	
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.02dp"
+        android:background="#dbdbdb" >
+    </LinearLayout>
+    
+	</LinearLayout>	
+</ScrollView>	
+-->
+</LinearLayout>

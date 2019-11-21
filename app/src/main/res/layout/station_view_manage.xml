@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:background="#ffffff"
+    >
+    
+    <!--  
+	<LinearLayout 
+	    android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+    	android:paddingTop="16dp"
+    	android:paddingBottom="16dp"
+    	android:background="#ffffff">
+	    <LinearLayout
+	        android:id="@+id/layout_outletsManage2" 
+	        android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_weight="1"
+    		android:gravity="center"
+    		android:orientation="vertical">
+	        <ImageView 
+	            android:layout_width="80dp"
+    			android:layout_height="80dp"
+    			android:src="@drawable/outlets_manage2"/>
+	        <TextView 
+	            android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:layout_marginTop="5dp"
+    			android:textSize="16sp"
+    			
+    			android:text="代售点管理"/>
+	    </LinearLayout>
+	    
+	    <LinearLayout
+	        android:id="@+id/layout_outletsRelation"  
+	        android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_weight="1"
+    		android:gravity="center"
+    		android:orientation="vertical">
+	        <ImageView 
+	            android:layout_width="80dp"
+    			android:layout_height="80dp"
+    			android:src="@drawable/outlets_relation"/>
+	        <TextView 
+	            android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:layout_marginTop="5dp"
+    			android:textSize="16sp"
+    			
+    			android:text="代售点关联"/>
+	    </LinearLayout>
+	</LinearLayout>
+	-->
+	
+	<RelativeLayout 
+	      	android:id="@+id/rl_outletsManage2"
+	        android:layout_width="match_parent"
+	        android:layout_height="100dp"
+	        android:layout_marginTop="8dp"
+	        android:background="@drawable/red_bg">
+		<TextView
+	      	android:layout_width="wrap_content"
+	      	android:layout_height="wrap_content"
+	        android:text="代售点管理"
+	        android:textSize="16sp"
+	        android:layout_alignParentBottom="true"
+	        android:layout_marginLeft="16dp"
+	        android:layout_marginBottom="20dp"
+	        android:textColor="#ffffff"
+	        />
+		<ImageView 
+	    android:layout_width="34dp"
+	    android:layout_height="34dp"
+	    android:src="@drawable/outlets_manage2"
+	    android:layout_centerInParent="true"
+	    />
+	</RelativeLayout>
+	
+	<RelativeLayout 
+	      	android:id="@+id/rl_outletsRelation"
+	        android:layout_width="match_parent"
+	        android:layout_height="100dp"
+	        android:layout_marginTop="8dp"
+	        android:background="@drawable/oranger_bg">
+		<TextView
+	      	android:layout_width="wrap_content"
+	      	android:layout_height="wrap_content"
+	        android:text="代售点关联"
+	        android:textSize="16sp"
+	        android:layout_alignParentBottom="true"
+	        android:layout_marginLeft="16dp"
+	        android:layout_marginBottom="20dp"
+	        android:textColor="#ffffff"
+	        />
+		<ImageView 
+	    android:layout_width="35dp"
+	    android:layout_height="35dp"
+	    android:src="@drawable/outlets_relation"
+	    android:layout_centerInParent="true"
+	    />
+	</RelativeLayout>
+	
+	    
+	   
+</LinearLayout>

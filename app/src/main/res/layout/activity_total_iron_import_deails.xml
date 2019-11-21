@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_total_iron_import_deails"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.huoniao.oc.trainstation.TotalIronImportDeailsA"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#4d90e7">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="导入详情"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center_vertical">
+
+        <RelativeLayout
+            android:id="@+id/layout_startDataChoice"
+            android:layout_width="0dp"
+            android:layout_height="38dp"
+            android:layout_weight="3"
+            android:background="@drawable/shape_editext_white"
+            android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/tv_startDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:hint="开始日期"
+                android:textColorHint="#b7b7b7"
+                android:text=""
+                android:textSize="12sp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                />
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_marginRight="8dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/paysystem_select"/>
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="—"/>
+
+        <RelativeLayout
+            android:id="@+id/layout_endDataChoice"
+            android:layout_width="0dp"
+            android:layout_height="38dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="3"
+            android:background="@drawable/shape_editext_white"
+            android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/tv_endDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:hint="结束日期"
+                android:textColorHint="#b7b7b7"
+                android:text=""
+                android:textSize="12sp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                />
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_marginRight="8dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/paysystem_select"/>
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_ownership_institution"
+        android:layout_height="32dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="6dp"
+        android:drawableRight="@drawable/drop_down"
+        android:background="@drawable/shape_editext_white"
+        android:gravity="center_vertical"
+        android:paddingLeft="4dp"
+
+        android:maxLines="1"
+        android:textSize="12sp"
+        android:textColor="#b7b7b7"
+        android:text="归属机构"
+        />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#DEDEDE"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:padding="12dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="共"
+            android:textColor="@color/alpha_black"/>
+
+        <TextView
+            android:id="@+id/tv_dataNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="----"
+            android:textColor="#4d90e7"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="条记录"
+            android:textColor="@color/alpha_black"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.02dp"
+        android:background="#e0e0e0" >
+    </LinearLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/mPullToRefreshListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:smoothScrollbar="true"
+        />
+
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.huoniao.oc.user.UpdateHeader">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#4d90e7" >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/tv_save_header_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="设置个人头像"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_header_image"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:scaleType="fitXY"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        android:orientation="vertical"
+        android:paddingRight="30dp"
+        android:paddingLeft="30dp"
+        android:paddingTop="50dp"
+
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="拍照"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textColor="@color/alphaBlack"
+            android:onClick="cameraClick"
+            android:background="@drawable/text_round_bg"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="从相册选择"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textColor="@color/alphaBlack"
+            android:onClick="photoClick"
+            android:background="@drawable/text_round_bg"
+            android:layout_marginTop="15dp"
+            />
+
+    </LinearLayout>
+</LinearLayout>

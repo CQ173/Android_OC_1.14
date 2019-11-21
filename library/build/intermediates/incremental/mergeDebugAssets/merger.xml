@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="E:\workspace\trunk\Android_OC_1.14\library\src\main\assets"/><source path="E:\workspace\trunk\Android_OC_1.14\library\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="E:\workspace\trunk\Android_OC_1.14\library\src\debug\assets"/></dataSet></merger>

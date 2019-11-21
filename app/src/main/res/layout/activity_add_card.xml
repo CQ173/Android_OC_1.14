@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_card"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.huoniao.oc.outlets.AddCardA">
+
+   <include layout="@layout/backtitle" />
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_selector_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="horizontal"
+        android:background="#ffffff">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="银行"/>
+        <TextView
+            android:id="@+id/tv_bankType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#326e8d"
+            android:textSize="16sp"
+            android:layout_weight="1"
+            android:layout_marginLeft="60dp"
+            android:text="选择银行"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/bottom_arrow"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.02dp"
+        android:background="#dbdbdb" >
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout_cardType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="horizontal"
+        android:background="#ffffff">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="卡类型"/>
+        <TextView
+            android:id="@+id/tv_cardType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#666666"
+            android:textSize="16sp"
+            android:layout_weight="1"
+            android:layout_marginLeft="44dp"
+            android:text="请选择卡类型"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/bottom_arrow"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.02dp"
+        android:background="#dbdbdb" >
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="horizontal"
+
+        android:background="#ffffff">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="户名"/>
+        <TextView
+            android:id="@+id/tv_cardName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#666666"
+            android:textSize="16sp"
+            android:layout_weight="1"
+            android:layout_marginLeft="60dp"
+            android:background="@null"
+            />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.02dp"
+        android:background="#dbdbdb" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="horizontal"
+
+        android:background="#ffffff">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="卡号"/>
+        <EditText
+            android:id="@+id/et_cardNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:textColor="#666666"
+            android:textSize="16sp"
+            android:digits="0123456789"
+            android:maxLength="19"
+            android:layout_weight="1"
+            android:layout_marginLeft="60dp"
+            android:hint="请输入银行卡号"
+            />
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_save"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bluebutton_click_style"
+        android:text="保存"
+        android:textColor="#ffffff" />
+
+</LinearLayout>

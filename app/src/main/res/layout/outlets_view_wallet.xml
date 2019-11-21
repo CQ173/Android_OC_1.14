@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#f4f4f4">
+    
+    <!--  
+	<LinearLayout 
+	    android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+    	android:paddingTop="16dp"
+    	android:background="#ffffff">
+	    <LinearLayout
+	        android:id="@+id/layout_recharge2" 
+	        android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_weight="1"
+    		android:gravity="center"
+    		android:orientation="vertical">
+	        <ImageView 
+	            android:layout_width="80dp"
+    			android:layout_height="80dp"
+    			android:src="@drawable/recharge2"/>
+	        <TextView 
+	            android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:layout_marginTop="5dp"
+    			android:textSize="16sp"
+    			
+    			android:text="充值"/>
+	    </LinearLayout>
+	    
+	    <LinearLayout
+	        android:id="@+id/layout_capitalFlow" 
+	        android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_weight="1"
+    		android:gravity="center"
+    		android:orientation="vertical">
+	        <ImageView 
+	            android:layout_width="80dp"
+    			android:layout_height="80dp"
+    			android:src="@drawable/flowing_water2"/>
+	        <TextView 
+	            android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:layout_marginTop="5dp"
+    			android:textSize="16sp"
+    			
+    			android:text="资金流水"/>
+	    </LinearLayout>
+	</LinearLayout>
+	
+	<LinearLayout 
+	    android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+    	android:paddingTop="20dp"
+    	android:paddingBottom="16dp"
+    	android:background="#ffffff">
+	    <LinearLayout 
+	        android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_weight="1"
+    		android:gravity="center"
+    		android:orientation="vertical">
+	        <ImageView 
+	            android:layout_width="80dp"
+    			android:layout_height="80dp"
+    			android:src="@drawable/bank_card"/>
+	        <TextView 
+	            android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:layout_marginTop="5dp"
+    			android:textSize="16sp"
+    			
+    			android:text="银行卡"/>
+	    </LinearLayout>
+	    
+	    <LinearLayout 
+	        android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_weight="1"
+    		android:gravity="center"
+    		android:orientation="vertical">
+	        <ImageView 
+	            android:layout_width="80dp"
+    			android:layout_height="80dp"
+    			/>
+	        <TextView 
+	            android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:layout_marginTop="5dp"
+    			android:textSize="16sp"
+    			
+    			/>
+	    </LinearLayout>
+	</LinearLayout>
+	-->
+	<RelativeLayout 
+	     android:layout_width="match_parent"
+    	 android:layout_height="140dp"
+    	 android:background="@drawable/balance_bg">
+		<LinearLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_centerInParent="true"
+		    android:gravity="center"
+		    android:orientation="vertical">
+	    <LinearLayout
+	        android:id="@+id/layout_balance"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	       	
+	        
+	        android:orientation="horizontal" >
+
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_vertical"
+	            android:layout_marginRight="30dp"
+	            android:text="余额"
+	            android:textColor="#ffffff"
+	            android:textSize="16sp" />
+
+	        <TextView
+	            android:id="@+id/tv_balance"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="0.00"
+	            android:textColor="#ffffff"
+	            android:textSize="24sp" />
+
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="5dp"
+	            android:text="元"
+	            android:layout_gravity="center_vertical"
+	            android:textColor="#ffffff"
+	            android:textSize="16sp" />
+	        </LinearLayout>
+	   
+		
+	     <LinearLayout
+	        android:id="@+id/layout_minimum"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	       	
+	       	android:layout_marginTop="5dp"
+	        
+	        android:orientation="horizontal" >
+
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_vertical"
+	            android:layout_marginRight="20dp"
+	            android:text="账户最低限额"
+	            android:textColor="#ffffff"
+	            android:textSize="12sp" />
+
+	        <TextView
+	            android:id="@+id/tv_minimum"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="50000.0"
+	            android:textColor="#ffffff"
+	            android:textSize="18sp" />
+
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="5dp"
+	            android:text="元"
+	            android:layout_gravity="center_vertical"
+	            android:textColor="#ffffff"
+	            android:textSize="12sp" />
+	    </LinearLayout>
+	     </LinearLayout>
+	</RelativeLayout>
+	 
+	<LinearLayout 
+	    android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+    	android:layout_marginTop="10dp"
+    	android:paddingBottom="14dp"
+    	android:paddingTop="14dp"
+    	android:background="#ffffff">
+	    
+	    <LinearLayout
+	        android:id="@+id/layout_recharge2"  
+	        android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_weight="1"
+    		android:gravity="center"
+    		android:orientation="vertical">
+	        <ImageView 
+	            android:layout_width="30dp"
+    			android:layout_height="30dp"
+    			android:src="@drawable/recharge2"/>
+	        <TextView 
+	            android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:layout_marginTop="5dp"
+    
+    			android:text="缴费"/>
+	    </LinearLayout>
+	    
+	    <LinearLayout
+	        android:id="@+id/layout_bankCard"  
+	        android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_weight="1"
+    		android:gravity="center"
+    		android:orientation="vertical">
+	        <ImageView 
+	            android:layout_width="30dp"
+    			android:layout_height="30dp"
+    			android:src="@drawable/bank_card"/>
+	        <TextView 
+	            android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:layout_marginTop="5dp"
+    
+    			android:text="银行卡"/>
+	    </LinearLayout>
+	    
+	    <LinearLayout
+	        android:id="@+id/layout_capitalFlow"   
+	        android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_weight="1"
+    		android:gravity="center"
+    		android:orientation="vertical">
+	        <ImageView 
+	            android:layout_width="30dp"
+    			android:layout_height="30dp"
+    			android:src="@drawable/flowing_water2"/>
+	        <TextView 
+	            android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:layout_marginTop="5dp"
+    
+    			android:text="资金流水"/>
+	    </LinearLayout>
+	</LinearLayout>    
+</LinearLayout>

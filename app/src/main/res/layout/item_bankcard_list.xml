@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:descendantFocusability="blocksDescendants">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:orientation="horizontal"
+        android:focusable="true">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"/>
+
+        <TextView
+            android:id="@+id/tv_bankName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#333333"
+            android:text="中国建设银行"/>
+
+        <TextView
+            android:id="@+id/tv_cardType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:text="储蓄卡"/>
+        <TextView
+            android:id="@+id/tv_lastNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:text="(8859)"/>
+    </LinearLayout>
+</LinearLayout>

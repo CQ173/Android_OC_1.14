@@ -1,0 +1,741 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_user_data_modification"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.huoniao.oc.admin.AdminUserDataUpdate"
+
+    >
+
+    <include layout="@layout/backtitle" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/user_setting" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="用户机构设置"
+                    android:textColor="@color/blue" />
+            </LinearLayout>
+
+            <View
+                style="@style/viewStyle"
+                android:layout_marginTop="0dp" />
+
+            <LinearLayout style="@style/ll_user">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/userWeight"
+                        android:text="机构名称:" />
+
+                    <EditText style="@style/userWeightBackgroud"
+                        android:id="@+id/et_organizationName"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/userWeight"
+                        android:text="用户ID:" />
+
+                    <EditText
+                        style="@style/userWeightBackgroud"
+                        android:enabled="false"
+                        android:id="@+id/et_userid"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/userWeight"
+                        android:text="姓名:" />
+
+                    <EditText style="@style/userWeightBackgroud"
+                        android:id="@+id/et_name"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/userWeight"
+                        android:text="注册手机号:" />
+
+                    <EditText style="@style/userWeightBackgroud"
+                        android:id="@+id/et_register_phone"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/gray" />
+
+            <LinearLayout style="@style/ll_user">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/userWeight"
+                        android:text="账户余额:" />
+
+                    <TextView
+                        android:id="@+id/tv_account_balance"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="0.7"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="0.0"
+                        android:textColor="@color/colorAccent" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/userWeight"
+                        android:text="账户最低限额:" />
+
+                    <EditText style="@style/userWeightBackgroud"
+                        android:id="@+id/et_account_minimum"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/userWeight"
+                        android:text="动态限额:" />
+
+                    <EditText style="@style/userWeightBackgroud"
+                        android:id="@+id/et_dynamic_quota"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/userWeight"
+                        android:text="融资还款日:" />
+
+                    <EditText style="@style/userWeightBackgroud"
+                        android:id="@+id/et_financing_repayment_date"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/gray" />
+
+            <LinearLayout style="@style/ll_user">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/userWeight"
+                        android:text="归属机构:" />
+
+                    <LinearLayout style="@style/userWeightBackgroud"
+                        android:id="@+id/ll_ownership_institution"
+                        >
+
+                        <TextView style="@style/textla"
+                            android:id="@+id/tv_ownership_institution"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/userWeight"
+                        android:text="用户类型:" />
+
+                    <LinearLayout style="@style/userWeightBackgroud"
+                        android:id="@+id/ll_customer_type"
+                        >
+
+                        <TextView style="@style/textla"
+                            android:id="@+id/tv_customer_type"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/userWeight"
+                        android:text="用户角色:" />
+
+                    <LinearLayout style="@style/userWeightBackgroud"
+                        android:id="@+id/ll_user_roles"
+                        >
+
+                        <TextView style="@style/textla"
+                            android:id="@+id/tv_user_roles"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                style="@style/viewStyle"
+                android:layout_marginTop="0dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/user_data" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="用户资料修改"
+                    android:textColor="@color/blue" />
+            </LinearLayout>
+
+            <View
+                style="@style/viewStyle"
+                android:layout_marginTop="0dp" />
+
+            <LinearLayout style="@style/ll_user">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/userWeight"
+                        android:text="机构状态:" />
+
+                    <LinearLayout style="@style/userWeightBackgroud"
+                        android:id="@+id/ll_institutional_state"
+                        >
+
+                        <TextView style="@style/textla"
+                         android:id="@+id/tv_institutional_state"
+                            />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/userWeight"
+                        android:text="机构类型:" />
+
+                    <LinearLayout style="@style/userWeightBackgroud"
+                        android:id="@+id/ll_type_of_institution"
+                        >
+
+                        <TextView style="@style/textla"
+                            android:id="@+id/tv_type_of_institution"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/userWeight"
+                        android:text="第一代理人:" />
+
+                    <LinearLayout style="@style/userWeightBackgroud"
+                        android:id="@+id/ll_first_agent"
+                        >
+
+                        <TextView style="@style/textla"
+                            android:id="@+id/tv_first_agent"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/userWeight"
+                        android:text="第一代理人类型:" />
+
+                    <LinearLayout style="@style/userWeightBackgroud"
+                        android:id="@+id/ll_first_agent_type"
+                        >
+
+                        <TextView style="@style/textla"
+                            android:id="@+id/tv_first_agent_type"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/gray" />
+
+            <LinearLayout style="@style/ll_user">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/userWeight"
+                        android:text="上级机构:" />
+
+                    <EditText style="@style/userWeightBackgroud"
+                        android:id="@+id/et_superior_organization"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/userWeight"
+                        android:text="管辖区域:" />
+
+                    <EditText style="@style/userWeightBackgroud"
+                        android:id="@+id/et_jurisdiction_area"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/userWeight"
+                        android:text="地理区域:" />
+
+                    <EditText style="@style/userWeightBackgroud"
+                        android:id="@+id/et_geographical_region"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/userWeight"
+                        android:text="地址:" />
+
+                    <EditText style="@style/userWeightBackgroud"
+                        android:id="@+id/et_address"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/userWeight"
+                        android:text="地理位置:" />
+
+                    <TextView
+                        android:id="@+id/tv_geographical_position"
+                        android:layout_width="0dp"
+                        android:layout_height="38dp"
+                        android:layout_weight="0.8"
+                        android:drawableLeft="@drawable/location"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/grayss"
+                        android:text="我的位置" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/gray" />
+
+            <LinearLayout style="@style/ll_user">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/userWeight"
+                        android:text="法人姓名:" />
+
+                    <EditText style="@style/userWeightBackgroud"
+                        android:id="@+id/et_legal_person_name"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/userWeight"
+                        android:text="法人手机:" />
+
+                    <EditText style="@style/userWeightBackgroud"
+                        android:id="@+id/et_legal_person_phone"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/userWeight"
+                        android:text="法人身份证:" />
+
+                    <EditText style="@style/userWeightBackgroud"
+                        android:id="@+id/et_legal_person_id"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/gray" />
+
+            <LinearLayout style="@style/ll_user">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/userWeight"
+                        android:text="负责人姓名:" />
+
+                    <EditText style="@style/userWeightBackgroud"
+                        android:id="@+id/et_person_in_charge_name"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/userWeight"
+                        android:text="负责人手机:" />
+
+                    <EditText style="@style/userWeightBackgroud"
+                        android:id="@+id/et_person_in_charge_phone"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/userWeight"
+                        android:text="负责人身份证:" />
+
+                    <EditText style="@style/userWeightBackgroud"
+                        android:id="@+id/et_person_in_charge_id"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/gray" />
+
+            <LinearLayout style="@style/ll_user">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/userWeight"
+                        android:text="联系人姓名:" />
+
+                    <EditText style="@style/userWeightBackgroud"
+                        android:id="@+id/et_contact_name"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/userWeight"
+                        android:text="联系人电话:" />
+
+                    <EditText style="@style/userWeightBackgroud"
+                        android:id="@+id/et_contact_phone"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                style="@style/viewStyle"
+                android:layout_marginTop="0dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/document_data" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="证件资料"
+                    android:textColor="@color/blue" />
+            </LinearLayout>
+
+            <View
+                style="@style/viewStyle"
+                android:layout_marginTop="0dp" />
+
+            <GridView
+                android:id="@+id/gv_enclosure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </GridView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/gray" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:text="备注:"
+                android:textColor="@color/alphaBlack"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_remarks"
+                style="@style/userWeightBackgroud"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="top" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_saved"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/bluebutton_click_style"
+                    android:gravity="center"
+                    android:text="保存" />
+
+                <TextView
+                    android:id="@+id/tv_return"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/gray"
+                    android:gravity="center"
+                    android:text="返回" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

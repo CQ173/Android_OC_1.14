@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:gravity="center_vertical"
+        android:background="#ffffff">
+
+
+         <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="2016-11-20"
+            android:textColor="#666666"
+            android:textSize="14sp" />
+
+
+         <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="张三"
+            android:textColor="#666666"
+            android:textSize="14sp" />
+
+
+
+
+
+         <LinearLayout
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:gravity="center_horizontal"
+             android:orientation="vertical">
+         <TextView
+            android:id="@+id/tv_tradeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:text="快捷支付"
+            android:textColor="#666666"
+            android:textSize="14sp" />
+
+
+         <TextView
+            android:id="@+id/tv_tradeAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="5dp"
+            android:text="1234.00"
+           	android:textColor="#666666"
+            android:textSize="14sp" />
+       </LinearLayout>
+
+
+          <TextView
+            android:id="@+id/tv_tradeStatus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+
+            android:text="成功"
+           	android:textColor="#666666"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/tv_refund"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:text="退款"
+            android:textColor="#00f"
+            android:textSize="14sp"
+            android:gravity="center"
+            />
+     </LinearLayout>
+</LinearLayout>

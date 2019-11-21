@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/alphaGray"
+    android:gravity="center"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_height="400dp"
+        android:orientation="vertical"
+        android:background="@drawable/text_round_bg_white2"
+        >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="0.5"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:gravity="center"
+        android:background="@drawable/map_c"
+
+        />
+
+
+</LinearLayout>
+
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="0dp"
+             android:layout_weight="0.6"
+             android:orientation="vertical"
+             >
+
+             <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="60dp"
+                 android:text="配置地图"
+                 android:textSize="20sp"
+                 android:gravity="center"
+                 android:textColor="@color/alphaBlack"
+                 />
+             <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                  android:layout_marginLeft="16dp"
+                 android:layout_marginRight="16dp"
+                 android:text="为了完善代售点的实际地理位置分布,请您选择是否现在配置“地理位置”?"
+                 android:gravity="left"
+                 android:textColor="@color/graysss"
+                 android:textSize="16sp"
+                 android:lineSpacingExtra="9dp"
+
+                 />
+
+
+         </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+      <LinearLayout
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:layout_height="match_parent"
+          android:gravity="center"
+          >
+
+          <TextView
+              android:layout_width="120dp"
+              android:layout_height="30dp"
+              android:text="现在设置"
+              android:gravity="center"
+              android:id="@+id/tv_setting_map"
+              android:textColor="@color/blues"
+              />
+      </LinearLayout>
+<View
+    android:layout_width="1dp"
+    android:layout_height="20dp"
+    android:background="@color/blues"
+    />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            >
+            <TextView
+                android:id="@+id/tv_nosetting_map"
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:text="暂时不设置"
+                android:gravity="center"
+                android:textColor="@color/umsmpospi_register_text5"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

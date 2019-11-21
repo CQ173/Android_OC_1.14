@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:orientation="horizontal">
+                <ImageView 
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/outlets_log"/>
+                <TextView
+                    android:id="@+id/tv_staOutletsName" 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp"
+                    android:text="长沙369代售点"/>
+                <TextView
+       				android:id="@+id/tv_staDebitStatus"
+                    android:layout_width="70dp"
+                    android:layout_height="18dp"
+
+                    android:gravity="center"
+                    android:text="扣款成功"
+                    android:textColor="#4d90e7" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="应扣金额（元）："
+                    android:textColor="#666666" />
+
+                <TextView
+                    android:id="@+id/tv_staShouldSum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100.00"
+                    android:textColor="#fc6e22"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="已扣金额（元）："
+                    android:textColor="#666666" />
+
+                <TextView
+                    android:id="@+id/tv_staAlreadySum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100.00"
+                    android:textColor="#4d90e7"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            <RelativeLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="12dp"
+                android:paddingBottom="16dp">
+                <TextView
+                    android:id="@+id/tv_staPaysysdate" 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#666666"
+                    android:layout_alignParentRight="true"
+                    android:text="2017-3-24"/>
+            </RelativeLayout>
+</LinearLayout>

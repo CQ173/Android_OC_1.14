@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.huoniao.oc"
+    android:versionCode="27"
+    android:versionName="@string/verson">
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- sdcard读权限 -->
+
+
+    <!-- pos插件需要权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_PRIVILEGED" />
+
+    <!-- 访问sd卡需要的权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!-- 使用定位功能所需权限 -->
+    <!-- <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> -->
+
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- SD卡读取权限，用户写入离线定位数据 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <!-- 获取手机录音机使用权限，听写、识别、语义理解需要用到此权限 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- 允许程序改变网络连接状态 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <!-- 读取联系人权限，上传联系人需要用到此权限 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <!-- sdcard写权限 -->
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/applogo_a"        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <!-- 百度地图 -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="UEoMeCV8W6w7D9VmLheGemFz98KISqyv"
+            tools:replace="android:value" />
+
+        <!-- 友盟统计 -->
+        <!--
+            <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5982c1545312dd536d001951" />
+        -->
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="yingyongbao" />
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".BaseActivity"
+            android:theme="@style/AppBaseTheme" />
+
+        <!-- 启动页 -->
+        <activity android:name=".StartPagerA">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 用户相关 -->
+        <activity
+            android:name=".user.LoginA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".user.PersonalInformationA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".user.UpdataPasswordA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".user.ForgetPasswordA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".user.MainLogDetailsA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".user.MainMessageDetailsA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".user.UserFeedbackInfoA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".user.PerfectInformationA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".user.SystemNotificationA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".user.SystemNotificationDetailsA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".user.RegisterA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".user.SetIdentityInfoA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".user.RealNameAuthenticationA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".user.RegisterSuccessA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".user.SelectPicPopupWindow"
+            android:theme="@style/MyDialogStyleBottom" />
+        <activity
+            android:name=".user.UnauditedLoginA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".user.HelpCenterA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".user.UpdataMobileA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".user.UpdataMobileTwoA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".user.UpdataContactA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".user.Message2A"
+            android:theme="@style/Theme.AppCompat"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".user.OjiCreditA"
+            android:theme="@style/Theme.AppCompat" />
+        <!-- 代售点相关 -->
+        <activity
+            android:name=".outlets.RechargeA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".outlets.BankCardRechargeA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".outlets.PaySystemA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".outlets.ExciptionPaySystemA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".outlets.OutletsMyMessgeA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".outlets.OutletsMyLogA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".outlets.CapitalFlowA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".outlets.CapitalFlowDetailsA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".outlets.PlaneTicketA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".outlets.SecuritiesAccountA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".outlets.EcoFarmA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".outlets.BankCardListA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".outlets.AddBankCardA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".outlets.BankCardInfoA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".outlets.VerifyMobileA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".outlets.BankCardDetailsA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".outlets.TemporaryAddCardA"
+            android:theme="@style/AppBaseTheme"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".outlets.UpdataCardA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".outlets.WalletA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".outlets.OpWithHoldA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".outlets.OpWithHoldOneA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".outlets.OpWithHoldTwoA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".outlets.OpWithHoldThreeA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".outlets.OpWithHoldFourA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".outlets.OpWithHoldFiveA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".outlets.AlreadyOpWhListA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".outlets.NewMessageNoticeA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".outlets.ReviseReceivModeA"
+            android:theme="@style/AppBaseTheme" />
+        <!-- 火车站相关 -->
+        <activity
+            android:name=".trainstation.StationOutletsManageA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".trainstation.StationOutletsRelationA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".trainstation.StationOutletsDetailsA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".trainstation.StationOutletsRelationDetailsA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".trainstation.StationMyMessgeA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".trainstation.StationMyLogA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".trainstation.StationHisPaySystA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".trainstation.StationExcptPaySystA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".trainstation.WindowsAnchoredApplyA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".trainstation.WindowsAnchoredListA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".trainstation.WindowsAnchoredDetailsA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".trainstation.SonOutletsDetailsA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".trainstation.WarningInfoListA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".trainstation.WarningDetailsA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".trainstation.WithholdAccountInfoA"
+            android:theme="@style/AppBaseTheme" />
+        <!-- 管理员相关 -->
+        <activity
+            android:name=".admin.AdminHisPaySystA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".admin.UserManageA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".admin.UserListDetailsA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".admin.AdminCapitalFlowDetailsA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".admin.FeedbackA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".admin.FeedbackDetailsA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".admin.AdminHisPstDetailsA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".admin.AddNotificationA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".admin.AnchoredAuditListA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".admin.AnchoredAuditDetailsA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".admin.FinancialManageA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".admin.FinancialApplyDetailsA"
+            android:theme="@style/AppBaseTheme" />
+        <!-- 财务相关 -->
+        <activity
+            android:name=".financial.FinancialListA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".financial.FinancialListDetailsA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".financial.LaunchApplyA"
+            android:theme="@style/AppBaseTheme"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:name=".financial.FinancialRefundsA" />
+        <activity
+            android:name=".financial.ImportRecordA"
+            android:theme="@style/Theme.AppCompat" />
+        <!-- 我的二维码界面 -->
+        <activity
+            android:name=".outlets.WalletMeQRCode"
+            android:theme="@style/AppBaseTheme" />
+
+        <!-- 协议相关 -->
+        <activity
+            android:name=".useragreement.OutletsUseA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".useragreement.PartnerMallA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".useragreement.ElectronicWalletA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".useragreement.RegisterAgreeA"
+            android:theme="@style/AppBaseTheme" />
+        <!-- 支付宝相关 -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" />
+
+        <!-- QQ登录相关 -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="1105896121" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- 微信登录相关 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- 友盟推送相关 -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="58ed84f7aed1793ba600244b" />
+        <meta-data
+            android:name="UMENG_MESSAGE_SECRET"
+            android:value="68b71b9f246231620466623f927ef461" />
+
+        <activity android:name=".umenpush.PushMsgHandleA" />
+
+        <!-- 扫码后支付界面 -->
+        <activity android:name=".outlets.Payment" />
+        <!-- 个人中心 -->
+        <activity
+            android:name=".user.PersonCenterA"
+            android:theme="@style/AppBaseTheme" />
+        <!-- 设置 -->
+        <activity
+            android:name=".user.SettingA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".user.TicketA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".user.AboutA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".outlets.CashA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".outlets.CardA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".outlets.AddCardA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".user.UpdateHeader"
+            android:theme="@style/AppBaseTheme" />
+        <activity android:name=".user.EditPhotos" />
+        <activity android:name=".user.PosSuccessA" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+        <activity
+            android:name=".user.GeographicalPositionMapA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".user.UpdatePersonalinformation"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".user.SettingPayPwd"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".user.UpdatePayPwd"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".user.ForgotPayPwd"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".user.MessageA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".admin.AdminOJiTransactionDetails"
+            android:theme="@style/Theme.AppCompat"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".admin.TransactionDetails"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name=".admin.AdminUserManageA"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name=".admin.AdminUserDataUpdate"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name=".admin.AdminUserDetails"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name=".admin.AdminWindowAnchored"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name=".admin.AdminWindowAnchoredDetails"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name=".admin.AdminConsolidateRecordDetails"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name=".admin.AdminConsolidatedRecord"
+            android:theme="@style/Theme.AppCompat"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".outlets.HasOpenedConsolidatedWithholdingManagementA"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name=".outlets.LearnMoreA"
+            android:theme="@style/Theme.AppCompat" />
+        <activity android:name=".outlets.CancellationNoticeA" />
+        <activity
+            android:name=".user.PasswordManagement"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name=".user.DataChangeApplyA"
+            android:theme="@style/AppBaseTheme" />
+        <activity android:name=".user.AccountLogOffSuccessA" />
+        <activity android:name=".user.AccountLogOffAuditingA" />
+        <activity android:name=".user.AccountLogOffFailA" />
+        <activity android:name=".user.ChoiceBankCardA" />
+        <activity android:name=".user.AccountLogOffNeedKnow" />
+        <activity android:name=".user.AccountLogOffPromptA" />
+        <activity android:name=".user.WriteDataChangeInfoA" />
+        <activity android:name=".financial.StationInfoA" />
+        <activity android:name=".outlets.ReceivablesA" />
+        <activity android:name=".outlets.PaymentCodeA" />
+        <activity
+            android:name=".user.IncomeStatisticsA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".trainstation.ReturnLateFeeA"
+            android:theme="@style/AppBaseTheme" />
+        <activity android:name=".trainstation.LateFeeSubmitDetailsA" />
+        <activity
+            android:name=".trainstation.AddLateFeeSubmitA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".trainstation.ChoiceDateA"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".financial.AdvanceInCashA"
+            android:theme="@style/Theme.AppCompat"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity android:name=".financial.AdvanceInCashDetailsA" />
+        <activity android:name=".financial.AdvanceInCashDetails2A" />
+        <activity android:name=".financial.AepaymentApplyA" />
+        <activity android:name=".financial.AepaymentAuditingA" />
+        <activity android:name=".outlets.AposPayA" />
+        <activity
+            android:name=".financial.NewAdvanceInCashA"
+            android:theme="@style/Theme.AppCompat"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".financial.StationPaymentA"
+            android:theme="@style/Theme.AppCompat"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity android:name=".financial.NewAdvanceInCashDetailsA" />
+        <activity android:name=".financial.StationPaymentDetailsA" />
+        <activity
+            android:name=".trainstation.NewWarningInfoListA"
+            android:theme="@style/Theme.AppCompat"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity android:name=".trainstation.NewWarningDetailsA" />
+        <activity
+            android:name=".trainstation.RemittanceDetailsA"
+            android:theme="@style/Theme.AppCompat"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".trainstation.TotalIronImportDeailsA"
+            android:theme="@style/Theme.AppCompat"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".trainstation.ProxyDistributionA"
+            android:theme="@style/Theme.AppCompat"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" >
+
+
+        </activity>
+        <activity android:name=".outlets.NewReceivablesA" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name=".outlets.NewRechargeA" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name=".outlets.NewAposPayA" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity
+            android:name=".trainstation.StationStatisticsActivity"
+            android:theme="@style/Theme.AppCompat"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".trainstation.CustomSortingActivity"
+            android:theme="@style/Theme.AppCompat"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".trainstation.StationStatisticsDetailsActivity"
+            android:theme="@style/Theme.AppCompat"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+    </application>
+
+</manifest>

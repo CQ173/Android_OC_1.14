@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   	android:scrollbars="none">
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical"
+    	android:background="#FFFFFF"
+    	 >
+        
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#f6f6f6" >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="用户使用协议"
+            android:textColor="#666666"
+            android:textSize="20sp" />
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+        
+	
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="(代售点版)"
+	    android:layout_marginTop="10dp"
+	    android:textStyle="bold"
+	    android:textSize="18dp"
+	    android:layout_gravity="center_horizontal"
+	    />
+	
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="一、前言"
+	    android:layout_marginTop="2dp"
+	    android:textStyle="bold"
+	   
+	    
+	    />
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="      根据《O计会计金融平台注册协议》及您提交的资料，您已经注册成为由长沙市火鸟软件科技有限公司（以下简称为“火鸟公司”或“本公司”）研究开发的O计会计金融平台（以下简称为“O计平台”或“本平台”）用户。O计平台实行账号通用管理，您通过注册账户即可使用O计平台的汇缴管理、电子钱包、账务统计、伙伴商城等服务，务必请您妥善保管您的登录名、密码及注册信息。"
+	    android:layout_marginTop="2dp"
+	    
+	    />
+	
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="      您注册成为O计平台用户并使用本平台表示您已充分阅读、理解并同意与O计平台订立《用户使用协议》（以下简称为“本协议”），且您自愿受本协议的条款约束。O计平台有权随时变更本协议并在O计平台上予以公告。经修订的条款一经在O计平台公布后，立即自动生效。如您不同意相关变更，必须停止使用O计平台。本协议内容包括协议正文及所有O计平台已经发布的各类规则。所有规则为本协议不可分割的一部分，与本协议正文具有同等法律效力。一旦您继续使用O计平台，则表示您已接受并自愿遵守经修订后的条款。"
+	    android:layout_marginTop="2dp"
+	    
+	    />
+	
+	
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="二、服务内容"
+	    android:layout_marginTop="10dp"
+	    android:textStyle="bold"
+	    
+	    />
+	
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="      1、电子钱包：为配合O计平台提供的应收应付账款的回收（应付）、逾期（预付）账款、应收账款催收数据分析整合等服务，电子钱包具备垫付、提现、借款等功能，可支持票务结算、伙伴商城等服务。当您通过在线操作电子钱包前，必须绑定与您的名称相符的有效的中国大陆银行信用卡账户及储蓄卡账户，电子钱包设有最低限额要求，根据用户类型不同有不同的限额要求：代售点用户的最低限额是本次为汇缴业务办理的信用卡的额度。"
+	    android:layout_marginTop="2dp"
+	    />
+	
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="        （1）垫付：代售点用户可通过电子钱包的账户余额垫付票款、伙伴商城中购买的商品。本公司垫付后，非经法律程序或者非依本协议之约定，该支付是不可逆转的。"
+	    android:layout_marginTop="2dp"
+	    />
+	
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="        （2）提现：提取超出最低限额部分的资金到绑定的银行储蓄卡账户。"
+	    android:layout_marginTop="2dp"
+	    />
+	
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="        （3）借款：O计平台将打开合作的第三方融资平台网站，同时会携带部分用户账户信息给该网站以便实现免密登录及用户信用验证。"
+	    android:layout_marginTop="2dp"
+	    />
+	
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="      2、票款汇缴：火车站每日从火鸟公司银行账户划扣走所有使用O计系统进行票款汇缴的代售点所售票款，再登录O计平台提供的火车站账户提交所扣票款的明细数据到O计平台，系统会自动将数据统计到相应的代售点账户，并从其在O计平台的电子钱包中扣款相应款项。"
+	    android:layout_marginTop="2dp"
+	    />
+	
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="      3、伙伴商城：O计平台为给代售点用户提供更多的赚钱机会，与多家商户建立了合作伙伴关系，通过O计平台用户即可代理销售各合作伙伴的商品并获取返利。"
+	    android:layout_marginTop="2dp"
+	    />
+	
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="        （1）通过“伙伴商城”板块，可查看目前O计平台已合作的伙伴商户。"
+	    android:layout_marginTop="2dp"
+	    />
+	
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="        （2）点击相应的商户链接，即可跳转到商户的网站进行购买操作。"
+	    android:layout_marginTop="2dp"
+	    />
+	
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="三、使用O计平台的注意事项"
+	    android:layout_marginTop="10dp"
+	    android:textStyle="bold"
+	    
+	    />
+	
+	
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="      1、暂停或终止提供服务"
+	    android:layout_marginTop="2dp"
+	    />
+	
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="      在以下情况下，O计平台将暂停或终止提供服务，造成的损失由用户自行承担："
+	    android:layout_marginTop="2dp"
+	    />
+	
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="        （1）电子钱包不符合最低限额要求；"
+	    android:layout_marginTop="2dp"
+	    />
+	
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="        （2）您违反了本协议的约定；"
+	    android:layout_marginTop="2dp"
+	    />
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="        （3）根据法律法规及法律文书的规定；"
+	    android:layout_marginTop="2dp"
+	    />
+	
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="        （4）根据有权机关的要求；"
+	    android:layout_marginTop="2dp"
+	    />
+	
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="        （5）您的账户操作、资金流向等存在异常时；您的账户可能产生风险的；"
+	    android:layout_marginTop="2dp"
+	    />
+	
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="        （6）您遭到他人投诉，且对方已经提供了一定证据的；"
+	    android:layout_marginTop="2dp"
+	    />
+	
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="        （7）您可能错误地操作他人账户，或者将他人账户进行了身份验证的。"
+	    android:layout_marginTop="2dp"
+	    />
+	
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="      2、信息披露"
+	    android:layout_marginTop="2dp"
+	    />
+	
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="      您使用电子钱包进行垫付、提现、借款等功能或使用该账户登陆其他支持电子钱包的平台时，您即授权本公司将您的个人信息和交易信息披露给与您交易的关联站点，该信息包括但不限于：您的主体信息、联系方式、账户状态。"
+	    android:layout_marginTop="2dp"
+	    />
+	
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="      3、电子钱包垫付功能"
+	    android:layout_marginTop="2dp"
+	    />
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="      电子钱包垫付服务功能仅为O计平台及相关合作伙伴的支付体验优化软件，不提供任何形式的第三方收付款人中介与（或）支付担保服务。"
+	    android:layout_marginTop="2dp"
+	    />
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="      4、合理时限"
+	    android:layout_marginTop="2dp"
+	    />
+	
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="      O计平台并非银行、第三方担保支付或其它金融机构，本服务也非金融业务，本协议项下的资金移转均通过银行来实现，你理解并同意您的资金于流转途中的合理时间。"
+	    android:layout_marginTop="2dp"
+	    />
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="      5、风险提示"
+	    android:layout_marginTop="2dp"
+	    />
+	
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="      您完全承担您使用本服务期间由本公司保管或代收或代付的款项的货币贬值风险及可能的孳息损失。"
+	    android:layout_marginTop="2dp"
+	    />
+	
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="      6、服务费用。"
+	    android:layout_marginTop="2dp"
+	    />
+	
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="      O计平台将依据您选择的服务项目收取费用，具体费用收取方式在O计平台进行公示。"
+	    android:layout_marginTop="2dp"
+	    />
+	
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="四、免责声明"
+	    android:layout_marginTop="10dp"
+	    android:textStyle="bold"
+	    
+	    />
+	
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="      1、伙伴商城发布的任何信息（包括但不限于注册信息、企业/个人信息、店铺名称、联系人及联络信息、产品的描述和说明、图片、视频、言论等）均由第三方自行提供，由此产生的责任均由第三方提供者本人全部承担，与O计平台无关。"
+	    android:layout_marginTop="2dp"
+	    />
+	
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="      2、O计平台仅为个人或企业间财务往来帐目的管理提供信息化的解决方案，发生财务往来的个人或企业间以及用户与伙伴商城中第三方的交易规则由交易双方另行达成，O计平台不对交易的真实及履行情况进行审核或承担任何保证责任。"
+	    android:layout_marginTop="2dp"
+	    />
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="      3、本平台因维护、升级可能会不定期的中断提供服务；因您操作不当、电脑病毒或黑客攻击可能也会引发暂时的服务中断。您接受本声明，视为同意上述单方面的服务中断。本平台将会对可预料的中断服务提供告知（如在平台上公告或以电子邮件或短信等方式通知）。如发生服务中断，本平台会争取在最短的时间内恢复服务。但是，因上述原因导致您遭受的损失，由您本人承担。"
+	    android:layout_marginTop="2dp"
+	    />
+	
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="      4、本平台对于因战争、地震、洪水、火灾等不可抗力原因或互联网运输问题、信号线路问题等其他不可预见、不可控制的原因而导致本平台无法正常提供服务，或者导致您的信息泄露、利益受损不负责任。但是，本平台会在上述事由发生后积极挽救，努力使您的利益损失降到最低。"
+	    android:layout_marginTop="2dp"
+	    />
+	
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="五、信息使用及安全"
+	    android:layout_marginTop="10dp"
+	    android:textStyle="bold"
+	    
+	    />
+	
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="      1、O计平台不会向任何人出售或出借用户的个人或法人信息，除非事先得到用户的许可。"
+	    android:layout_marginTop="2dp"
+	    />
+	
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="      2、用户的个人或法人信息将在下述情况下部分或全部被披露："
+	    android:layout_marginTop="2dp"
+	    />
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="        （1）为提供您所要求的产品和服务，向伙伴商城、金融机构等第三方分享用户披露；"
+	    android:layout_marginTop="2dp"
+	    />
+	
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="        （2）根据法律的有关规定，或者行政、司法机关的要求，向第三方或者行政、司法机关披露；"
+	    android:layout_marginTop="2dp"
+	    />
+	
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="        （3）若用户出现违反中国有关法律或者O计平台规定的情况，需要向第三方披露；"
+	    android:layout_marginTop="2dp"
+	    />
+	
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="        （4）其它O计平台根据法律或者O计平台规定认为合适的披露。"
+	    android:layout_marginTop="2dp"
+	    />
+	
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="      3、O计平台实行账号通用管理，您通过注册账户即可使用O计平台的汇缴管理、电子钱包、账务统计、伙伴商城等服务，务必请您妥善保管您的登录名、密码及注册信息，使用注册账户进行的任何操作、发出的任何指令均视为您本人做出。因您的原因造成的账户、密码等信息被冒用、盗用或非法使用，由此引起的一切风险、责任、损失、费用等应由您自行承担。"
+	    android:layout_marginTop="2dp"
+	    />
+	
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="      4、如果用户发现自己的个人或法人信息泄密，尤其是电子钱包账户及密码发生泄露，请用户立即联络O计平台，以便我们采取相应措施。"
+	    android:layout_marginTop="2dp"
+	    />
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="六、商标、知识产权的保护"
+	    android:layout_marginTop="10dp"
+	    android:textStyle="bold"
+	    
+	    />
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="      1、本平台上所有内容，包括但不限于著作、图片、档案、资讯、资料、网站架构、网站画面的安排、网页设计，均由本公司或本公司关联企业依法拥有其知识产权，包括但不限于商标权、专利权、著作权、商业秘密等。"
+	    android:layout_marginTop="2dp"
+	    />
+	
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="      2、非经本公司或关联平台书面同意，任何人不得擅自使用、修改、复制、公开传播、改变、散布、发行或公开发表本网站程序或内容。"
+	    android:layout_marginTop="2dp"
+	    />
+	
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="七、法律适用与管辖"
+	    android:layout_marginTop="10dp"
+	    android:textStyle="bold"
+	    
+	    />
+	
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="      本协议之效力、解释、变更、执行与争议解决均适用中华人民共和国法律，没有相关法律规定的，参照通用国际商业惯例和（或）行业惯例。"
+	    android:layout_marginTop="2dp"
+	    />
+	
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="      因本协议产生之争议，均应依照中华人民共和国法律予以处理，并以本公司所住地法院为第一审管辖法院。"
+	    android:layout_marginTop="2dp"
+	    />
+	
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="八、解释权"
+	    android:layout_marginTop="10dp"
+	    android:textStyle="bold"
+	    
+	    />
+	
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="      火鸟公司对本协议包括基于本协议制定的各项规则拥有最终解释权。"
+	    android:layout_marginTop="2dp"
+	    />
+	</LinearLayout> 
+	
+   </LinearLayout>  
+</ScrollView>

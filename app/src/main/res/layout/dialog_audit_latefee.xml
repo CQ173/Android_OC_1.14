@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/et_refuseReason"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:textSize="14sp"
+        android:hint="请输入拒绝理由"
+        android:background="@null"/>
+
+   <!-- <View
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+    </View>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.02dp"
+        android:layout_weight="0"
+        android:background="#e0e0e0" >
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:background="#EDEDED">
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="取消"
+            android:textColor="#666666"
+            android:textSize="16sp"
+            android:gravity="center"
+            />
+        <LinearLayout
+            android:layout_width="0.02dp"
+            android:layout_weight="0"
+            android:layout_height="match_parent"
+            android:background="#e0e0e0" >
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_confirm"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="确定"
+            android:textColor="#666666"
+            android:textSize="16sp"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+</LinearLayout>
